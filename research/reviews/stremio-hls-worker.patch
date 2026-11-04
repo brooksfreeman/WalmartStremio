@@ -1,0 +1,10 @@
+--- hlsConfig.js
++++ hlsConfig.js
+@@ -1,6 +1,6 @@
+ module.exports = {
+     debug: false,
+-    enableWorker: true,
++    enableWorker: false,
+     lowLatencyMode: false,
+     backBufferLength: 30,
+     maxBufferLength: 50,

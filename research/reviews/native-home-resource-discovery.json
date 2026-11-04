@@ -1,0 +1,107 @@
+{
+  "date": "2026-11-02",
+  "model": "W4K65M-1031",
+  "question": "Do four already observed deployment/content metadata paths expose the actual Home bundle locator?",
+  "method": "get active; enumerate Home apps, catalog-services and live-hero; fixed allowlist; 5-second per-read deadline; 200000-character report cap",
+  "results": [
+    {
+      "key": "/app/loki/deployer/active",
+      "operation": "get",
+      "error": null,
+      "result": ""
+    },
+    {
+      "key": "/app/loki/home/apps",
+      "operation": "enumerate",
+      "error": null,
+      "result": [
+        "user_reordered_backfilled",
+        "recent",
+        "non_conforming",
+        "user_reordered_app",
+        "sorted",
+        "default",
+        "all"
+      ]
+    },
+    {
+      "key": "/loki/home/catalog-services",
+      "operation": "enumerate",
+      "error": null,
+      "result": [
+        "catalog-url-type",
+        "content-details-url-type",
+        "url-type",
+        "search-url-type",
+        "announcement-url-type",
+        "hub-announcements-url-type",
+        "promo-url-type"
+      ]
+    },
+    {
+      "key": "/loki/home/live-hero",
+      "operation": "enumerate",
+      "error": null,
+      "result": []
+    }
+  ],
+  "conclusion": "No bundle descriptor, source path or artifact URL returned; this bounded locator attempt is metadata-only.",
+  "writes": false,
+  "expected_next_question": "What app-catalog data and environment selector are published for the actual Home?",
+  "next_test": {
+    "reads": [
+      [
+        "get",
+        "/app/loki/home/apps/all"
+      ],
+      [
+        "get",
+        "/app/loki/home/apps/default"
+      ],
+      [
+        "get",
+        "/loki/home/catalog-services/catalog-url-type"
+      ]
+    ],
+    "outcomes": [
+      "App IDs only: ordering/membership evidence, no renderer or writable consumer proven",
+      "Structured app records: inspect field names and artifact references privately; do not confuse app icons/endpoints with Home source",
+      "Selector only: environment/type evidence, not catalog URL"
+    ],
+    "stop": "Three reads, no guessed resource paths or writes."
+  },
+  "catalog_followup_results": [
+    {
+      "key": "/app/loki/home/apps/all",
+      "error": "ResultTooLarge",
+      "action": "Stopped this path at cap; did not retry with increased limit; records not exported"
+    },
+    {
+      "key": "/app/loki/home/apps/default",
+      "error": null,
+      "shape": "JSON string decoding to list of 340 strings; raw identifiers retained privately",
+      "limit": "List entries not independently resolved to visible app tiles or consumer code"
+    },
+    {
+      "key": "/loki/home/catalog-services/catalog-url-type",
+      "error": null,
+      "shape": "empty string"
+    }
+  ],
+  "external_format_lead": {
+    "source": "https://github.com/vindeckyy/smartcast-backdoor#122-error-messages-as-documentation",
+    "authority": "Author reports observations on W4K65M-1030, not this 1031",
+    "reported_format": "ZIP bundle plus templates/BundleRoot.xml and a SHA1 filename check at one layer",
+    "owner_verified": false,
+    "not_established": [
+      "Matching Home bundle format or paths",
+      "Complete signature/validation chain",
+      "Filesystem access or replacement permission"
+    ]
+  },
+  "local_sdk_review": {
+    "source": ".private/owner-tv-static/companion.js",
+    "scope": "Exact Loki command vocabulary only, no repeated REA graph analysis",
+    "result": "Known operations bundle, clearScene, deepLink and registerSessionProvider are control operations; no bundle-export/read command identified in this enum. Not proof every native API lacks reads."
+  }
+}

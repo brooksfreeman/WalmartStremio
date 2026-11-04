@@ -1,0 +1,25 @@
+{
+  "date": "2026-11-01",
+  "model": "W4K65M-1031",
+  "owner_power_cycle": "Off, unplug30seconds, reconnect/on; owner confirms desktop back",
+  "preexisting_input_preference": "Last HDMI input; not changed",
+  "initial_direct_file_visual_result": "Owner: launcher does not appear",
+  "readonly_reopen": {
+    "origin": "http://127.0.0.1:12345",
+    "mode": "open-rest",
+    "steps": [
+      "rendering-stored-launcher"
+    ],
+    "html_sha256": "8cb842adeb0a46efa693db9ea94392142c772def7f0db63069ad0920a6f32293",
+    "bridge_available": true,
+    "native_launch_at": null,
+    "error": null
+  },
+  "file_retention_verified": true,
+  "expected_sha256": "8cb842adeb0a46efa693db9ea94392142c772def7f0db63069ad0920a6f32293",
+  "reinstalled_after_cycle": false,
+  "hypothesis": "First launch may require browser/storage initialization or encounter startup timing; exact cause not established",
+  "direct_retry_visual_result": "Owner confirms launcher and Netflix both work after read-only reopen",
+  "home_startup_replaced": false,
+  "cold_start_launch_reliably_verified": false
+}

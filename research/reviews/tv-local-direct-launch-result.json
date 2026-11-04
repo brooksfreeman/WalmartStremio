@@ -1,0 +1,17 @@
+{
+  "date": "2026-11-01",
+  "model": "W4K65M-1031",
+  "firmware": "86.920.9.3-2",
+  "launch": "Normal paired app/launch to exact filesystem:http://127.0.0.1:12345/persistent/owner-tv-home-rest-v1/index.html",
+  "owner_verified": [
+    "Eleven-app launcher appears on direct local-file launch",
+    "Netflix opens from that launcher"
+  ],
+  "effects": "Transient display/app navigation only; no registry, firmware or Home changes",
+  "limits": [
+    "Physical Home and startup still use existing PC-assisted redirect",
+    "No full power-loss persistence yet tested",
+    "Other apps not individually verified through this new path",
+    "Stremio remains PC-dependent"
+  ]
+}

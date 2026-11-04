@@ -1,0 +1,37 @@
+{
+  "started_utc": "2026-11-01T22:35:02.406424+00:00",
+  "duration_seconds": 60,
+  "scope": "Only PC helper services paused; PC OS and TV internet remain connected",
+  "phase": "test completed; current launcher PC dependency confirmed",
+  "observed_unit_states": [
+    "inactive",
+    "inactive",
+    "inactive"
+  ],
+  "ports_closed_while_paused": {
+    "8099": true,
+    "11470": true
+  },
+  "read_only_tv_sample": {
+    "utc": "2026-11-01T22:35:46.869089+00:00",
+    "input": "HDMI-2",
+    "app": {
+      "NAME_SPACE": 0,
+      "APP_ID": "2"
+    },
+    "seconds_since_pause_start": 44.462665
+  },
+  "restoration_verified_utc": "2026-11-01T22:36:15.684776+00:00",
+  "recovery_observed_states": {
+    "vizio-stremio-lab.service": "active",
+    "vizio-stremio-engine.service": "active",
+    "vizio-stremio-watch.service": "active"
+  },
+  "restored_http_health": 200,
+  "owner_report": "While OFFLINE, no apps opened; physical Home went to Vizio Home rather than the custom launcher.",
+  "conclusions": [
+    "Current native-app buttons need the PC helper.",
+    "Current Home return needs the PC watcher.",
+    "This does not prove every possible native TV installation path impossible."
+  ]
+}

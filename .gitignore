@@ -1,0 +1,18 @@
+.private/
+research/upstream/
+__pycache__/
+*.pyc
+node_modules/
+.tv_auth
+.env
+.codex/config.toml
+.pi-worktrees/
+/5586L_FUR9.2.tar.gz
+/mg1352-86.910.19.2-1F.utv
+
+# Local agent metadata and environment variants
+.pi-agents/
+.env.*
+!.env.example
+*.pem
+*.key

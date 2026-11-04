@@ -1,0 +1,54 @@
+{
+  "date": "2026-11-02",
+  "source": "https://github.com/theubusu/unixtract",
+  "commit": "aadba866ea47ed9506ffe130a8558bb9147ee968",
+  "files": {
+    "src/formats/utv_qterics/mod.rs": {
+      "bytes": 4338,
+      "sha256": "542e083d3c9728ea217b23dddf5ee27ca54b255bcc75e7dc97e1e74537b7dcec"
+    },
+    "src/ukf.rs": {
+      "bytes": 13221,
+      "sha256": "69234958d08b44247e16be90f374c0dedda05b02537470fb0c6fe80c1366a2a2"
+    },
+    "Cargo.toml": {
+      "bytes": 563,
+      "sha256": "bdcfa3daceb4d6018022d4f199b40d069e54e25aff811393a4d237a8620ae508"
+    },
+    "LICENSE": {
+      "bytes": 35149,
+      "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986"
+    },
+    "src/keys.ukf": {
+      "bytes": 70421,
+      "sha256": "9371ed11ffed8ea82fbb9f612036ba1f09e31c6e851da2ea56721013a34b48af",
+      "local_path": ".private/unixtract/keys.ukf",
+      "note": "Published upstream material, kept local; no owner device credentials."
+    }
+  },
+  "trial_report": "research/reviews/unixtract-key-trial-verified.json",
+  "artifact_sha256": "5eccf0374f7d89fb8f33ed763338095a7d58ccd202dde95abb198d9f78b1e9a1",
+  "outcome": "21 distinct published RSA keys tested with source-defined OAEP-SHA1; no match; no plaintext recovered.",
+  "validation": [
+    "Synthetic matching-key + first-block GCM authentication succeeded",
+    "One-bit synthetic GCM tag damage rejected"
+  ],
+  "maintainer_issue": "https://github.com/theubusu/unixtract/issues/5#issuecomment-5142392330",
+  "issue_scope": "Different-platform example: id.json/idpwe in Novatek com.nvt.idtv qterics directory. Not an established owner-MediaTek path.",
+  "archive_index_followup": "Seven existing indexes queried for key/provisioning filenames and Qterics/UpdateLogic/UTV component names. Only unrelated JSON-Schema id.json; no identified matching artifact. No archives reinventoried.",
+  "asset_crypto_correction": "OSUpdater PEM_read_PUBKEY consumes a PEM public key; earlier certificate shorthand corrected. Derivation hashes exact file bytes, not an X509 certificate object.",
+  "effects": {
+    "tv_requests": false,
+    "service_changes": false,
+    "firmware_flashes": false,
+    "upstream_code_built_or_run": false,
+    "new_dependencies_installed": false
+  },
+  "next_requirement": "Owner-relevant native file read/export, matching private material or already-unpacked native resources; do not assume example paths or UART access.",
+  "owner_followup": {
+    "electronics_experience": "Owner confirms relevant experience with mains-powered electronics",
+    "next_observation": "Unplugged mainboard overview and identification photos; no measurements or powered-open testing",
+    "scope_document": "docs/MAINBOARD-IDENTIFICATION.md",
+    "console_or_voltage_established": false
+  }
+}

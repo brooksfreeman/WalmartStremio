@@ -1,0 +1,34 @@
+{
+  "evidence_id": "ev_6bfb8b0cb27b394e40b1889019ddd1f54b07ac7d3d977540f960541e22b3be28",
+  "operation": "trace_application_feature",
+  "authority": "analyst-inference",
+  "confidence": "inferred",
+  "source": "author-provided extracted bundles, not owner TV Home app",
+  "seed": {
+    "kind": "string",
+    "value": "VIZIOApps",
+    "match": "exact",
+    "case_sensitive": false
+  },
+  "summary": {
+    "matched_seeds": 0,
+    "traced_nodes": 0,
+    "traced_edges": 0,
+    "terminal_paths": 0,
+    "native_handoffs": 0,
+    "observed_facts": 0,
+    "inferred_facts": 0,
+    "unknown_facts": 0,
+    "unavailable_facts": 0
+  },
+  "coverage": {
+    "status": "no-match",
+    "source_graph_status": "partial",
+    "total_seed_matches": 0
+  },
+  "limitations": [
+    "No graph entity matched the literal seed; this is not evidence that the feature is absent.",
+    "The source application graph is incomplete; unmatched seeds and frontiers remain unknown."
+  ],
+  "source_evidence_id": "ev_f33b3695edc0abaf5bb4a4e9ed4f78fc7e3883fe69b145098975fcc3408e42c3"
+}

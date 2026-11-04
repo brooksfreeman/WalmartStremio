@@ -1,0 +1,26 @@
+{
+  "date": "2026-11-03",
+  "addon_manager": {
+    "read_list": "TV verified",
+    "url_install": "TV verified with local sample add-on",
+    "remove": "TV verified",
+    "original_addons_preserved": true,
+    "installed_count": 7
+  },
+  "bandwidth": {
+    "source": "Only host/engine service TCP sockets",
+    "sample_count": 71,
+    "observed_peak_send_mbps": 24.55,
+    "observed_peak_receive_mbps": 0.02,
+    "other_apps_excluded": true,
+    "UDP_included": false
+  },
+  "home_link_regression": "5 actual Chrome DOM tests passed, including author CSS overriding hidden",
+  "frontend_build": "webpack succeeded; existing asset-size warnings only",
+  "unit_checks": "6 local regression tests passed",
+  "http_endpoint_checks": "TV source, Origin, nonce, private backup and report verified with isolated server",
+  "desktop_ui": "Overview and Add-ons tabs rendered and visually reviewed",
+  "github_upload": "not performed",
+  "final_hosting_state": "Intentionally stopped at owner explicit request; all three units remain enabled at boot",
+  "server_stop_diagnosis": "Clean control-triggered stops; no crash or restart-on-failure issue"
+}

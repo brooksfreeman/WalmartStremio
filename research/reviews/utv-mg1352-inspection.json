@@ -1,0 +1,109 @@
+{
+  "artifact": {
+    "path": "/path/to/WalmartStremio/mg1352-86.910.19.2-1F.utv",
+    "bytes": 533546571,
+    "sha256": "5eccf0374f7d89fb8f33ed763338095a7d58ccd202dde95abb198d9f78b1e9a1"
+  },
+  "jwt": {
+    "length": 7367,
+    "algorithm": "RS512",
+    "claim_names": [
+      "aas",
+      "aud",
+      "blk",
+      "crt",
+      "hsh",
+      "int",
+      "key",
+      "man",
+      "opd",
+      "siz",
+      "sub",
+      "upf",
+      "upi",
+      "upn",
+      "url"
+    ],
+    "selected_claims": {
+      "sub": "86.910.19.2-1F",
+      "opd": "00199D1352",
+      "siz": 533537568,
+      "blk": 5242880,
+      "upf": "mt5586_upgrade_image_ota.pkg",
+      "upi": 82113,
+      "aud": [
+        "86.804.21.3-1",
+        "86.804.31.3-1",
+        "86.804.31.3-3",
+        "86.900.61.1-1",
+        "86.804.43.2-2",
+        "86.900.61.1-6",
+        "86.910.19.1-2"
+      ],
+      "aas": false,
+      "upn": "86.910.19.2-1F",
+      "man": true,
+      "hsh": "DA0BE81FE90B1337306AC1F683B3220E568A0B68F11AA447994F2C8389B4FBC4"
+    },
+    "url_present": false,
+    "key_field_decoded_bytes": 256,
+    "signature_with_embedded_leaf": "valid"
+  },
+  "certificates": {
+    "leaf": {
+      "subject": "CN=updates.support.supportview.com,OU=2,OU=Token Signing,OU=Services,O=Qterics Inc.,C=US",
+      "issuer": "CN=Production CA-1,OU=Services,O=Qterics Inc.,C=US",
+      "sha256": "cbd77732354497ec91735f63b9a2516d40a00baf63b727e23f01a860dd4ccae6",
+      "public_key_bits": 2048,
+      "not_before_utc": "2018-02-13T19:26:14Z",
+      "not_after_utc": "2038-02-13T19:25:47Z"
+    },
+    "intermediate": {
+      "subject": "CN=Production CA-1,OU=Services,O=Qterics Inc.,C=US",
+      "issuer": "CN=Qterics Root CA,O=Qterics Inc.,C=US",
+      "sha256": "91b8449425f6d7ea1fe7fa79f97a1608f81418a47f4c76374d1a4c47af7be1d0",
+      "public_key_bits": 4096,
+      "not_before_utc": "2014-11-13T22:09:22Z",
+      "not_after_utc": "2044-11-13T21:37:19Z"
+    },
+    "leaf_signature_with_embedded_intermediate": "valid",
+    "issuer_subject_match": true,
+    "independent_root_trust": "not-established"
+  },
+  "layout": {
+    "payload_offset": 7371,
+    "payload_bytes": 533539200,
+    "declared_size": 533537568,
+    "declared_block_size": 5242880,
+    "full_declared_blocks": 101,
+    "declared_tail_bytes": 4006688,
+    "declared_block_count_including_tail": 102,
+    "payload_minus_declared_size": 1632,
+    "difference_per_declared_block_if_uniform": 16.0,
+    "interpretation": "Arithmetic only; no chunk-header, AES mode or padding semantics verified."
+  },
+  "payload": {
+    "sha256": "dd658b7f7e8afce3f2b1eb20538f65aa0c3451d57f36a55bb21e417a27e53960",
+    "hash_matches_claim_hsh": false,
+    "plaintext_recovered": false,
+    "plaintext_digest_verified": false
+  },
+  "installed_version_comparison": {
+    "installed_version": "86.920.9.3-2",
+    "exact_audience_member": false,
+    "limitation": "Audience comparison alone does not establish full device update policy or model compatibility."
+  },
+  "effects": {
+    "network_requests": false,
+    "tv_operations": false,
+    "target_execution": false,
+    "decryption": false,
+    "flashing": false
+  },
+  "limitations": [
+    "Signed metadata is not proof that opaque payload bytes satisfy the plaintext digest.",
+    "Embedded certificate consistency is not independently authenticated download provenance.",
+    "RSA-wrapped-key/AES interpretation comes from external research, not recovered cipher implementation.",
+    "Neither current-version status nor exact owner-model compatibility established by this file."
+  ]
+}

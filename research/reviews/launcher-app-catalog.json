@@ -1,0 +1,156 @@
+{
+  "date": "2026-11-01",
+  "sources": [
+    {
+      "url": "https://scfs.vizio.com/appservice/vizio_apps_prod.json",
+      "sha256": "22462ab3cd78cfc3c83502e90dab05601fa611d122cb54fa76a20e327f8a6b4c"
+    },
+    {
+      "url": "https://scfs.vizio.com/appservice/app_availability_prod.json",
+      "sha256": "c88649e996b57d7c6ed0512d975fb319118d55e43446b02a1748cedea03c572a"
+    }
+  ],
+  "chipset_evidence": {
+    "owner_api": {
+      "SOC": 1,
+      "CHIPSET": 9,
+      "firmware": "86.920.9.3-2"
+    },
+    "inference": "Author-provided companion-lib.js maps SOC 1 / CHIPSET 9 to MTK 5586; Prime MT5586 firmware minimum satisfied",
+    "scope": "static mapping from reported artifact; not a new native dump"
+  },
+  "apps": [
+    {
+      "key": "netflix",
+      "catalog_name": "Netflix",
+      "catalog_id": "34",
+      "chipset_selection": "*",
+      "firmware_minimum": null,
+      "payload": {
+        "NAME_SPACE": 3,
+        "APP_ID": "1",
+        "MESSAGE": null
+      },
+      "owner_tv_visual_test": "Netflix initially confirmed; overall expanded flow reported working, without an itemized follow-up."
+    },
+    {
+      "key": "hulu",
+      "catalog_name": "Hulu",
+      "catalog_id": "19",
+      "chipset_selection": "*",
+      "firmware_minimum": null,
+      "payload": {
+        "NAME_SPACE": 2,
+        "APP_ID": "3",
+        "MESSAGE": null
+      },
+      "owner_tv_visual_test": "Overall expanded flow reported working; individual app not explicitly named in reply."
+    },
+    {
+      "key": "hbo-max",
+      "catalog_name": "HBO Max",
+      "catalog_id": "128",
+      "chipset_selection": "*",
+      "firmware_minimum": null,
+      "payload": {
+        "NAME_SPACE": 2,
+        "APP_ID": "128",
+        "MESSAGE": null
+      },
+      "owner_tv_visual_test": "Overall expanded flow reported working; individual app not explicitly named in reply."
+    },
+    {
+      "key": "disney-plus",
+      "catalog_name": "Disney+",
+      "catalog_id": "76",
+      "chipset_selection": "*",
+      "firmware_minimum": null,
+      "payload": {
+        "NAME_SPACE": 2,
+        "APP_ID": "75",
+        "MESSAGE": null
+      },
+      "owner_tv_visual_test": "Overall expanded flow reported working; individual app not explicitly named in reply."
+    },
+    {
+      "key": "youtube-tv",
+      "catalog_name": "YouTube TV",
+      "catalog_id": "45",
+      "chipset_selection": "*",
+      "firmware_minimum": null,
+      "payload": {
+        "NAME_SPACE": 5,
+        "APP_ID": "3",
+        "MESSAGE": null
+      },
+      "owner_tv_visual_test": "Overall expanded flow reported working; individual app not explicitly named in reply."
+    },
+    {
+      "key": "youtube",
+      "catalog_name": "YouTube",
+      "catalog_id": "44",
+      "chipset_selection": "*",
+      "firmware_minimum": null,
+      "payload": {
+        "NAME_SPACE": 5,
+        "APP_ID": "1",
+        "MESSAGE": null
+      },
+      "owner_tv_visual_test": "Overall expanded flow reported working; individual app not explicitly named in reply."
+    },
+    {
+      "key": "prime",
+      "catalog_name": "Prime Video",
+      "catalog_id": "33",
+      "chipset_selection": "MT5586",
+      "firmware_minimum": "86.700.0.0",
+      "payload": {
+        "NAME_SPACE": 3,
+        "APP_ID": "3",
+        "MESSAGE": null
+      },
+      "owner_tv_visual_test": "Overall expanded flow reported working; individual app not explicitly named in reply."
+    },
+    {
+      "key": "paramount",
+      "catalog_name": "Paramount+",
+      "catalog_id": "9",
+      "chipset_selection": "*",
+      "firmware_minimum": null,
+      "payload": {
+        "NAME_SPACE": 2,
+        "APP_ID": "37",
+        "MESSAGE": null
+      },
+      "owner_tv_visual_test": "Overall expanded flow reported working; individual app not explicitly named in reply."
+    },
+    {
+      "key": "peacock",
+      "catalog_name": "Peacock",
+      "catalog_id": "88",
+      "chipset_selection": "*",
+      "firmware_minimum": null,
+      "payload": {
+        "NAME_SPACE": 2,
+        "APP_ID": "88",
+        "MESSAGE": null
+      },
+      "owner_tv_visual_test": "Overall expanded flow reported working; individual app not explicitly named in reply."
+    },
+    {
+      "key": "apple-tv",
+      "catalog_name": "Apple TV+",
+      "catalog_id": "91",
+      "chipset_selection": "*",
+      "firmware_minimum": null,
+      "payload": {
+        "NAME_SPACE": 3,
+        "APP_ID": "4",
+        "MESSAGE": null
+      },
+      "owner_tv_visual_test": "Overall expanded flow reported working; individual app not explicitly named in reply."
+    }
+  ],
+  "runtime_dependency": "No feed requests at runtime; fixed reviewed descriptors are shipped locally.",
+  "overall_owner_report": "Expanded app-launch / Home-return / TV-HDMI test: everything seems to work; apps not individually enumerated."
+}

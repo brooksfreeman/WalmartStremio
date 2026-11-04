@@ -1,0 +1,12 @@
+--- HTMLVideo.js
++++ HTMLVideo.js
+@@ -670,6 +670,9 @@
+                                     onPropChanged('live');
+                                 });
+                                 hls.on(Hls.Events.ERROR, function(_event, data) {
++                                    if (hls !== activeHls) return;
++                                    var note = [data.type, data.details, data.error && data.error.message].filter(Boolean).join(': ').replace(/https?:\/\/\S+/g, '[URL omitted]').slice(0, 700);
++                                    fetch('/event', {method: 'POST', headers: {'Content-Type': 'application/json'}, body: JSON.stringify({kind: 'stremio-hls-error', message: note})}).catch(function() {});
+                                     if (!data.fatal) {
+                                         return;
+                                     }

@@ -1,0 +1,10 @@
+{
+  "id": "local.owner.tv-lab",
+  "version": "1.0.0",
+  "name": "Owner TV Lab · licensed sample",
+  "description": "Private compatibility test containing only the CC BY 3.0 Big Buck Bunny sample.",
+  "resources": ["catalog", "meta", "stream"],
+  "types": ["movie"],
+  "catalogs": [{"type": "movie", "id": "tv-lab", "name": "Licensed test video"}],
+  "idPrefixes": ["tvlab-"]
+}

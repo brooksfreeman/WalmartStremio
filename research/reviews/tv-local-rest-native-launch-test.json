@@ -1,0 +1,45 @@
+{
+  "started_utc": "2026-11-02T00:30:49.065291+00:00",
+  "scope": "PC helpers stopped; PC OS and TV internet remain on",
+  "recovery_unit": "vizio-local-native-test-recovery-20261102T003049",
+  "launcher_sha256": "8cb842adeb0a46efa693db9ea94392142c772def7f0db63069ad0920a6f32293",
+  "native_launch_at": 1793579463923,
+  "phase": "API Netflix descriptor observed; visual confirmation required",
+  "initial_states": [
+    "active",
+    "active",
+    "inactive"
+  ],
+  "paused_states": [
+    "inactive",
+    "inactive",
+    "inactive"
+  ],
+  "ports_closed": {
+    "8099": true,
+    "11470": true
+  },
+  "isolated_utc": "2026-11-02T00:30:49.089321+00:00",
+  "observed_after_launch": {
+    "NAME_SPACE": 3,
+    "APP_ID": "1"
+  },
+  "observed_input": "SMARTCAST",
+  "netflix_descriptor_observed": true,
+  "restored_states": [
+    "active",
+    "active",
+    "active"
+  ],
+  "owner_visual_confirmation": "Netflix visibly launched on uninterrupted REST retry",
+  "owner_confirmation_recorded_utc": "2026-11-02T00:31:57.502132+00:00",
+  "helper_state_when_confirmation_recorded": [
+    "active",
+    "active",
+    "active"
+  ],
+  "limits": [
+    "PC OS and TV internet remained on; helper services stopped.",
+    "No physical Home replacement, boot hook, full power-loss persistence, independent Stremio or OEM removal established."
+  ]
+}

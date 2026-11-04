@@ -1,0 +1,61 @@
+{
+  "date": "2026-11-01",
+  "model": "W4K65M-1031",
+  "native_home_version": "v26.08.28.9",
+  "wamp_registration_meta": {
+    "origin": "http://127.0.0.1:12345",
+    "realm": "systemregistry",
+    "router_roles": [
+      "dealer",
+      "broker"
+    ],
+    "feature_names": [
+      "dealer:call_timeout",
+      "dealer:testament_meta_api",
+      "dealer:progressive_call_results"
+    ],
+    "registration_count": null,
+    "uris": [],
+    "error": "wamp.error.no_such_procedure",
+    "detail_limit": 32
+  },
+  "runtime_observations": [
+    "Home registry points to vizios-home, LOKI bundles/home",
+    "App database/symbols/aliases read privately, no updates",
+    "Home package version matches deployer and LOKI version metadata",
+    "Registry cache only oobe_currentstate; multiplexer only spam-event thresholds",
+    "Debug appmanager state machine confirms vizios-home is a Loki controller and custom URLs use browser controller",
+    "Discovered routines/list reads as an empty JSON list",
+    "Read-only preflight backs up home_provider=vizios-home; independent recovery-page path reads the same value without set"
+  ],
+  "cached_vendor_configuration_review": [
+    "VIZIOHome AppConfigs contains Sentry only",
+    "ViziOSPlatformSettings contains environment/crash-report fields only",
+    "BootToSC is a capability rule, not a target",
+    "SmartCastHome.UrlEndpoint remains legacy SCTV; actual confirmed Home is LOKI"
+  ],
+  "limits": [
+    "Registry values may be diagnostic snapshots; no authoritative Home consumer recovered",
+    "Standard WAMP metadata listing unavailable in tested realm, not proof of every API absent",
+    "No registry values, native files, firmware or Home bindings changed"
+  ],
+  "prepared_experiment": {
+    "status": "awaiting specific owner approval; NOT RUN",
+    "key": "/app/platformorchestrator/appsdatabase/home_provider",
+    "original": "vizios-home",
+    "temporary_target": "netflix",
+    "scope": "Single existing app ID; no app map or startup change",
+    "recovery": "finally restore through independently launched browser page; independent 75-second systemd restore timer; secondary 45-second page timer",
+    "validation": [
+      "Python/JS syntax checks passed",
+      "PC permit request rejected403; health200",
+      "6 isolated JS guard and rollback scenarios passed",
+      "TV preflight and restore-no-op both completed with original value"
+    ],
+    "limits": [
+      "Native setter permissions and Home consumer remain untested",
+      "Recovery transport was tested while original value was unchanged; recovery after a native routing change is not guaranteed",
+      "No native registry set/create/update/remove invoked"
+    ]
+  }
+}

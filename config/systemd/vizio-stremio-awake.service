@@ -1,0 +1,12 @@
+[Unit]
+Description=Keep the streaming PC awake
+StartLimitIntervalSec=0
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/systemd-inhibit --what=sleep:idle --mode=block --who=Stremio-TV "--why=Keep the streaming server available" /usr/bin/sleep infinity
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=default.target

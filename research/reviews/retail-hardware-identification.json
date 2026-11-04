@@ -1,0 +1,29 @@
+{
+  "date": "2026-11-02",
+  "scope": "Bounded public retail/hardware identification; no TV operations",
+  "retail_model": "65S4V1",
+  "internal_owner_model": "W4K65M-1031",
+  "research_report_model": "W4K65M-1030",
+  "walmart_item": "16109363845",
+  "sources": [
+    "https://www.walmart.com/ip/16109363845",
+    "https://github.com/vindeckyy/smartcast-backdoor",
+    "https://roku.onntvsupport.com/",
+    "https://fccid.io/2AJVQ-MWH647B/User-Manual/User-Manual-7910007",
+    "https://device.report/manual/15292677"
+  ],
+  "exact_board_or_fcc_id_acquired": true,
+  "owner_constraints": [
+    "Rear label now photographed; owner removed TV from wall",
+    "No USB-to-TTL adapter owned"
+  ],
+  "next": "Actual Home acquisition unresolved; require a specific new software export/artifact reference or model-matched hardware evidence. No repeated scans or assumed console access.",
+  "documentation": "docs/RETAIL-HARDWARE-IDENTIFICATION.md",
+  "retail_model_evidence": "Owner exterior rear-label photograph",
+  "walmart_listing_model": "65S4V4",
+  "listing_discrepancy_resolved": false,
+  "module_fcc_id": "2AJVQ-MWH647B",
+  "module_scope": "Wi-Fi/Bluetooth module, not identified mainboard or debug console",
+  "exact_board_identified": false,
+  "private_photo_identity": ".private/hardware-identification/identity.json"
+}

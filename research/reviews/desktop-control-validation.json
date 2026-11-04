@@ -1,0 +1,33 @@
+{
+  "date": "2026-11-02",
+  "desktop_shortcut": "Stremio TV",
+  "gtk_version": "3.24",
+  "live_control_tests": [
+    "WatchFree off persists and leaves hosting online",
+    "WatchFree on restores observer and boot enablement",
+    "boot preference off persists without stopping hosting",
+    "boot preference on enables all three services"
+  ],
+  "unit_verification": "passed",
+  "desktop_entry_validation": "passed",
+  "desktop_entry_launch": "passed",
+  "gui_visual_review": "passed",
+  "reboot_test": "not performed",
+  "network_autoconnect": true,
+  "network_system_available": true,
+  "power_prevention": "Xfce and GNOME inactivity sleep disabled; sleep/idle block inhibitor active",
+  "final_status": {
+    "host_online": true,
+    "engine_online": true,
+    "shortcut_enabled": true,
+    "shortcut_running": true,
+    "start_at_boot": true,
+    "sleep_blocked": true,
+    "linger": true,
+    "enabled": {
+      "lab": true,
+      "engine": true,
+      "watch": true
+    }
+  }
+}

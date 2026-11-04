@@ -1,0 +1,59 @@
+{
+  "model": "W4K65M-1031",
+  "firmware": "86.920.9.3-2",
+  "authority": "owner TV source reads; not source execution",
+  "resources": {
+    "sctv": {
+      "path": "/scfs/sctv/main.html",
+      "status": 200,
+      "oversized": false,
+      "sha256": "6b68147aafdeef2514fcc7f3c9a321a63cdaf2141950215a4f82af07274bec6d",
+      "bytes": 1092
+    },
+    "system-ui-index": {
+      "path": "/scfs/system-ui-app/index.html",
+      "status": 200,
+      "oversized": false,
+      "sha256": "19471a5b9b1aff8166af0b84febee1d2337d41e4242103fd6abe88482da8ef3f",
+      "bytes": 3041
+    },
+    "sctv-app": {
+      "path": "/scfs/sctv/app.js",
+      "status": 200,
+      "bytes": 173230,
+      "sha256": "719aab8577785f7b24d1a8304f7d7008889940cefaad9d3da45255f4d210abb5"
+    },
+    "system-ui-main": {
+      "path": "/scfs/system-ui-app/static/js/main.61012d2e.chunk.js",
+      "status": 200,
+      "bytes": 527472,
+      "sha256": "905af4d84719e114ee274e4ea6b63a061db19526b146fa823cbc8567de5f6093"
+    },
+    "sctv-worker": {
+      "path": "/scfs/sctv/service-worker.js",
+      "status": 200,
+      "bytes": 113467,
+      "sha256": "038c42d190886cbd29a58723f90d83d7e2ee6c014230b0ebd7c5e5fd07540cb4"
+    },
+    "sctv-source-map": {
+      "path": "/scfs/sctv/app.js.map",
+      "status": 404,
+      "bytes": 341,
+      "sha256": "664f2b1654c363a6348b688d5d475ed9ec0e7ef3c72f6f315f37fe97a2fe63eb"
+    }
+  },
+  "observations": [
+    "sctv entry references companion SDK, chunk-vendors.js, and app.js.",
+    "System UI index references its main chunk and a vendor chunk.",
+    "sctv registers a service worker. Its captured worker handles data messages, uses IndexedDB, and has install/activate handlers, but no fetch event handler was found in that file. This is not a demonstrated offline app installation path.",
+    "The app.js source-map reference returned HTTP 404.",
+    "AppMigration links the configured sctv app N2:A1 to N4:A1; this does not prove the legacy sctv JavaScript is what renders the current LOKI Home bundle.",
+    "No TV scripts executed, internal credentials obtained, config/store writes, update operations, firmware changes, or app installation performed."
+  ],
+  "remaining_unknowns": [
+    "TV-writable executable storage path",
+    "Supported persistent custom app registration",
+    "TV-side physical Home binding and cold-start launch",
+    "Whether retail firmware supports the developer-device ZIP installation workflow"
+  ]
+}

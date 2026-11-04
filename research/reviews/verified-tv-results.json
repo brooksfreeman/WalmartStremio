@@ -1,0 +1,62 @@
+{
+  "model": "W4K65M-1031",
+  "firmware": "86.920.9.3-2",
+  "date": "2026-11-01",
+  "frontend_build": "tvbuild=9",
+  "owner_verified": [
+    "normal PIN pairing",
+    "custom page and remote navigation",
+    "full Stremio torrent video/audio",
+    "pause/resume",
+    "seek +10 seconds",
+    "visible authored English captions",
+    "Back closes player menu",
+    "video fills screen",
+    "remote keyboard typing and result navigation",
+    "Torrentio video/audio on original Night of the Living Dead (1968)",
+    "PC-assisted launch after remote off/on",
+    "neither Walmart sign-in prompt nor TV advertisement observed during tested remote off/on cycles",
+    "initial clean launcher, remote navigation, Netflix launch, and physical Home/Input exit seemed to work",
+    "physical Home shows Vizio Home about three seconds then PC redirects to the clean launcher",
+    "expanded app-launch / physical Home return / TV-HDMI flow reported working; individual apps not enumerated",
+    "physical Home still shows Walmart OEM Vizio Home for about two seconds before redirect"
+  ],
+  "dependencies": [
+    "awake Linux PC and user session",
+    "page host on PC",
+    "Stremio engine for raw torrents and tested audio conversion",
+    "known LAN addresses"
+  ],
+  "not_established": [
+    "independent TV operation",
+    "root or bootloader unlock",
+    "replacement OS",
+    "native persistent startup",
+    "cold AC boot behavior",
+    "Walmart account requirement removal",
+    "system ad removal",
+    "removal of Vizio Home",
+    "prevention of brief stock Home display",
+    "zero TV/app telemetry"
+  ],
+  "prepared_frontend_build": "tvbuild=10 (new Home return paths; owner TV test pending)",
+  "api_verified_privacy_settings": {
+    "viewing_data": "Off",
+    "limited_ad_tracking": "On",
+    "evidence": "privacy-settings-result.json",
+    "scope": "normal menu read-back; not evidence of zero telemetry"
+  },
+  "configured_clean_launcher_apps": [
+    "Stremio",
+    "Netflix",
+    "Hulu",
+    "HBO Max",
+    "Disney+",
+    "YouTube TV",
+    "YouTube",
+    "Prime Video",
+    "Paramount+",
+    "Peacock",
+    "Apple TV"
+  ]
+}

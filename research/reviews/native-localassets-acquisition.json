@@ -1,0 +1,12 @@
+{
+  "url": "https://scfs2.vizio.com/localassets/drop-prodg-261013-91229.enc",
+  "source": "LocalAssetsUri returned by owner TV configuration",
+  "bytes": 11398288,
+  "sha256": "7b333214c507651d8e73724fe9898a3a3dd2214bbf3fd92a4138a31d3c7c2a87",
+  "byte_entropy_bits": 7.999982793265089,
+  "valid_zip": false,
+  "elf_at_offset_zero": false,
+  "prefix_only_sha256": "4a6242af97eb425e1a3d0b518740504bbf760fff1c0d70a16ecb49a8a73d4363",
+  "inference": "Opaque high-entropy .enc artifact. Entropy alone cannot distinguish encryption from compression. No plaintext native executable acquired or decryption performed.",
+  "tv_writes": false
+}

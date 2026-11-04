@@ -1,0 +1,16 @@
+{
+  "date": "2026-11-02",
+  "artifact_sha256": "5eccf0374f7d89fb8f33ed763338095a7d58ccd202dde95abb198d9f78b1e9a1",
+  "owner_statement": "Firmware confirmed compatible by owner; source URL not supplied.",
+  "independent_model_compatibility": "not-established",
+  "current_build_equivalence": "not-established",
+  "research_reference": "https://github.com/vindeckyy/smartcast-backdoor#appendix-a-ota-firmware-container-format",
+  "rea_parent": "ev_63b3dc44ba2a51e16f07382c0f49390fe4f9dbb0ff874c87ae9dd51cb84677db",
+  "rea_summary": "ev_852901569c341962279f3ce0345a3b5c26537efdca583caa12e947808f7c34cb",
+  "rea_bundle": ".private/rea-utv-inspection-evidence.json",
+  "source_followup": "OSUpdater asset decryptor differs from UTV; no exact x509_pub.bin artifact found in existing two indexes.",
+  "tv_changes": false,
+  "plaintext_recovered": false,
+  "validation": "Real JWT valid; one-bit signature tampering correctly rejected. Parser run on complete original.",
+  "documentation": "docs/UTV-FIRMWARE-REVIEW.md"
+}

@@ -1,0 +1,30 @@
+:root {color-scheme:dark;font-family:Arial,Helvetica,sans-serif;background:#101216;color:#f2f4f8}
+* {box-sizing:border-box}
+body {margin:0;min-height:100vh;background:#101216}
+main {padding:5vh 6vw;min-height:100vh;display:flex;flex-direction:column}
+header {display:flex;align-items:center;justify-content:space-between;margin-bottom:5vh}
+h1 {font-size:4vw;font-weight:500;letter-spacing:-.15vw;margin:0}
+time {font-size:2.2vw;color:#f1f4f9;font-variant-numeric:tabular-nums;text-shadow:0 2px 8px #000}
+nav {display:grid;grid-template-columns:repeat(4,minmax(0,1fr));column-gap:2.2vw;row-gap:2.7vh;align-content:start}
+button {font-family:inherit;cursor:pointer;border:2px solid #ffffff45;border-radius:1.2vw;color:inherit;background:rgba(16,22,33,.88)}
+.app {height:18vh;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1.8vh;font-size:1.8vw}
+.symbol {display:block;font-size:3.5vw;font-weight:700;line-height:1}
+.stremio .symbol {color:#b69bff;font-size:3.3vw}
+.netflix .symbol {color:#ff263a;font-family:Arial,sans-serif}
+.hulu .symbol {color:#68eeb5;font-size:3vw}
+.hbo-max .symbol {color:#d6d0ff;font-size:2.8vw}
+.disney-plus .symbol {color:#9ce9ee}
+.youtube-tv .symbol,.youtube .symbol {color:#ff4050;font-size:3vw}
+.prime .symbol {color:#79caff;font-size:2.8vw}
+.paramount .symbol {color:#a0b8ff}
+.peacock .symbol {color:#efcf6b;font-size:2.6vw;letter-spacing:.4vw}
+.apple-tv .symbol {color:#f4f4f6}
+button:focus {outline:5px solid #fff;outline-offset:6px;background:#2b303b;box-shadow:0 0 0 12px #ffffff12}
+button:active {background:#393f4e}
+footer {margin-top:auto;padding-top:4vh;display:flex;align-items:center;gap:2vw;min-height:12vh}
+footer button {font-size:1.55vw;padding:1.2vw 1.7vw;border-radius:.65vw}
+output {font-size:1.5vw;color:#c7ccd5;max-width:37vw}
+.hint {margin-left:auto;font-size:1.4vw;color:#eef1f8;text-shadow:0 2px 5px #000}
+.dependency-test {position:fixed;z-index:30;top:1vh;left:26vw;right:20vw;padding:.7vw 1vw;background:#183c2c;border:2px solid #8ce0ad;border-radius:.4vw;font-size:1.3vw;text-align:center;pointer-events:none}
+.dependency-test.offline {background:#4b2024;border-color:#ffa9ad}
+@media(max-aspect-ratio:1/1){nav{grid-template-columns:repeat(2,minmax(0,1fr))}.app{font-size:4vw}.symbol{font-size:8vw}footer{flex-wrap:wrap}}

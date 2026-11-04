@@ -1,0 +1,11 @@
+{
+  "source": "/home/your-user/Pictures/wallpaper.jpg",
+  "sha256": "78b9e24501db3d99918365b0e1ffe3aa8bbcde6fd2cc314fa7648b16b6a63a20",
+  "copy": ".private/launcher-wallpaper.jpg",
+  "served_as": "/launcher-wallpaper.jpg",
+  "processing": "original image unchanged; CSS cover crop and contrast overlay only",
+  "enabled": false,
+  "reason": "Owner requested removal to compare arrow responsiveness after lag with wallpaper",
+  "owner_comparison": "Owner reports arrows are responsive after wallpaper removal",
+  "interpretation": "Removing this background resolved the observed lag in the owner comparison; precise rendering bottleneck not measured"
+}

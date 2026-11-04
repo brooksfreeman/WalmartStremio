@@ -1,0 +1,21 @@
+{
+  "started_utc": "2026-11-01T22:23:24.420499+00:00",
+  "duration_seconds": 60,
+  "scope": "Only PC helper services paused; PC OS and TV internet remain connected",
+  "observed_unit_states": [
+    "inactive",
+    "inactive",
+    "inactive"
+  ],
+  "phase": "helpers restored; initial owner report received, independence inconclusive",
+  "restoration_verified_utc": "2026-11-01T22:25:05.442758+00:00",
+  "recovery_note": "Original timer AccuracySec allowed one minute of slack. Helpers were explicitly started and all three verified active. Future script sets AccuracySec=1s.",
+  "owner_report": "everything seemed to work but a lot of delay while arrows moved between tiles",
+  "limits": [
+    "Per-action timing relative to helper restoration was not captured.",
+    "Listener port closure was not independently measured during the pause.",
+    "Current native-app buttons still call the PC endpoint.",
+    "No successful native local installation or cold-start entry established."
+  ],
+  "follow_up": "Wallpaper removed for owner-requested responsiveness comparison; a repeat dependency test must visibly identify its paused window and verify listener closure."
+}

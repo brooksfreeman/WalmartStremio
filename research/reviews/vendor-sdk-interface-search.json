@@ -1,0 +1,114 @@
+{
+  "date": "2026-11-02",
+  "question": "Do remaining vendor toolchain/relink archives contain Loki or platform IPC headers documenting a read-only package/manifest/export interface?",
+  "supporting_evidence": "Retained OSUpdater source directly includes loki.hpp, sysreg_wrap.h, platformorchestrator.h and ipc/connection.h; these were absent from previously inspected names.",
+  "smallest_test": "Inventory four explicit remaining toolchain/ACR archives; copy only named candidate interfaces and small top-level docs as inert files; no build/install execution.",
+  "scope": [
+    "tools/vizio_toolchain-2.50-50af9fb.tar.gz",
+    "FANCYPLAYER/conan/packages/bin/vizio_toolchain.tar.gz",
+    "ES-PLAYER/toolchain/vizio_toolchain-1.32-L-f98fda7.tar.xz",
+    "ACR/libACR.tar.xz"
+  ],
+  "outcomes": [
+    "Relevant headers/API source: inspect methods and effects before considering a fixed read-only owner-TV test.",
+    "Compiler/dependency material only: record absence in this precise inventory, no claim of global API absence.",
+    "Ambiguous binary-only interfaces: record identity and capability limits; do not execute or assume symbols are a usable endpoint."
+  ],
+  "stopping_condition": "Four complete inventories, then selected actual interface files only. No guessed native writes, no generic fuzzing, no TV/service changes in this stage.",
+  "status": "Software scope complete; actual rear-label65S4V1 and transmitter FCC ID identified; exact1031 mainboard and actual Home acquisition unresolved.",
+  "followup_question": "Which evidenced artifact-export interface or model-matched mainboard acquisition route can supply the actual installed Home resources?",
+  "supporting_source": {
+    "provider": "/osu/logs",
+    "buffer_key": "log",
+    "enabled_key": "/app/osu/ui-logging/enabled",
+    "source": "retained OSUpdater osu/src/data_sessions/journald_data_session.cpp; provider registration in osu/src/main.cpp",
+    "effects": "constructor reads flag; default is disabled; onValueRead(log) returns existing buffer; setter/events are distinct and will not be invoked",
+    "scope_limit": "This is OSUpdater journal data only, not a Home source export."
+  },
+  "next_test": {
+    "operation": "get",
+    "key": "/app/osu/ui-logging/enabled",
+    "result_cap": 200000,
+    "timeout_seconds": 5,
+    "outcomes": [
+      "Enabled: inspect exact client protocol before any log retrieval; no arbitrary messages",
+      "Empty/disabled/absent/error: stop this lead; do not enable logging"
+    ],
+    "stopping_condition": "One read. No setter, logger start, update request or log collection.",
+    "status": "COMPLETED previously; disabled/empty result. Historical test specification only; do not repeat."
+  },
+  "inventory_results": [
+    {
+      "component": "acr-relink",
+      "members": 18410,
+      "candidate_paths": 9,
+      "complete_tar_inventory": true,
+      "report": "research/reviews/vendor-sdk-acr-relink-inventory.json"
+    },
+    {
+      "component": "sdk250",
+      "members": 6286,
+      "candidate_paths": 0,
+      "complete_tar_inventory": true,
+      "report": "research/reviews/vendor-sdk-sdk250-inventory.json"
+    },
+    {
+      "component": "sdk-fancy",
+      "members": 6281,
+      "candidate_paths": 0,
+      "complete_tar_inventory": true,
+      "report": "research/reviews/vendor-sdk-sdk-fancy-inventory.json"
+    },
+    {
+      "component": "sdk132l",
+      "members": 5109,
+      "candidate_paths": 0,
+      "complete_tar_inventory": true,
+      "report": "research/reviews/vendor-sdk-sdk132l-inventory.json"
+    }
+  ],
+  "archive_format_diagnosis": "sdk132l supplied with .tar.xz suffix is gzip by magic; first decoder failed before reading entries; corrected and resumed only this unfinished inventory.",
+  "native_artifact_analysis": {
+    "sdk_library_sha256": "24a0ee81f80a4f8a1064abfaddd97ea181cdd8d2f61f1124191e18e32d004d5a",
+    "architecture": "ARM32",
+    "bits": 32,
+    "dynamic_exports": 1396,
+    "coverage": "Complete ELF dynamic export table only; not whole-program or runtime reachability",
+    "rea_parent_evidence_id": "ev_ae438f32c9ecf49bdf7e594e7566d1cc0ad8c52ddf57fb2fdbb91b249a96accf",
+    "rea_summary_evidence_id": "ev_2cd7188c86cc9387e195cb9ec15e26343b49a599b17eff749447cb0ba26b7c06",
+    "evidence_bundle": ".private/rea-sdk-interface-evidence.json",
+    "evidence_bundle_records": 2,
+    "native_engine_opened": false,
+    "code_executed": false,
+    "ghidra_installed": false,
+    "finding": "Messaging/session/provider interfaces corroborated; no typed Home/file export found in reviewed headers and matching symbols. Server command completeness and owner binary equality remain unknown."
+  },
+  "log_status_test": {
+    "key": "/app/osu/ui-logging/enabled",
+    "operation": "get",
+    "error": null,
+    "empty_string": true,
+    "matches_source_enabled_condition": false,
+    "action": "Stopped; no logging enabled or collected; no Loki session or update command sent."
+  },
+  "public_followup_review": {
+    "url": "https://github.com/vindeckyy/smartcast-backdoor/issues",
+    "scope": "One collection request, up to30 issues; one returned about pre-auth, no file-export method documented",
+    "messages_sent": false
+  },
+  "next_stage": "Rear-label identification completed:65S4V1, transmitter2AJVQ-MWH647B. Exact mainboard/readout and installed Home artifacts remain unresolved. No connection or board access established. See docs/RETAIL-HARDWARE-IDENTIFICATION.md.",
+  "retail_identification_followup": {
+    "date": "2026-11-02",
+    "retail_model": "65S4V1",
+    "walmart_item": "16109363845",
+    "source": "https://www.walmart.com/ip/16109363845",
+    "owner_constraints": {
+      "rear_label_accessible": true,
+      "usb_ttl_adapter_owned": false
+    },
+    "exact_board_identified": false,
+    "notes": "Rear photo supersedes listing-based model assumption. Module FCC record is not a mainboard/pin map. No TV operations. See docs/RETAIL-HARDWARE-IDENTIFICATION.md.",
+    "walmart_listing_model": "65S4V4",
+    "module_fcc_id": "2AJVQ-MWH647B"
+  }
+}

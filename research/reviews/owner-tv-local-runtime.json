@@ -1,0 +1,38 @@
+{
+  "date": "2026-11-01",
+  "model": "W4K65M-1031",
+  "firmware": "86.920.9.3-2",
+  "features_observed_on_tv": {
+    "secureContext": false,
+    "serviceWorker": false,
+    "cacheStorage": false,
+    "indexedDB": true,
+    "fileSystemPicker": "undefined",
+    "nativeVizioObject": "undefined",
+    "nativeLaunchApp": "undefined"
+  },
+  "resource_observations": {
+    "manifest": {
+      "status": 200,
+      "text_bytes": 1507,
+      "sha256": "f1d682fab0d2b67b2da0a165993a748aa1a7f64a702bf9f905ee1e25a0917f08"
+    },
+    "companion": {
+      "status": 200,
+      "text_bytes": 299679,
+      "sha256": "f946f440d9c3baf57121e364677d636bb559623457441b0ff3f41f061b610ef3"
+    }
+  },
+  "effects": "Read-only feature detection and inert text fetches; SDK not executed; no internal auth token requested; no settings or native filesystem writes.",
+  "limitations": [
+    "Feature observations apply to the current HTTP LAN origin.",
+    "IndexedDB availability does not prove installation, persistence after reboot, or a TV-side startup mechanism.",
+    "No preloaded native launcher bridge observed in the custom page.",
+    "PC-service disconnect test still pending physical readiness."
+  ],
+  "companion_comparison": {
+    "byte_identical_to_author_extracted_copy": true,
+    "sha256": "f946f440d9c3baf57121e364677d636bb559623457441b0ff3f41f061b610ef3",
+    "limit": "Same SDK component does not prove full firmware or bootloader compatibility"
+  }
+}

@@ -1,0 +1,12 @@
+--- HTMLVideo/getContentType.js
++++ HTMLVideo/getContentType.js
+@@ -10,7 +10,8 @@
+     return fetch(stream.url, { method: 'HEAD' })
+         .then(function(resp) {
+             if (resp.ok) {
+-                return resp.headers.get('content-type');
++                const mime = (resp.headers.get('content-type') || '').split(';')[0].trim().toLowerCase();
++            return ['audio/mpegurl', 'audio/x-mpegurl', 'application/x-mpegurl', 'application/mpegurl'].includes(mime) ? 'application/vnd.apple.mpegurl' : mime;
+             }
+ 
+             throw new Error(resp.status + ' (' + resp.statusText + ')');

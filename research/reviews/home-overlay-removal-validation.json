@@ -1,0 +1,56 @@
+{
+  "date": "2026-11-03",
+  "browser": "isolated headless Google Chrome",
+  "checks": {
+    "previous": [
+      {
+        "step": "catalog",
+        "floatingHome": 1
+      },
+      {
+        "step": "pushState to player",
+        "floatingHome": 1
+      },
+      {
+        "step": "pushState to settings",
+        "floatingHome": 1
+      },
+      {
+        "step": "pushState to player query",
+        "floatingHome": 1
+      },
+      {
+        "step": "pushState to player root",
+        "floatingHome": 1
+      }
+    ],
+    "updated": [
+      {
+        "step": "catalog",
+        "floatingHome": 0
+      },
+      {
+        "step": "pushState to player",
+        "floatingHome": 0
+      },
+      {
+        "step": "pushState to settings",
+        "floatingHome": 0
+      },
+      {
+        "step": "pushState to player query",
+        "floatingHome": 0
+      },
+      {
+        "step": "pushState to player root",
+        "floatingHome": 0
+      }
+    ]
+  },
+  "result": "Previous route-based fix reproduced overlay after pushState; updated runtime has no floating Home in all five cases.",
+  "tv_visual_confirmation": "pending; owner chose Keep hosting stopped; I will reopen later",
+  "build": "tvbuild=12",
+  "compiled_main_sha256": "441e08870a93db00b2dcf8e0e622975530ee95c329562711a614ee4594310ea5",
+  "compiled_floating_home_id_present": false,
+  "webpack": "passed; existing asset-size warnings only"
+}

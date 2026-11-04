@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TV Lab · Playback test</title>
+  <link rel="stylesheet" href="/style.css">
+  <script src="/vendor/hls.min.js" defer></script>
+  <script src="/player.js" defer></script>
+</head>
+<body class="player-page">
+  <main>
+    <p class="eyebrow">OWNER TV LAB · DIRECT PLAYBACK TEST</p>
+    <h1>Big Buck Bunny trailer</h1>
+    <section id="stage" aria-label="Video player">
+      <video id="video" preload="metadata" playsinline>
+        <track id="captions" kind="subtitles" src="/test-captions.vtt" srclang="en" label="TV Lab test captions">
+      </video>
+      <nav aria-label="Playback controls">
+        <button id="play" autofocus>Play / Pause</button>
+        <button id="back">−10 seconds</button>
+        <button id="forward">+10 seconds</button>
+        <button id="fullscreen">Fullscreen</button>
+        <button id="subtitles">Captions on / off</button>
+        <button id="home">Return Home</button>
+      </nav>
+      <output id="status" aria-live="polite">Press OK to play. Arrows move between controls.</output>
+    </section>
+    <p class="hint">© 2008 Blender Foundation · CC BY 3.0 · bigbuckbunny.org. Video served directly by W3C; no local streaming server or transcoding. Captions are an original test overlay.</p>
+  </main>
+</body>
+</html>

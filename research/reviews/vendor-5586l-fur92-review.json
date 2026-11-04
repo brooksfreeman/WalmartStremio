@@ -1,0 +1,134 @@
+{
+  "date": "2026-11-02",
+  "owner_model": "W4K65M-1031",
+  "archive_identity": {
+    "archive": "5586L_FUR9.2.tar.gz",
+    "bytes": 6738959096,
+    "digests": {
+      "sha1": "31e9a0f603a666c47ffa22aa82332c11e0869a3c",
+      "md5": "84174019c114cbdc6d7755567f6a39fc",
+      "sha256": "5bc7e3646fa6130ce8538cab26046427770560a7c5025d20de75ecb8a6234ea5"
+    },
+    "published_checksums_match": true,
+    "elapsed_seconds": 16.5
+  },
+  "archive_verified": true,
+  "complete_inventory_member_counts": {
+    "outer": 296,
+    "vizios": 183533,
+    "firmware": 452384
+  },
+  "evidence_kind": "Manufacturer source archive inventory and selected-source analysis plus distinct owner-TV read-only registry reports",
+  "source_matches_running_build": "Not established; runtime key/storage correspondence corroborates only selected interfaces",
+  "loki_outer_folder": "Five fonts only",
+  "home_renderer_acquired": false,
+  "actual_loki_bundles_package_acquired": false,
+  "native_changes": false,
+  "build_or_installer_executed": false,
+  "source_files_copied": 577,
+  "source_file_bytes": 1744493,
+  "owner_runtime_tests": [
+    {
+      "key": "/app/osu",
+      "operation": "enumerate",
+      "error": null,
+      "result_type": "list",
+      "raw_report": ".private/loopback-registry-app_osu-enumerate.json",
+      "children": [
+        "installationReboot",
+        "updates",
+        "lastUpdateFailed",
+        "newManifestVersion",
+        "manifestHash",
+        "activeFolder",
+        "quarantineStatus",
+        "updateType",
+        "manifestStatus",
+        "manifestVersion",
+        "manifestInfo",
+        "lastFailedUpdateReason",
+        "manifest",
+        "dlm",
+        "lastUpdateType",
+        "dlmupdates",
+        "feature_flags"
+      ]
+    },
+    {
+      "key": "/app/osu/manifestHash",
+      "operation": "get",
+      "error": null,
+      "result_type": "str",
+      "raw_report": ".private/loopback-registry-app_osu_manifestHash-get.json",
+      "nonempty": true
+    },
+    {
+      "key": "/app/osu/manifestVersion",
+      "operation": "get",
+      "error": null,
+      "result_type": "str",
+      "raw_report": ".private/loopback-registry-app_osu_manifestVersion-get.json",
+      "nonempty": true
+    },
+    {
+      "key": "/app/osu/activeFolder",
+      "operation": "get",
+      "error": null,
+      "result_type": "str",
+      "raw_report": ".private/loopback-registry-app_osu_activeFolder-get.json",
+      "nonempty": true
+    },
+    {
+      "key": "/app/osu/manifest",
+      "operation": "enumerate",
+      "error": null,
+      "result_type": "list",
+      "raw_report": ".private/loopback-registry-app_osu_manifest-enumerate.json",
+      "children": [
+        "url"
+      ]
+    },
+    {
+      "key": "/app/osu/dlm",
+      "operation": "enumerate",
+      "error": null,
+      "result_type": "list",
+      "raw_report": ".private/loopback-registry-app_osu_dlm-enumerate.json",
+      "children": [
+        "updates"
+      ]
+    },
+    {
+      "key": "/app/osu/dlm/updates",
+      "operation": "get",
+      "error": null,
+      "result_type": "str",
+      "raw_report": ".private/loopback-registry-app_osu_dlm_updates-get.json",
+      "empty": true
+    }
+  ],
+  "limits": [
+    "Nested third-party/toolchain/ACR archives not recursively searched",
+    "No full Home resource or Home-key/startup consumer source acquired",
+    "Example package filenames are source test fixtures, not owner-installed artifacts",
+    "Archive is not a complete recovery image"
+  ],
+  "remaining_blocker": "An actual owner-build Home/Loki-bundles package, matching native filesystem export, or evidenced artifact download reference; no native file export interface established",
+  "selected_name_search": {
+    "outer": {
+      "BundleRoot_xml": 0,
+      "vizios_home": 0,
+      "bundles_home": 0
+    },
+    "vizios": {
+      "BundleRoot_xml": 0,
+      "vizios_home": 0,
+      "bundles_home": 0
+    },
+    "firmware": {
+      "BundleRoot_xml": 0,
+      "vizios_home": 0,
+      "bundles_home": 0
+    }
+  }
+}

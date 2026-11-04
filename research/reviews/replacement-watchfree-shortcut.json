@@ -1,0 +1,39 @@
+{
+  "date": "2026-11-02",
+  "model": "W4K65M-1030",
+  "source": "Owner physical WatchFree test",
+  "observed_changes": [
+    {
+      "utc": "2026-11-03T00:19:13.417283+00:00",
+      "input": "SMARTCAST",
+      "app": {
+        "NAME_SPACE": 4,
+        "APP_ID": "3001"
+      }
+    },
+    {
+      "utc": "2026-11-03T00:19:33.195346+00:00",
+      "input": "SMARTCAST",
+      "app": {
+        "NAME_SPACE": 4,
+        "APP_ID": "3014"
+      }
+    },
+    {
+      "utc": "2026-11-03T00:19:34.452375+00:00",
+      "input": "SMARTCAST",
+      "app": {
+        "NAME_SPACE": 4,
+        "APP_ID": "3001"
+      }
+    }
+  ],
+  "watcher_accepted_launch": true,
+  "home_redirect": false,
+  "watchfree_redirect": true,
+  "target": "PC-hosted /stremio/#/",
+  "owner_visual_confirmation": "Confirmed Stremio opens after physical WatchFree press",
+  "active_shortcut": "WatchFree -> Stremio",
+  "watcher": "active and enabled at boot",
+  "torrentio": "One configured descriptor verified by replacement TV browser client"
+}

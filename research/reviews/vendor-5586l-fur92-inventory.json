@@ -1,0 +1,428 @@
+{
+  "archive": "5586L_FUR9.2.tar.gz",
+  "archive_sha256": "5bc7e3646fa6130ce8538cab26046427770560a7c5025d20de75ecb8a6234ea5",
+  "complete_tar_inventory": true,
+  "members": 296,
+  "declared_regular_file_bytes": 6814580425,
+  "components": {
+    "5586L_FUR9.2/SCPL": 45,
+    "5586L_FUR9.2/build.sh": 1,
+    "5586L_FUR9.2/LOKI": 5,
+    "5586L_FUR9.2/Firmware": 2,
+    "5586L_FUR9.2/ACR": 1,
+    "5586L_FUR9.2/README.md": 1,
+    "5586L_FUR9.2/VIZIOS": 1,
+    "5586L_FUR9.2/CONJURE": 5,
+    "5586L_FUR9.2/tools": 2,
+    "5586L_FUR9.2/FANCYPLAYER": 30,
+    "5586L_FUR9.2/ES-PLAYER": 112
+  },
+  "relevant_path_candidates": [
+    {
+      "name": "5586L_FUR9.2/LOKI/IndieFlower.otf",
+      "size": 275044,
+      "type": "0"
+    },
+    {
+      "name": "5586L_FUR9.2/LOKI/TitilliumText22L003.otf",
+      "size": 46208,
+      "type": "0"
+    },
+    {
+      "name": "5586L_FUR9.2/LOKI/DancingScript.otf",
+      "size": 43884,
+      "type": "0"
+    },
+    {
+      "name": "5586L_FUR9.2/LOKI/Aftaserif.otf",
+      "size": 40312,
+      "type": "0"
+    },
+    {
+      "name": "5586L_FUR9.2/LOKI/NotCourierSans.otf",
+      "size": 66644,
+      "type": "0"
+    },
+    {
+      "name": "5586L_FUR9.2/CONJURE/README.md",
+      "size": 1111,
+      "type": "0"
+    },
+    {
+      "name": "5586L_FUR9.2/CONJURE/build_ffmpeg.sh",
+      "size": 457,
+      "type": "0"
+    },
+    {
+      "name": "5586L_FUR9.2/CONJURE/checkout.sh",
+      "size": 608,
+      "type": "0"
+    },
+    {
+      "name": "5586L_FUR9.2/CONJURE/Dockerfile",
+      "size": 2940,
+      "type": "0"
+    },
+    {
+      "name": "5586L_FUR9.2/CONJURE/docker_build.sh",
+      "size": 72,
+      "type": "0"
+    }
+  ],
+  "nested_archives": [
+    {
+      "name": "5586L_FUR9.2/SCPL/sources/enum-compat-0.0.2.tar.gz",
+      "size": 1254,
+      "type": "0"
+    },
+    {
+      "name": "5586L_FUR9.2/SCPL/sources/PyChromecast-0.7.7.tar.gz",
+      "size": 35356,
+      "type": "0"
+    },
+    {
+      "name": "5586L_FUR9.2/SCPL/sources/certifi-2020.6.20.tar.gz",
+      "size": 157997,
+      "type": "0"
+    },
+    {
+      "name": "5586L_FUR9.2/SCPL/sources/inotify-0.2.10.tar.gz",
+      "size": 9905,
+      "type": "0"
+    },
+    {
+      "name": "5586L_FUR9.2/SCPL/sources/awsiotsdk-1.12.0.tar.gz",
+      "size": 68459,
+      "type": "0"
+    },
+    {
+      "name": "5586L_FUR9.2/SCPL/sources/djangorestframework-3.9.4.tar.gz",
+      "size": 779306,
+      "type": "0"
+    },
+    {
+      "name": "5586L_FUR9.2/SCPL/sources/botocore-1.10.66.tar.gz",
+      "size": 4535206,
+      "type": "0"
+    },
+    {
+      "name": "5586L_FUR9.2/SCPL/sources/ipaddress-1.0.23.tar.gz",
+      "size": 32958,
+      "type": "0"
+    },
+    {
+      "name": "5586L_FUR9.2/SCPL/sources/boto3-1.7.66.tar.gz",
+      "size": 93191,
+      "type": "0"
+    },
+    {
+      "name": "5586L_FUR9.2/SCPL/sources/django-cors-headers-3.0.2.tar.gz",
+      "size": 24497,
+      "type": "0"
+    },
+    {
+      "name": "5586L_FUR9.2/SCPL/sources/awscrt-0.16.0.tar.gz",
+      "size": 21801191,
+      "type": "0"
+    },
+    {
+      "name": "5586L_FUR9.2/SCPL/sources/future-0.18.2.tar.gz",
+      "size": 829220,
+      "type": "0"
+    },
+    {
+      "name": "5586L_FUR9.2/SCPL/sources/urllib3-1.26.11.tar.gz",
+      "size": 299255,
+      "type": "0"
+    },
+    {
+      "name": "5586L_FUR9.2/SCPL/sources/cffi-1.14.6.tar.gz",
+      "size": 475744,
+      "type": "0"
+    },
+    {
+      "name": "5586L_FUR9.2/SCPL/sources/cryptography-3.3.2.tar.gz",
+      "size": 539883,
+      "type": "0"
+    },
+    {
+      "name": "5586L_FUR9.2/SCPL/sources/sentry-sdk-1.14.0.tar.gz",
+      "size": 139729,
+      "type": "0"
+    },
+    {
+      "name": "5586L_FUR9.2/SCPL/sources/attrs-24.3.0.tar.gz",
+      "size": 805984,
+      "type": "0"
+    },
+    {
+      "name": "5586L_FUR9.2/SCPL/sources/Django-1.11.29.tar.gz",
+      "size": 7977916,
+      "type": "0"
+    },
+    {
+      "name": "5586L_FUR9.2/SCPL/sources/PyYAML-6.0.1.tar.gz",
+      "size": 125201,
+      "type": "0"
+    },
+    {
+      "name": "5586L_FUR9.2/SCPL/sources/s3transfer-0.1.13.tar.gz",
+      "size": 103335,
+      "type": "0"
+    },
+    {
+      "name": "5586L_FUR9.2/SCPL/sources/jsonschema-4.16.0.tar.gz",
+      "size": 292399,
+      "type": "0"
+    },
+    {
+      "name": "5586L_FUR9.2/SCPL/sources/flup-1.0.3.tar.gz",
+      "size": 52277,
+      "type": "0"
+    },
+    {
+      "name": "5586L_FUR9.2/SCPL/sources/pyrsistent-0.20.0.tar.gz",
+      "size": 103642,
+      "type": "0"
+    },
+    {
+      "name": "5586L_FUR9.2/SCPL/sources/retrying-1.3.3.tar.gz",
+      "size": 10890,
+      "type": "0"
+    },
+    {
+      "name": "5586L_FUR9.2/SCPL/sources/enum34-1.1.6.tar.gz",
+      "size": 40048,
+      "type": "0"
+    },
+    {
+      "name": "5586L_FUR9.2/SCPL/sources/pytz-2024.2.tar.gz",
+      "size": 319692,
+      "type": "0"
+    },
+    {
+      "name": "5586L_FUR9.2/SCPL/sources/zeroconf-0.17.6.tar.gz",
+      "size": 20266,
+      "type": "0"
+    },
+    {
+      "name": "5586L_FUR9.2/SCPL/sources/pycparser-2.20.tar.gz",
+      "size": 161330,
+      "type": "0"
+    },
+    {
+      "name": "5586L_FUR9.2/SCPL/sources/jmespath-0.9.3.tar.gz",
+      "size": 22967,
+      "type": "0"
+    },
+    {
+      "name": "5586L_FUR9.2/SCPL/sources/pyOpenSSL-19.1.0.tar.gz",
+      "size": 160510,
+      "type": "0"
+    },
+    {
+      "name": "5586L_FUR9.2/SCPL/sources/nose-1.3.7.tar.gz",
+      "size": 280488,
+      "type": "0"
+    },
+    {
+      "name": "5586L_FUR9.2/SCPL/sources/six-1.10.0.tar.gz",
+      "size": 29630,
+      "type": "0"
+    },
+    {
+      "name": "5586L_FUR9.2/SCPL/sources/idna-2.10.tar.gz",
+      "size": 175616,
+      "type": "0"
+    },
+    {
+      "name": "5586L_FUR9.2/SCPL/sources/AWSIoTPythonSDK-1.4.9.tar.gz",
+      "size": 80331,
+      "type": "0"
+    },
+    {
+      "name": "5586L_FUR9.2/SCPL/sources/python-dateutil-2.8.2.tar.gz",
+      "size": 357324,
+      "type": "0"
+    },
+    {
+      "name": "5586L_FUR9.2/SCPL/sources/docutils-0.18.1.tar.gz",
+      "size": 2043249,
+      "type": "0"
+    },
+    {
+      "name": "5586L_FUR9.2/SCPL/sources/requests-2.12.3.tar.gz",
+      "size": 546994,
+      "type": "0"
+    },
+    {
+      "name": "5586L_FUR9.2/SCPL/sources/django-filter-2.0.0.tar.gz",
+      "size": 142039,
+      "type": "0"
+    },
+    {
+      "name": "5586L_FUR9.2/Firmware/release.tar.gz",
+      "size": 2827644178,
+      "type": "0"
+    },
+    {
+      "name": "5586L_FUR9.2/ACR/libACR.tar.xz",
+      "size": 43366596,
+      "type": "0"
+    },
+    {
+      "name": "5586L_FUR9.2/VIZIOS/ViziOS-GPL_5586_FUR9.1.tar.gz",
+      "size": 1643989885,
+      "type": "0"
+    },
+    {
+      "name": "5586L_FUR9.2/tools/vizio_toolchain-2.50-50af9fb.tar.gz",
+      "size": 797137690,
+      "type": "0"
+    },
+    {
+      "name": "5586L_FUR9.2/FANCYPLAYER/conan/packages/bin/vizio_toolchain.tar.gz",
+      "size": 796995221,
+      "type": "0"
+    },
+    {
+      "name": "5586L_FUR9.2/ES-PLAYER/toolchain/vizio_toolchain-1.32-L-f98fda7.tar.xz",
+      "size": 616072384,
+      "type": "0"
+    }
+  ],
+  "selected_inert_captures": [
+    {
+      "name": "5586L_FUR9.2/SCPL/README.md",
+      "size": 2985,
+      "type": "0",
+      "sha256": "a98f42929a32d887e7b19507969344af8cd0f9287486f426f5b4c174dd078a27",
+      "saved_as": "967b8f321b3bed50.inert"
+    },
+    {
+      "name": "5586L_FUR9.2/build.sh",
+      "size": 4958,
+      "type": "0",
+      "sha256": "b1261837aeaa553ebad52e875eff7447ae73a3baa9d5f2feb9989c604b92fab3",
+      "saved_as": "437a50779c3bdc27.inert"
+    },
+    {
+      "name": "5586L_FUR9.2/LOKI/IndieFlower.otf",
+      "size": 275044,
+      "type": "0",
+      "sha256": "8e47f5dd653871b07d5bb8aca5b4176c256f9ba7dfbfb00f1e78f95474727169",
+      "saved_as": "04bb1d4d00100b34.inert"
+    },
+    {
+      "name": "5586L_FUR9.2/LOKI/TitilliumText22L003.otf",
+      "size": 46208,
+      "type": "0",
+      "sha256": "3369f5aa239677defc73f47441d7cc44e19ddaa6e83da8ab8d2aa6fd8310dd47",
+      "saved_as": "7f57337838233e6c.inert"
+    },
+    {
+      "name": "5586L_FUR9.2/LOKI/DancingScript.otf",
+      "size": 43884,
+      "type": "0",
+      "sha256": "db9a1cd1843eae6659ca5fe28dedc8e8f2808f0c90e8a5ae44309b3ebd98b5b8",
+      "saved_as": "9e8bc2365f0a80c7.inert"
+    },
+    {
+      "name": "5586L_FUR9.2/LOKI/Aftaserif.otf",
+      "size": 40312,
+      "type": "0",
+      "sha256": "779ecf89c0349d58a9b243c050af6e4c5841af60e1ff78f79d019955ec612ec7",
+      "saved_as": "0e1ffe3768397407.inert"
+    },
+    {
+      "name": "5586L_FUR9.2/LOKI/NotCourierSans.otf",
+      "size": 66644,
+      "type": "0",
+      "sha256": "00158678524cbe9de6ebeff4939553c42f8116238d5725a68a8abe9c1698d5cb",
+      "saved_as": "962ab3c3bda32c38.inert"
+    },
+    {
+      "name": "5586L_FUR9.2/Firmware/README.md",
+      "size": 1019,
+      "type": "0",
+      "sha256": "84e88765c04ff01b675b725379a40bdfadd173cf911b2c2b0ad0120f2b21f45f",
+      "saved_as": "f51bf1927857b222.inert"
+    },
+    {
+      "name": "5586L_FUR9.2/README.md",
+      "size": 990,
+      "type": "0",
+      "sha256": "00a66ba11184dd978abb593e7b8965bd7bd4f968c587ad93baedd775df4f40c5",
+      "saved_as": "25592ab0dd2f4e2d.inert"
+    },
+    {
+      "name": "5586L_FUR9.2/CONJURE/README.md",
+      "size": 1111,
+      "type": "0",
+      "sha256": "195e7e9481e6556eacce34883de4437055f3dc3943692753b3c7f20176804169",
+      "saved_as": "8c2b09341f209b9c.inert"
+    },
+    {
+      "name": "5586L_FUR9.2/CONJURE/build_ffmpeg.sh",
+      "size": 457,
+      "type": "0",
+      "sha256": "81f3496c22e7a5b5f022a08fe94d7c6ba59a5bb3d92ff350076fd453ba77612f",
+      "saved_as": "d8aa35414fa844c6.inert"
+    },
+    {
+      "name": "5586L_FUR9.2/CONJURE/checkout.sh",
+      "size": 608,
+      "type": "0",
+      "sha256": "e1a0123ddce42aed5b23cfbd92e0a2eae19e2aa14257f1c4b6cf28ba04fd0e8e",
+      "saved_as": "eaf36274576d7228.inert"
+    },
+    {
+      "name": "5586L_FUR9.2/CONJURE/Dockerfile",
+      "size": 2940,
+      "type": "0",
+      "sha256": "f737abc069c8e40b57de7ed6ca988a4120e122afaed9a04a43c70f2c18301215",
+      "saved_as": "40bae8cbcad805fd.inert"
+    },
+    {
+      "name": "5586L_FUR9.2/CONJURE/docker_build.sh",
+      "size": 72,
+      "type": "0",
+      "sha256": "508e0fecaa968db406702e314a81eb34750405f008cc827a397f63e7f85371e4",
+      "saved_as": "1853279d32b1f2fc.inert"
+    },
+    {
+      "name": "5586L_FUR9.2/FANCYPLAYER/build.sh",
+      "size": 3098,
+      "type": "0",
+      "sha256": "ac4ac73e08acaa4b50e51f1f486bfc2fac15847840b66470febad253343c4c5d",
+      "saved_as": "4e97f8f93d33f410.inert"
+    },
+    {
+      "name": "5586L_FUR9.2/FANCYPLAYER/README",
+      "size": 546,
+      "type": "0",
+      "sha256": "1415ba0505008e5bfa4114bdddb0ca9fc73c1429495d66285fea898ae19497c4",
+      "saved_as": "fe15314e89ba34c7.inert"
+    },
+    {
+      "name": "5586L_FUR9.2/ES-PLAYER/build.sh",
+      "size": 4302,
+      "type": "0",
+      "sha256": "69fd4badbda284f7a8a2c1ccca4dc30e7cc105b7231b0c9e59969ef61481e517",
+      "saved_as": "7676d5c22e9e263f.inert"
+    },
+    {
+      "name": "5586L_FUR9.2/ES-PLAYER/README.md",
+      "size": 4493,
+      "type": "0",
+      "sha256": "78648cf2b226b920b50500fb5a2e8492b00e22bd306b072270509bc3424d935c",
+      "saved_as": "f4a11b7ddb3aac4d.inert"
+    }
+  ],
+  "captured_bytes": 499671,
+  "limits": [
+    "Filename inventory is not a source-content search or proof of completeness of vendor release.",
+    "Nested archives have not been inspected.",
+    "No archive paths extracted; no script execution, build, installation or TV operations."
+  ]
+}

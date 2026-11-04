@@ -1,0 +1,91 @@
+{
+  "commit": "aadba866ea47ed9506ffe130a8558bb9147ee968",
+  "source": "https://github.com/theubusu/unixtract",
+  "scope": "Offline published Qterics key collection against owner-supplied UTV; first block authentication only",
+  "results": [
+    {
+      "name": "def",
+      "unwrap": "no-match"
+    },
+    {
+      "name": "mg302",
+      "unwrap": "no-match"
+    },
+    {
+      "name": "mg304",
+      "unwrap": "no-match"
+    },
+    {
+      "name": "mg305",
+      "unwrap": "no-match"
+    },
+    {
+      "name": "mg306",
+      "unwrap": "no-match"
+    },
+    {
+      "name": "mg312",
+      "unwrap": "no-match"
+    },
+    {
+      "name": "mg332",
+      "unwrap": "no-match"
+    },
+    {
+      "name": "mg335",
+      "unwrap": "no-match"
+    },
+    {
+      "name": "mg336",
+      "unwrap": "no-match"
+    },
+    {
+      "name": "mg337",
+      "unwrap": "no-match"
+    },
+    {
+      "name": "mg326",
+      "unwrap": "no-match"
+    },
+    {
+      "name": "mg342",
+      "unwrap": "no-match"
+    },
+    {
+      "name": "mg344",
+      "unwrap": "no-match"
+    },
+    {
+      "name": "mg345",
+      "unwrap": "no-match"
+    },
+    {
+      "name": "mg308",
+      "unwrap": "no-match"
+    },
+    {
+      "name": "mg338",
+      "unwrap": "no-match"
+    },
+    {
+      "name": "mg309",
+      "unwrap": "no-match"
+    },
+    {
+      "name": "mg339",
+      "unwrap": "no-match"
+    },
+    {
+      "name": "mg435",
+      "unwrap": "no-match"
+    },
+    {
+      "name": "mg436",
+      "unwrap": "no-match"
+    },
+    {
+      "name": "mg438",
+      "unwrap": "no-match"
+    }
+  ]
+}

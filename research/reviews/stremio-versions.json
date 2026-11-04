@@ -1,0 +1,42 @@
+{
+  "stremio_web": {
+    "commit": "c34935cc36e28c00ec15f066c38bbc6f6f59f716",
+    "version": "5.0.0-beta.43",
+    "source": "https://github.com/Stremio/stremio-web"
+  },
+  "stremio_video": "0.0.103",
+  "hls_js": "1.7.4",
+  "service": {
+    "version": "0.1.22",
+    "engine_version": "4.21.0",
+    "source": "https://github.com/Stremio/stremio-service/releases/tag/v0.1.22",
+    "deb_sha256": "fcbab342fcd8990312b400698ae85f9c87aed0326a0da0168c1ddba18c39a415"
+  },
+  "build": "tvbuild=12",
+  "adaptations": [
+    "HLS MIME normalization",
+    "HLS.js 1.7.4",
+    "remote player bar",
+    "Back closes menus",
+    "disable view transitions on Vizio",
+    "local URL-redacted error reporting",
+    "service worker disabled",
+    "spatial dialog/page navigation",
+    "omit seasonal promotion",
+    "disable HLS workers to match working diagnostic",
+    "URL-redacted HLS error details",
+    "request AAC stereo from streaming engine",
+    "one-use local addon-descriptor import without account auth",
+    "disable frontend route analytics",
+    "remote on-screen search keyboard",
+    "search focus remains navigable after keyboard closes",
+    "Back from root catalog returns to clean local launcher",
+    "TV-confirmed desktop URL add-on installation and removal",
+    "No standalone floating Home link on any route; auto-hiding player Home remains",
+    "Back/root and player Home return to clean local launcher"
+  ],
+  "last_owner_playback_verified_build": "tvbuild=9",
+  "build_10_validation": "webpack build succeeded; browser Stremio launch and new Home return passed; owner TV test pending",
+  "build_11_validation": "webpack passed; 5 Chrome Home-link checks; TV add-on list/install/remove verified with original add-ons preserved; playback overlay awaits owner visual follow-up; superseded: owner still saw floating Home, reproduced with React Router pushState",
+  "build_12_validation": "webpack passed; previous pushState overlay reproduced in isolated Chrome; no floating Home in all five updated cases; no tv-clean-home in compiled main.js; TV reload pending"
+}

@@ -1,0 +1,17 @@
+{
+  "date": "2026-11-01",
+  "model": "W4K65M-1031",
+  "html_sha256": "1ffc521b26692047290008cc2bcf2c1e9a226922339fe8f71dfd7dcacf8d3a1f",
+  "bytes": 8550,
+  "native_app_tiles": "Direct navigator.vizio AppLaunch client, no PC helper or credential",
+  "stremio": "Existing Linux-hosted app and engine remain required",
+  "storage_target": "Chromium PERSISTENT/owner-tv-home-v1/index.html",
+  "home_replaced": false,
+  "cold_start_verified": false,
+  "owner_test": "Native AppLaunch to Netflix observed as N3:A1 with all three helpers inactive and both ports closed. Visual feedback pending.",
+  "stored_file_verified": true,
+  "stored_file_sha256": "1ffc521b26692047290008cc2bcf2c1e9a226922339fe8f71dfd7dcacf8d3a1f",
+  "owner_visual_confirmation": "Netflix did not open; black screen",
+  "visual_app_open_verified": false,
+  "diagnosis": "API descriptor changed to Netflix while helpers were stopped; visual playback/interface launch failed or did not complete within observation. Timing and method comparison pending."
+}

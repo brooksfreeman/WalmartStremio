@@ -1,0 +1,32 @@
+{
+  "event_counts": {
+    "asset": 14,
+    "ready": 1,
+    "key": 24,
+    "select": 3,
+    "player-ready": 3,
+    "video-error": 1,
+    "player-key": 80,
+    "play-rejected": 2,
+    "seek-request": 9,
+    "captions-toggle": 5,
+    "captions-loaded": 2,
+    "home-api-success": 3,
+    "media-range": 35,
+    "video-loadedmetadata": 2,
+    "video-canplay": 8,
+    "fullscreen-request": 10,
+    "video-seeking": 6,
+    "video-seeked": 6,
+    "video-playing": 6,
+    "playback-progress": 11,
+    "video-waiting": 4,
+    "video-pause": 2,
+    "fill-screen-change": 6
+  },
+  "decoded_video_observed": true,
+  "decoded_audio_observed": true,
+  "successful_seek_events": 6,
+  "fill_screen_toggles": 6,
+  "last_tv_lab_event": "2026-11-01T20:07:30.925554+00:00"
+}

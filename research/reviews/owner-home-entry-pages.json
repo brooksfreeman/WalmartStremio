@@ -1,0 +1,24 @@
+{
+  "model": "W4K65M-1031",
+  "firmware": "86.920.9.3-2",
+  "resources": {
+    "scu": {
+      "path": "/scfs/scu/main.html",
+      "status": 200,
+      "bytes": 3144,
+      "sha256": "b14497ab3bb21132ec498f2f872e206987648f1b257cacb7a847cc0cc36c0178"
+    },
+    "system-ui-app": {
+      "path": "/scfs/system-ui-app/main.html",
+      "status": 404,
+      "bytes": 341,
+      "sha256": "664f2b1654c363a6348b688d5d475ed9ec0e7ef3c72f6f315f37fe97a2fe63eb"
+    }
+  },
+  "observations": [
+    "SCU entry HTML references ./js/dlm.js and calls doLoad when it loads.",
+    "system-ui-app/main.html returned 404; this does not prove the advertised bundle absent.",
+    "Source saved as inert text only; no scripts executed and no native writes."
+  ],
+  "next_exact_source": "/scfs/scu/js/dlm.js (reference from captured entry HTML)"
+}

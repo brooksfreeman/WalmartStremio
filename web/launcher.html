@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Home</title>
+  <link rel="stylesheet" href="/launcher.css">
+  <script src="/launcher.js" defer></script>
+</head>
+<body>
+  <aside id="dependency-test" class="dependency-test" aria-live="polite" hidden></aside>
+  <main>
+    <header><h1>Home</h1><time id="clock" aria-label="Current time"></time></header>
+    <nav id="apps" aria-label="Apps">
+      <button class="app stremio" data-app="stremio" autofocus><span class="symbol" aria-hidden="true">▶</span><span>Stremio</span></button>
+      <button class="app netflix" data-app="netflix"><span class="symbol" aria-hidden="true">N</span><span>Netflix</span></button>
+      <button class="app hulu" data-app="hulu"><span class="symbol" aria-hidden="true">hulu</span><span>Hulu</span></button>
+      <button class="app hbo-max" data-app="hbo-max"><span class="symbol" aria-hidden="true">HBO</span><span>HBO Max</span></button>
+      <button class="app disney-plus" data-app="disney-plus"><span class="symbol" aria-hidden="true">D+</span><span>Disney+</span></button>
+      <button class="app youtube-tv" data-app="youtube-tv"><span class="symbol" aria-hidden="true">▶</span><span>YouTube TV</span></button>
+      <button class="app youtube" data-app="youtube"><span class="symbol" aria-hidden="true">▶</span><span>YouTube</span></button>
+      <button class="app prime" data-app="prime"><span class="symbol" aria-hidden="true">prime</span><span>Prime Video</span></button>
+      <button class="app paramount" data-app="paramount"><span class="symbol" aria-hidden="true">P+</span><span>Paramount+</span></button>
+      <button class="app peacock" data-app="peacock"><span class="symbol" aria-hidden="true">●●●</span><span>Peacock</span></button>
+      <button class="app apple-tv" data-app="apple-tv"><span class="symbol" aria-hidden="true">tv</span><span>Apple TV</span></button>
+    </nav>
+    <footer><button id="tv" data-app="tv">TV / HDMI</button><output id="status" aria-live="polite"></output><span class="hint">Arrows to choose · OK to open</span></footer>
+  </main>
+</body>
+</html>

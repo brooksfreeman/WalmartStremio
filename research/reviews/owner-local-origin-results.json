@@ -1,0 +1,96 @@
+{
+  "date": "2026-11-01",
+  "model": "W4K65M-1031",
+  "firmware": "86.920.9.3-2",
+  "authority": "Runtime reports from owner TV, restricted endpoint and exact loopback Origin",
+  "local_origin": {
+    "origin": "http://127.0.0.1:12345",
+    "secure_context": true,
+    "connection_type": "object",
+    "own_names": [],
+    "prototype_names": [
+      "constructor",
+      "onviziodata",
+      "addEventListener",
+      "send",
+      "sendAnalytics",
+      "sendLogs"
+    ],
+    "cache_storage": true,
+    "service_worker": true,
+    "indexed_db": true,
+    "registrations": [],
+    "cache_count": 0,
+    "idb_count": 0,
+    "errors": [],
+    "file_system_request": "function",
+    "storage_persisted": true,
+    "storage_estimate": {
+      "usage": 0,
+      "quota": 1338635058
+    },
+    "debuggers": [
+      {
+        "port": 9555,
+        "error": "TypeError"
+      },
+      {
+        "port": 9222,
+        "error": "TypeError"
+      }
+    ]
+  },
+  "lan_origin_native_bridge": {
+    "connection_type": "undefined",
+    "own_names": [],
+    "prototype_names": [],
+    "send_type": "undefined",
+    "receive_type": "undefined"
+  },
+  "loader_sources": {
+    "conjure-main": {
+      "path": "/scfs/conjure/main.html",
+      "status": 404,
+      "bytes": 341,
+      "sha256": "664f2b1654c363a6348b688d5d475ed9ec0e7ef3c72f6f315f37fe97a2fe63eb"
+    },
+    "conjure-index": {
+      "path": "/scfs/conjure/index.html",
+      "status": 200,
+      "bytes": 2364,
+      "sha256": "59fe01c5550291ae8d0b13bfc2884f28e930a03bf32e39e0a03a9f308d037765"
+    },
+    "conjure-package": {
+      "path": "/scfs/conjure/package.json",
+      "status": 404,
+      "bytes": 341,
+      "sha256": "664f2b1654c363a6348b688d5d475ed9ec0e7ef3c72f6f315f37fe97a2fe63eb"
+    },
+    "scu-package": {
+      "path": "/scfs/scu/package.json",
+      "status": 200,
+      "bytes": 880,
+      "sha256": "49ed00b661ec5a8f636124b57c16161eb60a5dbc5e07cbebc56c346f08cb4782"
+    },
+    "conjure-script": {
+      "path": "/scfs/conjure/js/scripts.js",
+      "status": 200,
+      "bytes": 1006,
+      "sha256": "a2b693de5971c9dafd875d032295a7e9753a3b5708ec2f3aa59c5bf7d01b56ba"
+    }
+  },
+  "execution_route": "Normal paired launch of LAN diagnostic; diagnostic navigates to installed Conjure spinner with offlineAppUrl javascript bootstrap; bootstrap loads bounded inventory script in loopback origin. Direct SCPL URL embedding was rejected HTTP400 Dangerous input detected.",
+  "effects": "Transient DOM changes and read-only inventories. No bridge invocation, file/storage writes, service-worker registration, debug enablement, firmware or startup changes in this completed test.",
+  "limits": [
+    "Storage APIs and storage.persisted true do not establish working file writes or persistence after reboot.",
+    "No current service-worker registrations or cache entries observed in this origin/profile.",
+    "Debugger fetch TypeError cannot distinguish closed port, CORS or another browser access failure.",
+    "Native binding availability is not proof of native filesystem access or root.",
+    "No PC-independent startup or physical Home replacement established."
+  ],
+  "rea": {
+    "parent_evidence_id": "ev_e0be33a20be5cbeca6d7a444fb6dbe40587138572d0d02c6bf85538a9d53f08d",
+    "summary_evidence_id": "ev_24c4a8a8685bf3c381f9cf90ae51f4cab23dd12fefabec882ee75c9cd8c1ecff",
+    "coverage": "Partial, syntax recovered; direct manual loader source corroborates redirect behavior. Static analysis does not establish runtime execution."
+  }
+}

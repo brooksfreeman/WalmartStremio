@@ -1,0 +1,15 @@
+[Unit]
+Description=Owner TV Stremio engine
+StartLimitIntervalSec=0
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/python3 "/path/to/WalmartStremio/scripts/service_entry.py" engine --bind 192.0.2.24
+Restart=on-failure
+RestartSec=5
+UMask=0077
+StandardOutput=null
+StandardError=null
+
+[Install]
+WantedBy=default.target

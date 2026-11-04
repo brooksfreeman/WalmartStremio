@@ -1,0 +1,67 @@
+{
+  "date": "2026-11-01",
+  "model": "W4K65M-1031",
+  "firmware": "86.920.9.3-2",
+  "source_acquisition": "Function.prototype.toString from owner TV local-origin objects and ephemeral factory connection instances",
+  "source_artifacts": [
+    {
+      "path": ".private/owner-runtime-bindings/vizio.js",
+      "bytes": 627,
+      "sha256": "6bb3069414562f0cd8ff5ab7065dd3cba23845a4a5df640df9cf187709d0c16a"
+    },
+    {
+      "path": ".private/owner-runtime-bindings/vizioSystemRegistry.js",
+      "bytes": 696,
+      "sha256": "8a2039d53eadbf5a0bd451ea94ab45687d3c50311d6dbf64f966fc6c0162dcbd"
+    },
+    {
+      "path": ".private/owner-runtime-bindings/createLokiConnection.js",
+      "bytes": 2401,
+      "sha256": "15b21c076f49380f6b99bdc5f3b16252ba49f1e8f43b7bb4e96086ae0cfb7fd4"
+    },
+    {
+      "path": ".private/owner-runtime-bindings/createAppLaunchConnection.js",
+      "bytes": 679,
+      "sha256": "fa8c40eaca90244073784e7e539ddb3dfcecce9b60fc4244b07543593d24afd6"
+    },
+    {
+      "path": ".private/owner-runtime-bindings/vizioConnection.js",
+      "bytes": 4153,
+      "sha256": "6f021481ebee98214f7e64257fc9bf7c296b7eeedf828a89dd44a6597440fbe0"
+    },
+    {
+      "path": ".private/owner-runtime-bindings/createSystemRegistryConnection.js",
+      "bytes": 2475,
+      "sha256": "25b12c11541ea2de32ffceeec5b7ff6959af91f0f4dc6b3ef0fdebe8caffd0c5"
+    }
+  ],
+  "rea_parent_evidence_id": "ev_b1fd97073600b8e97e3968bb60e5ab66685d89d9b1d3491a379fc374554ce80e",
+  "rea_summary_evidence_id": "ev_f69dec762a726408dc2cb87c0ed28369e970674bbbd13ae25a2713be0094d6ee",
+  "rea_limits": [
+    "Three selected class sources parsed without syntax errors; 3 inventory files were not selected.",
+    "Partial graph with 3 application and 384 semantic unknowns; referenced WAMP implementation absent.",
+    "Static analysis does not establish method execution. Runtime acquisition separately verified connections and read-only enumeration."
+  ],
+  "observed_contracts": {
+    "transport": "ws://127.0.0.1:55555 WAMP bridge",
+    "registry": "createSystemRegistryConnection; exists/get/enumerate take one key; create/set/update/remove are distinct writes and have not been called",
+    "native_app_launch": "API reports Netflix N3:A1 while all helpers stopped; owner saw black screen, not Netflix. Native visual app launch remains unverified.",
+    "loki": "createLokiConnection; query and arbitrary message operations distinct; no Loki client methods invoked"
+  },
+  "runtime_registry": {
+    "empty_root_result": [],
+    "slash_root_children": 32,
+    "relevant_discovered_paths": [
+      "/app/platformorchestrator/appsdatabase/home_provider",
+      "/app/platformorchestrator/appsdatabase/apps",
+      "/app/platformorchestrator/appsdatabase/app_symbols",
+      "/app/platformorchestrator/appsdatabase/app_aliases"
+    ],
+    "values_read": "Home provider vizios-home; complete apps/symbols/aliases maps read privately. Home definition controller=loki, params app=home and bundle=bundles/home. No write or consumer update demonstrated.",
+    "writes": false
+  },
+  "limits": [
+    "No Home or startup consumer established by key names alone.",
+    "No root or native executable filesystem access demonstrated."
+  ]
+}

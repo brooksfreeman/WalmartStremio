@@ -1,0 +1,122 @@
+{
+  "source": "https://github.com/theubusu/unixtract",
+  "reference_commit": "aadba866ea47ed9506ffe130a8558bb9147ee968",
+  "artifact_sha256": "5eccf0374f7d89fb8f33ed763338095a7d58ccd202dde95abb198d9f78b1e9a1",
+  "keyfile_sha256": "9371ed11ffed8ea82fbb9f612036ba1f09e31c6e851da2ea56721013a34b48af",
+  "tested_entries": 21,
+  "unique_public_keys": 21,
+  "algorithm": "RSA-OAEP(SHA1,MGF1-SHA1),44-byte secret,AES128-GCM,16-byte tag per chunk",
+  "scope": "Explicit published collection only; no brute force, TV access or extracted output",
+  "results": [
+    {
+      "name": "def",
+      "public_key_sha256": "0605e95813672ee3db5971a24a877e865c03b1ec50df44072de3807172a0d80b",
+      "unwrap": "no-match"
+    },
+    {
+      "name": "mg302",
+      "public_key_sha256": "257c9cc709484d7bf08af4d9dd0f812d659bf00a61769e9b933cd685fce9d95f",
+      "unwrap": "no-match"
+    },
+    {
+      "name": "mg304",
+      "public_key_sha256": "6bb552f29378c61861471b5eb165817bf6f011fd13db322f134c94b61a91b791",
+      "unwrap": "no-match"
+    },
+    {
+      "name": "mg305",
+      "public_key_sha256": "2037e241fa7d0f902da12c5cc11dcbb30ec9dde8c93c89e2d73bf19356a31306",
+      "unwrap": "no-match"
+    },
+    {
+      "name": "mg306",
+      "public_key_sha256": "0ee00763793d44e6eb45cf14b4d35e90a7eda969b448b3fbf62221b39f58f134",
+      "unwrap": "no-match"
+    },
+    {
+      "name": "mg312",
+      "public_key_sha256": "6d318a8ce0b6f596c9e78f5a2e0eea91a8a11fb0c7e25733e7e3c45dd8e7d517",
+      "unwrap": "no-match"
+    },
+    {
+      "name": "mg332",
+      "public_key_sha256": "5b2e12134a461fdb030e1c68981164b9d0de9a080655b34b40bd65f49cd4c224",
+      "unwrap": "no-match"
+    },
+    {
+      "name": "mg335",
+      "public_key_sha256": "cd7b71b09ffb1dedf8e6e4e5f33fc1893aaefc687cc0899edbca756844a93485",
+      "unwrap": "no-match"
+    },
+    {
+      "name": "mg336",
+      "public_key_sha256": "07c9926d451dddde4c4944d8224fdc19946a5d88afed02bad6a02dab0f8b7daf",
+      "unwrap": "no-match"
+    },
+    {
+      "name": "mg337",
+      "public_key_sha256": "b62a0cd7836fd359e3f738c830f1ac4215dc5dd160c35f121b876e38a6e6b606",
+      "unwrap": "no-match"
+    },
+    {
+      "name": "mg326",
+      "public_key_sha256": "9ec484eb6a70e6b62938eb49c34b977e4fe8fbacfa5b6a1347b99ba2c7f62e21",
+      "unwrap": "no-match"
+    },
+    {
+      "name": "mg342",
+      "public_key_sha256": "6fd27f47df3500dd8e8dca45a072d7dae7b14e21837e16d1b75aaaeece459321",
+      "unwrap": "no-match"
+    },
+    {
+      "name": "mg344",
+      "public_key_sha256": "e0e4bd0574fe88272f7508ad500b69f01f88bc4275832eb19e88430707817d79",
+      "unwrap": "no-match"
+    },
+    {
+      "name": "mg345",
+      "public_key_sha256": "e83cdcd3c0d3fda5c8d5d7e53f80e8fd1f7d29d48a2f049dde91cb8afe9fdf70",
+      "unwrap": "no-match"
+    },
+    {
+      "name": "mg308",
+      "public_key_sha256": "0d70d8b93502eba716757c7f0cc2ba4282ed28d03e8cb0cb4eb79ee7461c8a55",
+      "unwrap": "no-match"
+    },
+    {
+      "name": "mg338",
+      "public_key_sha256": "fd721352e7cec5838c1fdff71bd2d7773bbcacfd9b772c2fe581a1d0b66a2c0a",
+      "unwrap": "no-match"
+    },
+    {
+      "name": "mg309",
+      "public_key_sha256": "865f98c51c19b9c4fb82748d7e35d52dfe8fdc86a01796a5ecdae36e153a6216",
+      "unwrap": "no-match"
+    },
+    {
+      "name": "mg339",
+      "public_key_sha256": "ed0279f28f8317649617601b101b53216bd2ea0fc47a9d87804120b5e80fb2c6",
+      "unwrap": "no-match"
+    },
+    {
+      "name": "mg435",
+      "public_key_sha256": "eff10573dcee799d0992728006965404c3b7e08cbc78aa6462b50088a59fe038",
+      "unwrap": "no-match"
+    },
+    {
+      "name": "mg436",
+      "public_key_sha256": "847b979adc66050fd5eb32b90380a76b6690d2e1a445aeae5059df19827fd4ff",
+      "unwrap": "no-match"
+    },
+    {
+      "name": "mg438",
+      "public_key_sha256": "3b20ad359829ae98a2355bddb77665fec3ea7381cbff2c2b563c25464729c52f",
+      "unwrap": "no-match"
+    }
+  ],
+  "limitations": [
+    "Caller must verify signed metadata independently; this trial does not authenticate provenance.",
+    "No match is limited to this exact key collection and reference algorithm.",
+    "A first-block GCM success would not establish all blocks or whole plaintext digest."
+  ]
+}

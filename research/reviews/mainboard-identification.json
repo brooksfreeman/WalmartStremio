@@ -1,0 +1,25 @@
+{
+  "date": "2026-11-02",
+  "pcb_reading": "715GF461-M0B-T01-004I",
+  "caveat": "0/O glyph ambiguous; final character read as uppercase I.",
+  "uart": "No confirmed pinout, voltage or console. CN8601 unidentified.",
+  "exact_identifier_index_counts": {
+    "members.jsonl": {
+      "715gf461": 0,
+      "y3m650a04": 0,
+      "7505867": 0
+    },
+    "vizios-inventory/members.jsonl": {
+      "715gf461": 0,
+      "y3m650a04": 0,
+      "7505867": 0
+    },
+    "firmware-inventory/members.jsonl": {
+      "715gf461": 0,
+      "y3m650a04": 0,
+      "7505867": 0
+    }
+  },
+  "web_search": "Bounded exact-board and assembly searches found no usable schematic/pinout.",
+  "scope": "Visual assessment only; no live TV operations, measurement, hookup or writes."
+}

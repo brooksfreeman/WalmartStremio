@@ -1,0 +1,13 @@
+{
+  "utc": "2026-11-01T21:50:16.638556+00:00",
+  "action": "apply",
+  "before": {
+    "viewing_data": "On",
+    "limited_ad_tracking": "Off"
+  },
+  "after": {
+    "viewing_data": "Off",
+    "limited_ad_tracking": "On"
+  },
+  "verification": "normal menu API read-back; no traffic capture or zero-telemetry claim"
+}

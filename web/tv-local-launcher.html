@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Home</title>
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline'; style-src 'unsafe-inline'; connect-src ws://127.0.0.1:55555; base-uri 'none'; form-action 'none'"><style>:root {color-scheme:dark;font-family:Arial,Helvetica,sans-serif;background:#101216;color:#f2f4f8}
+* {box-sizing:border-box}
+body {margin:0;min-height:100vh;background:#101216}
+main {padding:5vh 6vw;min-height:100vh;display:flex;flex-direction:column}
+header {display:flex;align-items:center;justify-content:space-between;margin-bottom:5vh}
+h1 {font-size:4vw;font-weight:500;letter-spacing:-.15vw;margin:0}
+time {font-size:2.2vw;color:#f1f4f9;font-variant-numeric:tabular-nums;text-shadow:0 2px 8px #000}
+nav {display:grid;grid-template-columns:repeat(4,minmax(0,1fr));column-gap:2.2vw;row-gap:2.7vh;align-content:start}
+button {font-family:inherit;cursor:pointer;border:2px solid #ffffff45;border-radius:1.2vw;color:inherit;background:rgba(16,22,33,.88)}
+.app {height:18vh;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1.8vh;font-size:1.8vw}
+.symbol {display:block;font-size:3.5vw;font-weight:700;line-height:1}
+.stremio .symbol {color:#b69bff;font-size:3.3vw}
+.netflix .symbol {color:#ff263a;font-family:Arial,sans-serif}
+.hulu .symbol {color:#68eeb5;font-size:3vw}
+.hbo-max .symbol {color:#d6d0ff;font-size:2.8vw}
+.disney-plus .symbol {color:#9ce9ee}
+.youtube-tv .symbol,.youtube .symbol {color:#ff4050;font-size:3vw}
+.prime .symbol {color:#79caff;font-size:2.8vw}
+.paramount .symbol {color:#a0b8ff}
+.peacock .symbol {color:#efcf6b;font-size:2.6vw;letter-spacing:.4vw}
+.apple-tv .symbol {color:#f4f4f6}
+button:focus {outline:5px solid #fff;outline-offset:6px;background:#2b303b;box-shadow:0 0 0 12px #ffffff12}
+button:active {background:#393f4e}
+footer {margin-top:auto;padding-top:4vh;display:flex;align-items:center;gap:2vw;min-height:12vh}
+footer button {font-size:1.55vw;padding:1.2vw 1.7vw;border-radius:.65vw}
+output {font-size:1.5vw;color:#c7ccd5;max-width:37vw}
+.hint {margin-left:auto;font-size:1.4vw;color:#eef1f8;text-shadow:0 2px 5px #000}
+.dependency-test {position:fixed;z-index:30;top:1vh;left:26vw;right:20vw;padding:.7vw 1vw;background:#183c2c;border:2px solid #8ce0ad;border-radius:.4vw;font-size:1.3vw;text-align:center;pointer-events:none}
+.dependency-test.offline {background:#4b2024;border-color:#ffa9ad}
+@media(max-aspect-ratio:1/1){nav{grid-template-columns:repeat(2,minmax(0,1fr))}.app{font-size:4vw}.symbol{font-size:8vw}footer{flex-wrap:wrap}}
+</style>
+  
+</head>
+<body>
+  <aside id="dependency-test" class="dependency-test" aria-live="polite" hidden></aside>
+  <main>
+    <header><h1>Home</h1><time id="clock" aria-label="Current time"></time></header>
+    <nav id="apps" aria-label="Apps">
+      <button class="app stremio" data-app="stremio" autofocus><span class="symbol" aria-hidden="true">▶</span><span>Stremio</span></button>
+      <button class="app netflix" data-app="netflix"><span class="symbol" aria-hidden="true">N</span><span>Netflix</span></button>
+      <button class="app hulu" data-app="hulu"><span class="symbol" aria-hidden="true">hulu</span><span>Hulu</span></button>
+      <button class="app hbo-max" data-app="hbo-max"><span class="symbol" aria-hidden="true">HBO</span><span>HBO Max</span></button>
+      <button class="app disney-plus" data-app="disney-plus"><span class="symbol" aria-hidden="true">D+</span><span>Disney+</span></button>
+      <button class="app youtube-tv" data-app="youtube-tv"><span class="symbol" aria-hidden="true">▶</span><span>YouTube TV</span></button>
+      <button class="app youtube" data-app="youtube"><span class="symbol" aria-hidden="true">▶</span><span>YouTube</span></button>
+      <button class="app prime" data-app="prime"><span class="symbol" aria-hidden="true">prime</span><span>Prime Video</span></button>
+      <button class="app paramount" data-app="paramount"><span class="symbol" aria-hidden="true">P+</span><span>Paramount+</span></button>
+      <button class="app peacock" data-app="peacock"><span class="symbol" aria-hidden="true">●●●</span><span>Peacock</span></button>
+      <button class="app apple-tv" data-app="apple-tv"><span class="symbol" aria-hidden="true">tv</span><span>Apple TV</span></button>
+    </nav>
+    <footer><button id="tv" data-app="tv">TV / HDMI</button><output id="status" aria-live="polite"></output><span class="hint">Arrows to choose · OK to open</span></footer>
+  </main>
+<script>'use strict';
+// Self-contained saved TV page. Native app tiles use only the local WAMP bridge.
+const nativeApps={"netflix":{"NAME_SPACE":3,"APP_ID":"1","MESSAGE":null},"hulu":{"NAME_SPACE":2,"APP_ID":"3","MESSAGE":null},"hbo-max":{"NAME_SPACE":2,"APP_ID":"128","MESSAGE":null},"disney-plus":{"NAME_SPACE":2,"APP_ID":"75","MESSAGE":null},"youtube-tv":{"NAME_SPACE":5,"APP_ID":"3","MESSAGE":null},"youtube":{"NAME_SPACE":5,"APP_ID":"1","MESSAGE":null},"prime":{"NAME_SPACE":3,"APP_ID":"3","MESSAGE":null},"paramount":{"NAME_SPACE":2,"APP_ID":"37","MESSAGE":null},"peacock":{"NAME_SPACE":2,"APP_ID":"88","MESSAGE":null},"apple-tv":{"NAME_SPACE":3,"APP_ID":"4","MESSAGE":null}};
+let nativeClient=null;
+const tiles = Array.from(document.querySelectorAll('#apps button'));
+const tv = document.getElementById('tv');
+const status = document.getElementById('status');
+let busy = false;
+let lastTile = tiles[0];
+function clock() {
+  const now = new Date();
+  document.getElementById('clock').textContent = now.toLocaleTimeString([], {hour: 'numeric', minute: '2-digit'});
+}
+clock();
+setInterval(clock, 30000);
+async function openApp(button) {
+  if(busy)return;
+  if(button===tv){status.textContent='Press Input, then HDMI-2 to return to the PC.';return;}
+  if(button.dataset.app==='stremio'){
+    status.textContent='Stremio currently needs the Linux PC.';
+    location.assign("http://192.0.2.24:8099/stremio/#/");return;
+  }
+  const descriptor=nativeApps[button.dataset.app];
+  if(!descriptor)return;
+  busy=true;status.textContent='Opening '+button.querySelector('span:last-child').textContent+'…';
+  try {
+    if(typeof navigator.vizio?.createAppLaunchConnection!=='function')throw new Error('Native bridge unavailable');
+    nativeClient=nativeClient||navigator.vizio.createAppLaunchConnection();
+    const client=await nativeClient;
+    await client.appLaunch(descriptor.APP_ID,descriptor.NAME_SPACE,descriptor.MESSAGE);
+    status.textContent='Launch requested directly from the TV.';
+  } catch(_){nativeClient=null;status.textContent='App launch failed. Input → HDMI-2 returns to the PC.';}
+  finally{busy=false;}
+}
+[...tiles, tv].forEach(button => button.addEventListener('click', () => openApp(button)));
+tiles.forEach(button => button.addEventListener('focus', () => {lastTile = button;}));
+window.addEventListener('keydown', e => {
+  const key = e.key || ({13:'Enter',37:'ArrowLeft',38:'ArrowUp',39:'ArrowRight',40:'ArrowDown'})[e.keyCode];
+  const back = ['Escape','Backspace','BrowserBack','GoBack'].includes(key) || [461,10009].includes(e.keyCode);
+  if (!back && !['ArrowLeft','ArrowRight','ArrowUp','ArrowDown','Enter'].includes(key)) return;
+  e.preventDefault();
+  e.stopImmediatePropagation();
+  if (back) {tv.focus(); return;}
+  if (key === 'Enter') {if (!e.repeat) document.activeElement?.click(); return;}
+  const current = document.activeElement;
+  if (current === tv) {if (key === 'ArrowUp') lastTile.focus(); return;}
+  const index = tiles.indexOf(current);
+  if (index < 0) {tiles[0].focus(); return;}
+  const columns = getComputedStyle(document.getElementById('apps')).gridTemplateColumns.split(' ').length;
+  if (key === 'ArrowDown') {
+    if (index + columns < tiles.length) tiles[index + columns].focus();
+    else tv.focus();
+  } else if (key === 'ArrowUp') {
+    if (index >= columns) tiles[index - columns].focus();
+  } else {
+    const next = index + (key === 'ArrowLeft' ? -1 : 1);
+    if (next >= 0 && next < tiles.length) tiles[next].focus();
+  }
+}, true);
+tiles[0].focus();
+
+status.textContent='Saved on TV · Home shortcut pending · Stremio needs Linux';
+
+if(Number.isFinite(window.__ownerNativeLaunchAt)){
+  const at=window.__ownerNativeLaunchAt;delete window.__ownerNativeLaunchAt;
+  status.textContent='Testing direct TV launch of Netflix in 15 seconds…';
+  setTimeout(()=>openApp(tiles.find(button=>button.dataset.app==='netflix')),Math.max(0,at-Date.now()));
+}
+</script></body>
+</html>

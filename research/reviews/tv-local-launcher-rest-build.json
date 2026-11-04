@@ -1,0 +1,16 @@
+{
+  "date": "2026-11-01",
+  "model": "W4K65M-1031",
+  "html_sha256": "8cb842adeb0a46efa693db9ea94392142c772def7f0db63069ad0920a6f32293",
+  "bytes": 8802,
+  "transport": "rest",
+  "native_app_tiles": "TV-local rest; no PC helper; REST credential stays only in TV memory",
+  "stremio": "Existing Linux-hosted app and engine remain required",
+  "storage_target": "Chromium PERSISTENT/owner-tv-home-rest-v1/index.html",
+  "home_replaced": false,
+  "cold_start_verified": false,
+  "owner_test": "Netflix visibly opened on uninterrupted REST retry; corresponding test verified helpers inactive and ports closed before launch, held off through loading interval.",
+  "stored_file_verified": true,
+  "test_status": "First helper-off trial returned to HDMI before observation; owner unsure whether they interrupted. No visual success established.",
+  "visual_app_open_verified": true
+}

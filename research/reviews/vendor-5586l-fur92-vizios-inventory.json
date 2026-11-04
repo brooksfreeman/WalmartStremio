@@ -1,0 +1,1935 @@
+{
+  "component": "vizios",
+  "identity": {
+    "member": "5586L_FUR9.2/VIZIOS/ViziOS-GPL_5586_FUR9.1.tar.gz",
+    "saved_as": "vizios-gpl.tar.gz",
+    "bytes": 1643989885,
+    "sha256": "92386c37769adf14bc6bda4b78777f9472ab716567fc37e92ff646bdbfc3ba95"
+  },
+  "complete_tar_inventory": true,
+  "members": 183533,
+  "declared_regular_file_bytes": 5392154001,
+  "components": {
+    "Dockerfile.gpl": 1,
+    "build_gpl_fw.sh": 1,
+    "sysroot/nanotrace": 12,
+    "sysroot/perfetto": 30333,
+    "sysroot/mdns": 887,
+    "sysroot/boost": 74086,
+    "sysroot/snap": 1,
+    "sysroot/toolchain": 6035,
+    "sysroot/patch": 32,
+    "sysroot/sysroot": 37923,
+    "sysroot/data": 5,
+    "sysroot/redis": 1395,
+    "storaged/snap": 1,
+    "storaged/external": 976,
+    "README.md": 1,
+    "rootfs/mdns": 887,
+    "rootfs/tools": 6,
+    "rootfs/snap": 1,
+    "rootfs/eris": 15,
+    "rootfs/inspector": 2,
+    "rootfs/patch": 1,
+    "rootfs/reader": 2,
+    "rootfs/external": 9189,
+    "rootfs/OSUpdater": 556
+  },
+  "relevant_path_candidates": [
+    {
+      "name": "./sysroot/perfetto/buildtools/lzma/CPP/7zip/Bundles/Format7zExtractR/StdAfx.cpp",
+      "bytes": 38,
+      "type": "0"
+    },
+    {
+      "name": "./sysroot/perfetto/buildtools/lzma/CPP/7zip/Bundles/Format7zExtractR/makefile",
+      "bytes": 1895,
+      "type": "0"
+    },
+    {
+      "name": "./sysroot/perfetto/buildtools/lzma/CPP/7zip/Bundles/Format7zExtractR/StdAfx.h",
+      "bytes": 104,
+      "type": "0"
+    },
+    {
+      "name": "./sysroot/perfetto/buildtools/lzma/CPP/7zip/Bundles/Format7zExtractR/resource.rc",
+      "bytes": 156,
+      "type": "0"
+    },
+    {
+      "name": "./sysroot/perfetto/buildtools/lzma/CPP/7zip/Bundles/LzmaCon/StdAfx.cpp",
+      "bytes": 38,
+      "type": "0"
+    },
+    {
+      "name": "./sysroot/perfetto/buildtools/lzma/CPP/7zip/Bundles/LzmaCon/makefile",
+      "bytes": 1051,
+      "type": "0"
+    },
+    {
+      "name": "./sysroot/perfetto/buildtools/lzma/CPP/7zip/Bundles/LzmaCon/StdAfx.h",
+      "bytes": 104,
+      "type": "0"
+    },
+    {
+      "name": "./sysroot/perfetto/buildtools/lzma/CPP/7zip/Bundles/LzmaCon/LzmaAlone.cpp",
+      "bytes": 19352,
+      "type": "0"
+    },
+    {
+      "name": "./sysroot/perfetto/buildtools/lzma/CPP/7zip/Bundles/LzmaCon/LzmaCon.dsp",
+      "bytes": 11606,
+      "type": "0"
+    },
+    {
+      "name": "./sysroot/perfetto/buildtools/lzma/CPP/7zip/Bundles/LzmaCon/resource.rc",
+      "bytes": 74,
+      "type": "0"
+    },
+    {
+      "name": "./sysroot/perfetto/buildtools/lzma/CPP/7zip/Bundles/LzmaCon/LzmaCon.dsw",
+      "bytes": 537,
+      "type": "0"
+    },
+    {
+      "name": "./sysroot/perfetto/buildtools/lzma/CPP/7zip/Bundles/LzmaCon/makefile.gcc",
+      "bytes": 4556,
+      "type": "0"
+    },
+    {
+      "name": "./sysroot/perfetto/buildtools/lzma/CPP/7zip/Bundles/SFXSetup/setup.ico",
+      "bytes": 1078,
+      "type": "0"
+    },
+    {
+      "name": "./sysroot/perfetto/buildtools/lzma/CPP/7zip/Bundles/SFXSetup/ExtractEngine.h",
+      "bytes": 291,
+      "type": "0"
+    },
+    {
+      "name": "./sysroot/perfetto/buildtools/lzma/CPP/7zip/Bundles/SFXSetup/StdAfx.cpp",
+      "bytes": 38,
+      "type": "0"
+    },
+    {
+      "name": "./sysroot/perfetto/buildtools/lzma/CPP/7zip/Bundles/SFXSetup/resource.h",
+      "bytes": 199,
+      "type": "0"
+    },
+    {
+      "name": "./sysroot/perfetto/buildtools/lzma/CPP/7zip/Bundles/SFXSetup/ExtractEngine.cpp",
+      "bytes": 3305,
+      "type": "0"
+    },
+    {
+      "name": "./sysroot/perfetto/buildtools/lzma/CPP/7zip/Bundles/SFXSetup/ExtractCallbackSfx.cpp",
+      "bytes": 6346,
+      "type": "0"
+    },
+    {
+      "name": "./sysroot/perfetto/buildtools/lzma/CPP/7zip/Bundles/SFXSetup/makefile",
+      "bytes": 2257,
+      "type": "0"
+    },
+    {
+      "name": "./sysroot/perfetto/buildtools/lzma/CPP/7zip/Bundles/SFXSetup/ExtractCallbackSfx.h",
+      "bytes": 1899,
+      "type": "0"
+    },
+    {
+      "name": "./sysroot/perfetto/buildtools/lzma/CPP/7zip/Bundles/SFXSetup/SFXSetup.dsp",
+      "bytes": 18862,
+      "type": "0"
+    },
+    {
+      "name": "./sysroot/perfetto/buildtools/lzma/CPP/7zip/Bundles/SFXSetup/StdAfx.h",
+      "bytes": 205,
+      "type": "0"
+    },
+    {
+      "name": "./sysroot/perfetto/buildtools/lzma/CPP/7zip/Bundles/SFXSetup/resource.rc",
+      "bytes": 419,
+      "type": "0"
+    },
+    {
+      "name": "./sysroot/perfetto/buildtools/lzma/CPP/7zip/Bundles/SFXSetup/SfxSetup.cpp",
+      "bytes": 9618,
+      "type": "0"
+    },
+    {
+      "name": "./sysroot/perfetto/buildtools/lzma/CPP/7zip/Bundles/SFXSetup/SFXSetup.dsw",
+      "bytes": 539,
+      "type": "0"
+    },
+    {
+      "name": "./sysroot/perfetto/buildtools/lzma/CPP/7zip/Bundles/Format7zR/StdAfx.cpp",
+      "bytes": 38,
+      "type": "0"
+    },
+    {
+      "name": "./sysroot/perfetto/buildtools/lzma/CPP/7zip/Bundles/Format7zR/makefile",
+      "bytes": 2344,
+      "type": "0"
+    },
+    {
+      "name": "./sysroot/perfetto/buildtools/lzma/CPP/7zip/Bundles/Format7zR/StdAfx.h",
+      "bytes": 104,
+      "type": "0"
+    },
+    {
+      "name": "./sysroot/perfetto/buildtools/lzma/CPP/7zip/Bundles/Format7zR/resource.rc",
+      "bytes": 144,
+      "type": "0"
+    },
+    {
+      "name": "./sysroot/perfetto/buildtools/lzma/CPP/7zip/Bundles/Alone7z/StdAfx.cpp",
+      "bytes": 38,
+      "type": "0"
+    },
+    {
+      "name": "./sysroot/perfetto/buildtools/lzma/CPP/7zip/Bundles/Alone7z/Alone.dsw",
+      "bytes": 533,
+      "type": "0"
+    },
+    {
+      "name": "./sysroot/perfetto/buildtools/lzma/CPP/7zip/Bundles/Alone7z/Alone.dsp",
+      "bytes": 40584,
+      "type": "0"
+    },
+    {
+      "name": "./sysroot/perfetto/buildtools/lzma/CPP/7zip/Bundles/Alone7z/makefile",
+      "bytes": 3288,
+      "type": "0"
+    },
+    {
+      "name": "./sysroot/perfetto/buildtools/lzma/CPP/7zip/Bundles/Alone7z/StdAfx.h",
+      "bytes": 104,
+      "type": "0"
+    },
+    {
+      "name": "./sysroot/perfetto/buildtools/lzma/CPP/7zip/Bundles/Alone7z/resource.rc",
+      "bytes": 193,
+      "type": "0"
+    },
+    {
+      "name": "./sysroot/perfetto/buildtools/lzma/CPP/7zip/Bundles/SFXCon/StdAfx.cpp",
+      "bytes": 38,
+      "type": "0"
+    },
+    {
+      "name": "./sysroot/perfetto/buildtools/lzma/CPP/7zip/Bundles/SFXCon/SfxCon.cpp",
+      "bytes": 12251,
+      "type": "0"
+    },
+    {
+      "name": "./sysroot/perfetto/buildtools/lzma/CPP/7zip/Bundles/SFXCon/SFXCon.dsp",
+      "bytes": 20452,
+      "type": "0"
+    },
+    {
+      "name": "./sysroot/perfetto/buildtools/lzma/CPP/7zip/Bundles/SFXCon/SFXCon.dsw",
+      "bytes": 535,
+      "type": "0"
+    },
+    {
+      "name": "./sysroot/perfetto/buildtools/lzma/CPP/7zip/Bundles/SFXCon/makefile",
+      "bytes": 2676,
+      "type": "0"
+    },
+    {
+      "name": "./sysroot/perfetto/buildtools/lzma/CPP/7zip/Bundles/SFXCon/7z.ico",
+      "bytes": 1078,
+      "type": "0"
+    },
+    {
+      "name": "./sysroot/perfetto/buildtools/lzma/CPP/7zip/Bundles/SFXCon/StdAfx.h",
+      "bytes": 104,
+      "type": "0"
+    },
+    {
+      "name": "./sysroot/perfetto/buildtools/lzma/CPP/7zip/Bundles/SFXCon/resource.rc",
+      "bytes": 105,
+      "type": "0"
+    },
+    {
+      "name": "./sysroot/perfetto/buildtools/lzma/CPP/7zip/Bundles/LzmaSpec/LzmaSpec.cpp",
+      "bytes": 15999,
+      "type": "0"
+    },
+    {
+      "name": "./sysroot/perfetto/buildtools/lzma/CPP/7zip/Bundles/SFXWin/StdAfx.cpp",
+      "bytes": 38,
+      "type": "0"
+    },
+    {
+      "name": "./sysroot/perfetto/buildtools/lzma/CPP/7zip/Bundles/SFXWin/resource.h",
+      "bytes": 21,
+      "type": "0"
+    },
+    {
+      "name": "./sysroot/perfetto/buildtools/lzma/CPP/7zip/Bundles/SFXWin/SFXWin.dsp",
+      "bytes": 22733,
+      "type": "0"
+    },
+    {
+      "name": "./sysroot/perfetto/buildtools/lzma/CPP/7zip/Bundles/SFXWin/SfxWin.cpp",
+      "bytes": 5844,
+      "type": "0"
+    },
+    {
+      "name": "./sysroot/perfetto/buildtools/lzma/CPP/7zip/Bundles/SFXWin/makefile",
+      "bytes": 3008,
+      "type": "0"
+    },
+    {
+      "name": "./sysroot/perfetto/buildtools/lzma/CPP/7zip/Bundles/SFXWin/7z.ico",
+      "bytes": 1078,
+      "type": "0"
+    },
+    {
+      "name": "./sysroot/perfetto/buildtools/lzma/CPP/7zip/Bundles/SFXWin/StdAfx.h",
+      "bytes": 226,
+      "type": "0"
+    },
+    {
+      "name": "./sysroot/perfetto/buildtools/lzma/CPP/7zip/Bundles/SFXWin/SFXWin.dsw",
+      "bytes": 535,
+      "type": "0"
+    },
+    {
+      "name": "./sysroot/perfetto/buildtools/lzma/CPP/7zip/Bundles/SFXWin/resource.rc",
+      "bytes": 1602,
+      "type": "0"
+    },
+    {
+      "name": "./sysroot/boost/libs/spirit/example/qi/compiler_tutorial/conjure_samples/operators.cnj",
+      "bytes": 2168,
+      "type": "0"
+    },
+    {
+      "name": "./sysroot/boost/libs/spirit/example/qi/compiler_tutorial/conjure_samples/precedence.cnj",
+      "bytes": 138,
+      "type": "0"
+    },
+    {
+      "name": "./sysroot/boost/libs/spirit/example/qi/compiler_tutorial/conjure_samples/pow2.cnj",
+      "bytes": 198,
+      "type": "0"
+    },
+    {
+      "name": "./sysroot/boost/libs/spirit/example/qi/compiler_tutorial/conjure_samples/error.cnj",
+      "bytes": 203,
+      "type": "0"
+    },
+    {
+      "name": "./sysroot/boost/libs/spirit/example/qi/compiler_tutorial/conjure_samples/factorial.cnj",
+      "bytes": 163,
+      "type": "0"
+    },
+    {
+      "name": "./sysroot/boost/libs/spirit/example/qi/compiler_tutorial/conjure1/skipper.hpp",
+      "bytes": 1268,
+      "type": "0"
+    },
+    {
+      "name": "./sysroot/boost/libs/spirit/example/qi/compiler_tutorial/conjure1/function.hpp",
+      "bytes": 1253,
+      "type": "0"
+    },
+    {
+      "name": "./sysroot/boost/libs/spirit/example/qi/compiler_tutorial/conjure1/main.cpp",
+      "bytes": 3817,
+      "type": "0"
+    },
+    {
+      "name": "./sysroot/boost/libs/spirit/example/qi/compiler_tutorial/conjure1/function.cpp",
+      "bytes": 558,
+      "type": "0"
+    },
+    {
+      "name": "./sysroot/boost/libs/spirit/example/qi/compiler_tutorial/conjure1/annotation.hpp",
+      "bytes": 2713,
+      "type": "0"
+    },
+    {
+      "name": "./sysroot/boost/libs/spirit/example/qi/compiler_tutorial/conjure1/vm.cpp",
+      "bytes": 4785,
+      "type": "0"
+    },
+    {
+      "name": "./sysroot/boost/libs/spirit/example/qi/compiler_tutorial/conjure1/function_def.hpp",
+      "bytes": 2212,
+      "type": "0"
+    },
+    {
+      "name": "./sysroot/boost/libs/spirit/example/qi/compiler_tutorial/conjure1/statement.hpp",
+      "bytes": 1663,
+      "type": "0"
+    },
+    {
+      "name": "./sysroot/boost/libs/spirit/example/qi/compiler_tutorial/conjure1/vm.hpp",
+      "bytes": 2929,
+      "type": "0"
+    },
+    {
+      "name": "./sysroot/boost/libs/spirit/example/qi/compiler_tutorial/conjure1/ast.hpp",
+      "bytes": 6150,
+      "type": "0"
+    },
+    {
+      "name": "./sysroot/boost/libs/spirit/example/qi/compiler_tutorial/conjure1/expression.cpp",
+      "bytes": 562,
+      "type": "0"
+    },
+    {
+      "name": "./sysroot/boost/libs/spirit/example/qi/compiler_tutorial/conjure1/expression_def.hpp",
+      "bytes": 3869,
+      "type": "0"
+    },
+    {
+      "name": "./sysroot/boost/libs/spirit/example/qi/compiler_tutorial/conjure1/expression.hpp",
+      "bytes": 2528,
+      "type": "0"
+    },
+    {
+      "name": "./sysroot/boost/libs/spirit/example/qi/compiler_tutorial/conjure1/compiler.cpp",
+      "bytes": 18844,
+      "type": "0"
+    },
+    {
+      "name": "./sysroot/boost/libs/spirit/example/qi/compiler_tutorial/conjure1/statement_def.hpp",
+      "bytes": 3683,
+      "type": "0"
+    },
+    {
+      "name": "./sysroot/boost/libs/spirit/example/qi/compiler_tutorial/conjure1/statement.cpp",
+      "bytes": 560,
+      "type": "0"
+    },
+    {
+      "name": "./sysroot/boost/libs/spirit/example/qi/compiler_tutorial/conjure1/error_handler.hpp",
+      "bytes": 2897,
+      "type": "0"
+    },
+    {
+      "name": "./sysroot/boost/libs/spirit/example/qi/compiler_tutorial/conjure1/compiler.hpp",
+      "bytes": 4372,
+      "type": "0"
+    },
+    {
+      "name": "./sysroot/boost/libs/spirit/example/qi/compiler_tutorial/conjure3/config.hpp",
+      "bytes": 2210,
+      "type": "0"
+    },
+    {
+      "name": "./sysroot/boost/libs/spirit/example/qi/compiler_tutorial/conjure3/ids.hpp",
+      "bytes": 5387,
+      "type": "0"
+    },
+    {
+      "name": "./sysroot/boost/libs/spirit/example/qi/compiler_tutorial/conjure3/function.hpp",
+      "bytes": 1292,
+      "type": "0"
+    },
+    {
+      "name": "./sysroot/boost/libs/spirit/example/qi/compiler_tutorial/conjure3/main.cpp",
+      "bytes": 5047,
+      "type": "0"
+    },
+    {
+      "name": "./sysroot/boost/libs/spirit/example/qi/compiler_tutorial/conjure3/function.cpp",
+      "bytes": 781,
+      "type": "0"
+    },
+    {
+      "name": "./sysroot/boost/libs/spirit/example/qi/compiler_tutorial/conjure3/lexer.cpp",
+      "bytes": 704,
+      "type": "0"
+    },
+    {
+      "name": "./sysroot/boost/libs/spirit/example/qi/compiler_tutorial/conjure3/annotation.hpp",
+      "bytes": 3818,
+      "type": "0"
+    },
+    {
+      "name": "./sysroot/boost/libs/spirit/example/qi/compiler_tutorial/conjure3/vm.cpp",
+      "bytes": 1289,
+      "type": "0"
+    },
+    {
+      "name": "./sysroot/boost/libs/spirit/example/qi/compiler_tutorial/conjure3/function_def.hpp",
+      "bytes": 2112,
+      "type": "0"
+    },
+    {
+      "name": "./sysroot/boost/libs/spirit/example/qi/compiler_tutorial/conjure3/statement.hpp",
+      "bytes": 1616,
+      "type": "0"
+    },
+    {
+      "name": "./sysroot/boost/libs/spirit/example/qi/compiler_tutorial/conjure3/vm.hpp",
+      "bytes": 3367,
+      "type": "0"
+    },
+    {
+      "name": "./sysroot/boost/libs/spirit/example/qi/compiler_tutorial/conjure3/ast.hpp",
+      "bytes": 6192,
+      "type": "0"
+    },
+    {
+      "name": "./sysroot/boost/libs/spirit/example/qi/compiler_tutorial/conjure3/conjure_static_lexer.hpp",
+      "bytes": 16459,
+      "type": "0"
+    },
+    {
+      "name": "./sysroot/boost/libs/spirit/example/qi/compiler_tutorial/conjure3/conjure_static_lexer_generate.cpp",
+      "bytes": 1320,
+      "type": "0"
+    },
+    {
+      "name": "./sysroot/boost/libs/spirit/example/qi/compiler_tutorial/conjure3/expression.cpp",
+      "bytes": 785,
+      "type": "0"
+    },
+    {
+      "name": "./sysroot/boost/libs/spirit/example/qi/compiler_tutorial/conjure3/lexer.hpp",
+      "bytes": 5175,
+      "type": "0"
+    },
+    {
+      "name": "./sysroot/boost/libs/spirit/example/qi/compiler_tutorial/conjure3/expression_def.hpp",
+      "bytes": 3397,
+      "type": "0"
+    },
+    {
+      "name": "./sysroot/boost/libs/spirit/example/qi/compiler_tutorial/conjure3/conjure_static_switch_lexer.hpp",
+      "bytes": 19349,
+      "type": "0"
+    },
+    {
+      "name": "./sysroot/boost/libs/spirit/example/qi/compiler_tutorial/conjure3/expression.hpp",
+      "bytes": 2377,
+      "type": "0"
+    },
+    {
+      "name": "./sysroot/boost/libs/spirit/example/qi/compiler_tutorial/conjure3/compiler.cpp",
+      "bytes": 31004,
+      "type": "0"
+    },
+    {
+      "name": "./sysroot/boost/libs/spirit/example/qi/compiler_tutorial/conjure3/statement_def.hpp",
+      "bytes": 3614,
+      "type": "0"
+    },
+    {
+      "name": "./sysroot/boost/libs/spirit/example/qi/compiler_tutorial/conjure3/statement.cpp",
+      "bytes": 783,
+      "type": "0"
+    },
+    {
+      "name": "./sysroot/boost/libs/spirit/example/qi/compiler_tutorial/conjure3/lexer_def.hpp",
+      "bytes": 3794,
+      "type": "0"
+    },
+    {
+      "name": "./sysroot/boost/libs/spirit/example/qi/compiler_tutorial/conjure3/error_handler.hpp",
+      "bytes": 3283,
+      "type": "0"
+    },
+    {
+      "name": "./sysroot/boost/libs/spirit/example/qi/compiler_tutorial/conjure3/compiler.hpp",
+      "bytes": 9314,
+      "type": "0"
+    },
+    {
+      "name": "./sysroot/boost/libs/spirit/example/qi/compiler_tutorial/conjure2/config.hpp",
+      "bytes": 2210,
+      "type": "0"
+    },
+    {
+      "name": "./sysroot/boost/libs/spirit/example/qi/compiler_tutorial/conjure2/ids.hpp",
+      "bytes": 5190,
+      "type": "0"
+    },
+    {
+      "name": "./sysroot/boost/libs/spirit/example/qi/compiler_tutorial/conjure2/function.hpp",
+      "bytes": 1292,
+      "type": "0"
+    },
+    {
+      "name": "./sysroot/boost/libs/spirit/example/qi/compiler_tutorial/conjure2/main.cpp",
+      "bytes": 4213,
+      "type": "0"
+    },
+    {
+      "name": "./sysroot/boost/libs/spirit/example/qi/compiler_tutorial/conjure2/function.cpp",
+      "bytes": 781,
+      "type": "0"
+    },
+    {
+      "name": "./sysroot/boost/libs/spirit/example/qi/compiler_tutorial/conjure2/lexer.cpp",
+      "bytes": 706,
+      "type": "0"
+    },
+    {
+      "name": "./sysroot/boost/libs/spirit/example/qi/compiler_tutorial/conjure2/annotation.hpp",
+      "bytes": 2713,
+      "type": "0"
+    },
+    {
+      "name": "./sysroot/boost/libs/spirit/example/qi/compiler_tutorial/conjure2/vm.cpp",
+      "bytes": 4807,
+      "type": "0"
+    },
+    {
+      "name": "./sysroot/boost/libs/spirit/example/qi/compiler_tutorial/conjure2/function_def.hpp",
+      "bytes": 2104,
+      "type": "0"
+    },
+    {
+      "name": "./sysroot/boost/libs/spirit/example/qi/compiler_tutorial/conjure2/statement.hpp",
+      "bytes": 1616,
+      "type": "0"
+    },
+    {
+      "name": "./sysroot/boost/libs/spirit/example/qi/compiler_tutorial/conjure2/vm.hpp",
+      "bytes": 2929,
+      "type": "0"
+    },
+    {
+      "name": "./sysroot/boost/libs/spirit/example/qi/compiler_tutorial/conjure2/ast.hpp",
+      "bytes": 5021,
+      "type": "0"
+    },
+    {
+      "name": "./sysroot/boost/libs/spirit/example/qi/compiler_tutorial/conjure2/conjure_static_lexer.hpp",
+      "bytes": 16459,
+      "type": "0"
+    },
+    {
+      "name": "./sysroot/boost/libs/spirit/example/qi/compiler_tutorial/conjure2/conjure_static_lexer_generate.cpp",
+      "bytes": 1320,
+      "type": "0"
+    },
+    {
+      "name": "./sysroot/boost/libs/spirit/example/qi/compiler_tutorial/conjure2/expression.cpp",
+      "bytes": 785,
+      "type": "0"
+    },
+    {
+      "name": "./sysroot/boost/libs/spirit/example/qi/compiler_tutorial/conjure2/lexer.hpp",
+      "bytes": 4701,
+      "type": "0"
+    },
+    {
+      "name": "./sysroot/boost/libs/spirit/example/qi/compiler_tutorial/conjure2/expression_def.hpp",
+      "bytes": 3069,
+      "type": "0"
+    },
+    {
+      "name": "./sysroot/boost/libs/spirit/example/qi/compiler_tutorial/conjure2/conjure_static_switch_lexer.hpp",
+      "bytes": 19349,
+      "type": "0"
+    },
+    {
+      "name": "./sysroot/boost/libs/spirit/example/qi/compiler_tutorial/conjure2/expression.hpp",
+      "bytes": 2315,
+      "type": "0"
+    },
+    {
+      "name": "./sysroot/boost/libs/spirit/example/qi/compiler_tutorial/conjure2/compiler.cpp",
+      "bytes": 18724,
+      "type": "0"
+    },
+    {
+      "name": "./sysroot/boost/libs/spirit/example/qi/compiler_tutorial/conjure2/statement_def.hpp",
+      "bytes": 3495,
+      "type": "0"
+    },
+    {
+      "name": "./sysroot/boost/libs/spirit/example/qi/compiler_tutorial/conjure2/statement.cpp",
+      "bytes": 783,
+      "type": "0"
+    },
+    {
+      "name": "./sysroot/boost/libs/spirit/example/qi/compiler_tutorial/conjure2/lexer_def.hpp",
+      "bytes": 2585,
+      "type": "0"
+    },
+    {
+      "name": "./sysroot/boost/libs/spirit/example/qi/compiler_tutorial/conjure2/error_handler.hpp",
+      "bytes": 3439,
+      "type": "0"
+    },
+    {
+      "name": "./sysroot/boost/libs/spirit/example/qi/compiler_tutorial/conjure2/compiler.hpp",
+      "bytes": 4375,
+      "type": "0"
+    },
+    {
+      "name": "./rootfs/OSUpdater/osu/utils/settings/impl/sysreg_settings.cpp",
+      "bytes": 3852,
+      "type": "0"
+    },
+    {
+      "name": "./rootfs/OSUpdater/osu/utils/settings/impl/sysreg_settings.h",
+      "bytes": 1296,
+      "type": "0"
+    },
+    {
+      "name": "./rootfs/OSUpdater/osu/utils/reboot/impl/spock_system_rebooter.cpp",
+      "bytes": 1396,
+      "type": "0"
+    },
+    {
+      "name": "./rootfs/OSUpdater/osu/src/commands/loki_command_handler.cpp",
+      "bytes": 2706,
+      "type": "0"
+    },
+    {
+      "name": "./rootfs/OSUpdater/osu/src/commands/loki_command_handler.h",
+      "bytes": 1080,
+      "type": "0"
+    },
+    {
+      "name": "./rootfs/OSUpdater/osu/tests/command_handlers/loki_command_handler_tests.cpp",
+      "bytes": 2839,
+      "type": "0"
+    },
+    {
+      "name": "./rootfs/OSUpdater/osu/loki_impl.cpp",
+      "bytes": 108,
+      "type": "0"
+    }
+  ],
+  "selected_inert_captures": [
+    {
+      "name": "./build_gpl_fw.sh",
+      "bytes": 1668,
+      "type": "0",
+      "sha256": "9cc12ab2f280ffa8dbfb4aa976d3b5bec182bb03115de8ece981472b36f2137f",
+      "saved_as": "b2ac236f3df4410f.inert"
+    },
+    {
+      "name": "./sysroot/nanotrace/README.md",
+      "bytes": 2077,
+      "type": "0",
+      "sha256": "ac1f5668cf2ff44ed2f03408b0e399d99adceb4089c3984d8db730473f838cbb",
+      "saved_as": "a0a00286e7b23980.inert"
+    },
+    {
+      "name": "./sysroot/perfetto/buildtools/lzma/CPP/7zip/Bundles/Format7zExtractR/StdAfx.cpp",
+      "bytes": 38,
+      "type": "0",
+      "sha256": "fa3f80e78b3078cefe58363b47223b43374c1e13fdb2594f4caf0ff3cb3db2c1",
+      "saved_as": "7f31d18e1c8e7ca5.inert"
+    },
+    {
+      "name": "./sysroot/perfetto/buildtools/lzma/CPP/7zip/Bundles/Format7zExtractR/makefile",
+      "bytes": 1895,
+      "type": "0",
+      "sha256": "34b6b67c451184645d867236c6285ca1b8fbe489455f86e23d035e3c16e239e5",
+      "saved_as": "d5eadc1bcf6e9722.inert"
+    },
+    {
+      "name": "./sysroot/perfetto/buildtools/lzma/CPP/7zip/Bundles/Format7zExtractR/StdAfx.h",
+      "bytes": 104,
+      "type": "0",
+      "sha256": "a1a20150dd5baf23e53a7e81c785ef280bd0dd040fcf8cbd43e24e36c1eaff17",
+      "saved_as": "2dd3a577dfd56385.inert"
+    },
+    {
+      "name": "./sysroot/perfetto/buildtools/lzma/CPP/7zip/Bundles/Format7zExtractR/resource.rc",
+      "bytes": 156,
+      "type": "0",
+      "sha256": "7ac96f0215d6b515e15a84d74e6650a24ab830f9ecf27ca55e34a95741d5b8ab",
+      "saved_as": "750315f5d8476d39.inert"
+    },
+    {
+      "name": "./sysroot/perfetto/buildtools/lzma/CPP/7zip/Bundles/LzmaCon/StdAfx.cpp",
+      "bytes": 38,
+      "type": "0",
+      "sha256": "fa3f80e78b3078cefe58363b47223b43374c1e13fdb2594f4caf0ff3cb3db2c1",
+      "saved_as": "7fa48a4116a19c27.inert"
+    },
+    {
+      "name": "./sysroot/perfetto/buildtools/lzma/CPP/7zip/Bundles/LzmaCon/makefile",
+      "bytes": 1051,
+      "type": "0",
+      "sha256": "dbb306d3d9385a5bb5bfe54c2a5e92da4f39933178cc45a0d5016b94ea9f6f88",
+      "saved_as": "4ab5a11dc568652c.inert"
+    },
+    {
+      "name": "./sysroot/perfetto/buildtools/lzma/CPP/7zip/Bundles/LzmaCon/StdAfx.h",
+      "bytes": 104,
+      "type": "0",
+      "sha256": "a1a20150dd5baf23e53a7e81c785ef280bd0dd040fcf8cbd43e24e36c1eaff17",
+      "saved_as": "5783e2f763d7efa9.inert"
+    },
+    {
+      "name": "./sysroot/perfetto/buildtools/lzma/CPP/7zip/Bundles/LzmaCon/LzmaAlone.cpp",
+      "bytes": 19352,
+      "type": "0",
+      "sha256": "705fc3d3208a09c9de047c1e16f55c80e3124f65e9a77e26675100b6bce7ee76",
+      "saved_as": "5262faf0a196fad7.inert"
+    },
+    {
+      "name": "./sysroot/perfetto/buildtools/lzma/CPP/7zip/Bundles/LzmaCon/LzmaCon.dsp",
+      "bytes": 11606,
+      "type": "0",
+      "sha256": "badb117c86e9ef795327a063d78e6f1c576b4c6403bc431b264e7ee3a1bc35db",
+      "saved_as": "9dad488526014be8.inert"
+    },
+    {
+      "name": "./sysroot/perfetto/buildtools/lzma/CPP/7zip/Bundles/LzmaCon/resource.rc",
+      "bytes": 74,
+      "type": "0",
+      "sha256": "c0e9ea03c29436664ebac60b28191831ec8375643c0cf77e99e72a3532fc0000",
+      "saved_as": "ebea83774546b6d4.inert"
+    },
+    {
+      "name": "./sysroot/perfetto/buildtools/lzma/CPP/7zip/Bundles/LzmaCon/LzmaCon.dsw",
+      "bytes": 537,
+      "type": "0",
+      "sha256": "4e3ffa1d68d3492964bec0477e6513c2733e26b99531fbc1a33aa2c0a3def773",
+      "saved_as": "95ed512236fd10be.inert"
+    },
+    {
+      "name": "./sysroot/perfetto/buildtools/lzma/CPP/7zip/Bundles/LzmaCon/makefile.gcc",
+      "bytes": 4556,
+      "type": "0",
+      "sha256": "557d7f4bc903d215b7884e6d878f0b203a8e3c2fa34ec3f7b1120ed34e9149d9",
+      "saved_as": "022e36ac601a830c.inert"
+    },
+    {
+      "name": "./sysroot/perfetto/buildtools/lzma/CPP/7zip/Bundles/SFXSetup/setup.ico",
+      "bytes": 1078,
+      "type": "0",
+      "sha256": "8c1774fc46a29bc6da48f1eaabaa0cfaf86aa30e890be1721b8b676a8ef20b3a",
+      "saved_as": "4d4550cd7aa2846b.inert"
+    },
+    {
+      "name": "./sysroot/perfetto/buildtools/lzma/CPP/7zip/Bundles/SFXSetup/ExtractEngine.h",
+      "bytes": 291,
+      "type": "0",
+      "sha256": "7ec6c70231f9a50ca560b33b32b54e4b718314b28551518ab69178882d6ac28a",
+      "saved_as": "89d57ac76928cf57.inert"
+    },
+    {
+      "name": "./sysroot/perfetto/buildtools/lzma/CPP/7zip/Bundles/SFXSetup/StdAfx.cpp",
+      "bytes": 38,
+      "type": "0",
+      "sha256": "fa3f80e78b3078cefe58363b47223b43374c1e13fdb2594f4caf0ff3cb3db2c1",
+      "saved_as": "d8680be88d3c07eb.inert"
+    },
+    {
+      "name": "./sysroot/perfetto/buildtools/lzma/CPP/7zip/Bundles/SFXSetup/resource.h",
+      "bytes": 199,
+      "type": "0",
+      "sha256": "d7cc7760adcbd965d380492700efd0f8ad04d1a19ec5ab4229b79a379f42d32f",
+      "saved_as": "985246075a32915a.inert"
+    },
+    {
+      "name": "./sysroot/perfetto/buildtools/lzma/CPP/7zip/Bundles/SFXSetup/ExtractEngine.cpp",
+      "bytes": 3305,
+      "type": "0",
+      "sha256": "4832f2f38e2bed9571bffc59b416267e7859982766990c78d7a6b91b7e0eed29",
+      "saved_as": "541c6616dc4279a8.inert"
+    },
+    {
+      "name": "./sysroot/perfetto/buildtools/lzma/CPP/7zip/Bundles/SFXSetup/ExtractCallbackSfx.cpp",
+      "bytes": 6346,
+      "type": "0",
+      "sha256": "215331243d7a879d3ff0ac4a18ef73f474a6bbe483489b218bfb62f7612c68a5",
+      "saved_as": "84a42616f6ed2c3c.inert"
+    },
+    {
+      "name": "./sysroot/perfetto/buildtools/lzma/CPP/7zip/Bundles/SFXSetup/makefile",
+      "bytes": 2257,
+      "type": "0",
+      "sha256": "fb74448306331b0d02c62d2c27be0b82b7ab81063605ff69fedc7cd0cacb3f06",
+      "saved_as": "1f74b50e807448c7.inert"
+    },
+    {
+      "name": "./sysroot/perfetto/buildtools/lzma/CPP/7zip/Bundles/SFXSetup/ExtractCallbackSfx.h",
+      "bytes": 1899,
+      "type": "0",
+      "sha256": "3f2feceea5e5ddbb6a700deb46252ffaf55e1e09cd7799aa12f274bb2133d345",
+      "saved_as": "e76d9536f856855a.inert"
+    },
+    {
+      "name": "./sysroot/perfetto/buildtools/lzma/CPP/7zip/Bundles/SFXSetup/SFXSetup.dsp",
+      "bytes": 18862,
+      "type": "0",
+      "sha256": "663b236e4c3fc1e88bc3cb6eadf6e2a4f86c2f98b7b7be49d12e191595123483",
+      "saved_as": "c7c6ec87fea0a997.inert"
+    },
+    {
+      "name": "./sysroot/perfetto/buildtools/lzma/CPP/7zip/Bundles/SFXSetup/StdAfx.h",
+      "bytes": 205,
+      "type": "0",
+      "sha256": "c1975879fc2467e785c8d297d46a520835a4efdcc7f23c5c9bdaffff2a9d0e75",
+      "saved_as": "6bebb6c2ad014d5b.inert"
+    },
+    {
+      "name": "./sysroot/perfetto/buildtools/lzma/CPP/7zip/Bundles/SFXSetup/resource.rc",
+      "bytes": 419,
+      "type": "0",
+      "sha256": "f5c99d763b181b2cd3c37057fba4bae1d4e8986bed4e71a7251faa4ed24f615f",
+      "saved_as": "dff862764f5627fa.inert"
+    },
+    {
+      "name": "./sysroot/perfetto/buildtools/lzma/CPP/7zip/Bundles/SFXSetup/SfxSetup.cpp",
+      "bytes": 9618,
+      "type": "0",
+      "sha256": "896db5f960699fc213381f785f2c5a46f0ddc9a85acbd900c7101cad5d4bca82",
+      "saved_as": "8d0d24900e4222ec.inert"
+    },
+    {
+      "name": "./sysroot/perfetto/buildtools/lzma/CPP/7zip/Bundles/SFXSetup/SFXSetup.dsw",
+      "bytes": 539,
+      "type": "0",
+      "sha256": "f2c8267d3ae62650c1c0f075efe8cd143617011f26df1d6c703b5f80ba335e06",
+      "saved_as": "7e997b3b6abf75ca.inert"
+    },
+    {
+      "name": "./sysroot/perfetto/buildtools/lzma/CPP/7zip/Bundles/Format7zR/StdAfx.cpp",
+      "bytes": 38,
+      "type": "0",
+      "sha256": "fa3f80e78b3078cefe58363b47223b43374c1e13fdb2594f4caf0ff3cb3db2c1",
+      "saved_as": "edcc827e0ab0cc8f.inert"
+    },
+    {
+      "name": "./sysroot/perfetto/buildtools/lzma/CPP/7zip/Bundles/Format7zR/makefile",
+      "bytes": 2344,
+      "type": "0",
+      "sha256": "273f53a3c7d1b3caa82ee0adc179998daefd8070d6d8ac31884b1690c542c9e8",
+      "saved_as": "f6b6116ed22bc199.inert"
+    },
+    {
+      "name": "./sysroot/perfetto/buildtools/lzma/CPP/7zip/Bundles/Format7zR/StdAfx.h",
+      "bytes": 104,
+      "type": "0",
+      "sha256": "a1a20150dd5baf23e53a7e81c785ef280bd0dd040fcf8cbd43e24e36c1eaff17",
+      "saved_as": "62e14d1006daa6a6.inert"
+    },
+    {
+      "name": "./sysroot/perfetto/buildtools/lzma/CPP/7zip/Bundles/Format7zR/resource.rc",
+      "bytes": 144,
+      "type": "0",
+      "sha256": "94ddae7ee129583ecfcfdf5b22e134e52d3a83b8f6ce9a5763207d8364132f3e",
+      "saved_as": "b5098966c6526c9f.inert"
+    },
+    {
+      "name": "./sysroot/perfetto/buildtools/lzma/CPP/7zip/Bundles/Alone7z/StdAfx.cpp",
+      "bytes": 38,
+      "type": "0",
+      "sha256": "fa3f80e78b3078cefe58363b47223b43374c1e13fdb2594f4caf0ff3cb3db2c1",
+      "saved_as": "b1f082b16cc8ea05.inert"
+    },
+    {
+      "name": "./sysroot/perfetto/buildtools/lzma/CPP/7zip/Bundles/Alone7z/Alone.dsw",
+      "bytes": 533,
+      "type": "0",
+      "sha256": "0af9e15cbaa2ac0e8e219044b401d6c4fdb7ffab7637b5117df1efa9476507cd",
+      "saved_as": "ace273dc69d6c432.inert"
+    },
+    {
+      "name": "./sysroot/perfetto/buildtools/lzma/CPP/7zip/Bundles/Alone7z/Alone.dsp",
+      "bytes": 40584,
+      "type": "0",
+      "sha256": "dcb01fdba63ec7dad93d402e2306e810d7774e5f183806c4f64650a80c9c85e9",
+      "saved_as": "ac55cc23c872b99e.inert"
+    },
+    {
+      "name": "./sysroot/perfetto/buildtools/lzma/CPP/7zip/Bundles/Alone7z/makefile",
+      "bytes": 3288,
+      "type": "0",
+      "sha256": "62c260766d861a144c6241e72209faddf79c611e3216298742287b7c9edf35ab",
+      "saved_as": "62b24e3a8bf71645.inert"
+    },
+    {
+      "name": "./sysroot/perfetto/buildtools/lzma/CPP/7zip/Bundles/Alone7z/StdAfx.h",
+      "bytes": 104,
+      "type": "0",
+      "sha256": "a1a20150dd5baf23e53a7e81c785ef280bd0dd040fcf8cbd43e24e36c1eaff17",
+      "saved_as": "684b9d55b6bdf75f.inert"
+    },
+    {
+      "name": "./sysroot/perfetto/buildtools/lzma/CPP/7zip/Bundles/Alone7z/resource.rc",
+      "bytes": 193,
+      "type": "0",
+      "sha256": "0314a2c2e6343cda4c9d82e78ad86fa82d7d84181b69150c4b0cc0712fa4ba3b",
+      "saved_as": "e849ee539e6845fa.inert"
+    },
+    {
+      "name": "./sysroot/perfetto/buildtools/lzma/CPP/7zip/Bundles/SFXCon/StdAfx.cpp",
+      "bytes": 38,
+      "type": "0",
+      "sha256": "fa3f80e78b3078cefe58363b47223b43374c1e13fdb2594f4caf0ff3cb3db2c1",
+      "saved_as": "b338f754cdea6cd8.inert"
+    },
+    {
+      "name": "./sysroot/perfetto/buildtools/lzma/CPP/7zip/Bundles/SFXCon/SfxCon.cpp",
+      "bytes": 12251,
+      "type": "0",
+      "sha256": "03c4567b4ad2c1404f0fd923c64218f245ca041d1fccf6298b80a431b4402e11",
+      "saved_as": "d34a6e5382fc771c.inert"
+    },
+    {
+      "name": "./sysroot/perfetto/buildtools/lzma/CPP/7zip/Bundles/SFXCon/SFXCon.dsp",
+      "bytes": 20452,
+      "type": "0",
+      "sha256": "fc0c1961fefe59882e714de2a52935ec37b63bab571240ae22f34cb35ae2a3b3",
+      "saved_as": "97895eb24bd2d95f.inert"
+    },
+    {
+      "name": "./sysroot/perfetto/buildtools/lzma/CPP/7zip/Bundles/SFXCon/SFXCon.dsw",
+      "bytes": 535,
+      "type": "0",
+      "sha256": "26ee8fce449ca1593d22784eaaf6b5b2de2fd3eb5ec089b9b204e004b6415111",
+      "saved_as": "9be8aa5e3c845f33.inert"
+    },
+    {
+      "name": "./sysroot/perfetto/buildtools/lzma/CPP/7zip/Bundles/SFXCon/makefile",
+      "bytes": 2676,
+      "type": "0",
+      "sha256": "f04024414388ecae0f3b74cb3a798eedbc129895f5b33a7dbb9c958e76764fe4",
+      "saved_as": "7ef44211a1ac103c.inert"
+    },
+    {
+      "name": "./sysroot/perfetto/buildtools/lzma/CPP/7zip/Bundles/SFXCon/7z.ico",
+      "bytes": 1078,
+      "type": "0",
+      "sha256": "ad4990b6462d0b8a0ac489e741474c0542936351b615a78bfa2e1f27ce795a8f",
+      "saved_as": "2ca4cf62c1b3fb4a.inert"
+    },
+    {
+      "name": "./sysroot/perfetto/buildtools/lzma/CPP/7zip/Bundles/SFXCon/StdAfx.h",
+      "bytes": 104,
+      "type": "0",
+      "sha256": "a1a20150dd5baf23e53a7e81c785ef280bd0dd040fcf8cbd43e24e36c1eaff17",
+      "saved_as": "e4189a845a47c230.inert"
+    },
+    {
+      "name": "./sysroot/perfetto/buildtools/lzma/CPP/7zip/Bundles/SFXCon/resource.rc",
+      "bytes": 105,
+      "type": "0",
+      "sha256": "596509fd93cc9756501a6b23a051ab37a828e52e862c974a9ddcd9ccc5167700",
+      "saved_as": "374daa67c268f17a.inert"
+    },
+    {
+      "name": "./sysroot/perfetto/buildtools/lzma/CPP/7zip/Bundles/LzmaSpec/LzmaSpec.cpp",
+      "bytes": 15999,
+      "type": "0",
+      "sha256": "ae81e258ffc5e3adfc3276492b92838282b4eb882dbe2ba126ea230d2580f196",
+      "saved_as": "63d42329036b42cc.inert"
+    },
+    {
+      "name": "./sysroot/perfetto/buildtools/lzma/CPP/7zip/Bundles/SFXWin/StdAfx.cpp",
+      "bytes": 38,
+      "type": "0",
+      "sha256": "fa3f80e78b3078cefe58363b47223b43374c1e13fdb2594f4caf0ff3cb3db2c1",
+      "saved_as": "11ad3bc466474c12.inert"
+    },
+    {
+      "name": "./sysroot/perfetto/buildtools/lzma/CPP/7zip/Bundles/SFXWin/resource.h",
+      "bytes": 21,
+      "type": "0",
+      "sha256": "2f91904123e29e55bc8211fc7c5b1d3b57b230ace4b7dfea2bbc508fc92fbf12",
+      "saved_as": "c83b9ae895a28d21.inert"
+    },
+    {
+      "name": "./sysroot/perfetto/buildtools/lzma/CPP/7zip/Bundles/SFXWin/SFXWin.dsp",
+      "bytes": 22733,
+      "type": "0",
+      "sha256": "e2e44502fa3839ac0fa1704ce4c128e1f53c604dc560a667341c6530be149f05",
+      "saved_as": "ef820b01d7479d49.inert"
+    },
+    {
+      "name": "./sysroot/perfetto/buildtools/lzma/CPP/7zip/Bundles/SFXWin/SfxWin.cpp",
+      "bytes": 5844,
+      "type": "0",
+      "sha256": "278c32ae545292a997709d6e9115511c35befbde89564a078955dfb18321035d",
+      "saved_as": "93641ba5db9b1bc3.inert"
+    },
+    {
+      "name": "./sysroot/perfetto/buildtools/lzma/CPP/7zip/Bundles/SFXWin/makefile",
+      "bytes": 3008,
+      "type": "0",
+      "sha256": "7f29e87c5e90c3b4f30a7b4a5b15129402873e1fc9f16a1ea3d11f40f7ded7ec",
+      "saved_as": "cabf738600f95a43.inert"
+    },
+    {
+      "name": "./sysroot/perfetto/buildtools/lzma/CPP/7zip/Bundles/SFXWin/7z.ico",
+      "bytes": 1078,
+      "type": "0",
+      "sha256": "ad4990b6462d0b8a0ac489e741474c0542936351b615a78bfa2e1f27ce795a8f",
+      "saved_as": "5fd4362511480fd8.inert"
+    },
+    {
+      "name": "./sysroot/perfetto/buildtools/lzma/CPP/7zip/Bundles/SFXWin/StdAfx.h",
+      "bytes": 226,
+      "type": "0",
+      "sha256": "2d73cb9f9d6af8797eb3391eaf96390e5aaa9ec95a66b6a00f56a0afa3951b9e",
+      "saved_as": "c1473da2bd7ebbe4.inert"
+    },
+    {
+      "name": "./sysroot/perfetto/buildtools/lzma/CPP/7zip/Bundles/SFXWin/SFXWin.dsw",
+      "bytes": 535,
+      "type": "0",
+      "sha256": "ef00e94e9ed67bec6723d3964ab600a8e607873e582f4f134aa10bd2330a9edd",
+      "saved_as": "27e2e6edc448ca73.inert"
+    },
+    {
+      "name": "./sysroot/perfetto/buildtools/lzma/CPP/7zip/Bundles/SFXWin/resource.rc",
+      "bytes": 1602,
+      "type": "0",
+      "sha256": "25706337e0b2dc7f912fc0e1008e5b0988d1f900be3d45ecb534b0cd1befda9b",
+      "saved_as": "268756ba29543b59.inert"
+    },
+    {
+      "name": "./sysroot/perfetto/README.md",
+      "bytes": 456,
+      "type": "0",
+      "sha256": "eacb4f987c47151b8fc05d3a7c6e096e7c24047e95273c2a77103f0b5d797b4d",
+      "saved_as": "cc3e47a5582c6aa8.inert"
+    },
+    {
+      "name": "./sysroot/mdns/README.md",
+      "bytes": 6627,
+      "type": "0",
+      "sha256": "575a88951078fc52b61d9d0bc5b6a91ec41ecf8e359308a4a2c30abef43789ac",
+      "saved_as": "e244c501398bd7ec.inert"
+    },
+    {
+      "name": "./sysroot/boost/README.md",
+      "bytes": 542,
+      "type": "0",
+      "sha256": "45bf96b84c47a69bafd6fed620c0ad1dffe8872db5905aa70daf2ea3ac29d657",
+      "saved_as": "26d96a04920d3878.inert"
+    },
+    {
+      "name": "./sysroot/boost/libs/spirit/example/qi/compiler_tutorial/conjure_samples/operators.cnj",
+      "bytes": 2168,
+      "type": "0",
+      "sha256": "e080dc86d389cf953af6336acd30af6e40e2ecd3bc84fe9f5c64da7f492f076e",
+      "saved_as": "db2db287ba58c37f.inert"
+    },
+    {
+      "name": "./sysroot/boost/libs/spirit/example/qi/compiler_tutorial/conjure_samples/precedence.cnj",
+      "bytes": 138,
+      "type": "0",
+      "sha256": "881122e928aa43b3d2ca80a84b38edd5676b8bd9fb0c644bef344875bc91a7b6",
+      "saved_as": "791e2d8362e137a9.inert"
+    },
+    {
+      "name": "./sysroot/boost/libs/spirit/example/qi/compiler_tutorial/conjure_samples/pow2.cnj",
+      "bytes": 198,
+      "type": "0",
+      "sha256": "29e69431390c3c8f2aadf0429edfbceb83a5c086db226877acb12c6ac88d8c62",
+      "saved_as": "c9456e453d36db2e.inert"
+    },
+    {
+      "name": "./sysroot/boost/libs/spirit/example/qi/compiler_tutorial/conjure_samples/error.cnj",
+      "bytes": 203,
+      "type": "0",
+      "sha256": "20cb1d9414aff6fbe2d5dfd96ec8040c066e924b2aaf435c9f4af6343ddc8788",
+      "saved_as": "e9b0a767bb75795c.inert"
+    },
+    {
+      "name": "./sysroot/boost/libs/spirit/example/qi/compiler_tutorial/conjure_samples/factorial.cnj",
+      "bytes": 163,
+      "type": "0",
+      "sha256": "348f7a8f3dfd2fe1b22891360973352908235db4589dca9cee703a9842897a7b",
+      "saved_as": "2765c51d4305831e.inert"
+    },
+    {
+      "name": "./sysroot/boost/libs/spirit/example/qi/compiler_tutorial/conjure1/skipper.hpp",
+      "bytes": 1268,
+      "type": "0",
+      "sha256": "17cd4875b71d8431cc0e90a3bdd5a04748a990b57d5bd2646159ebd9add83937",
+      "saved_as": "7fee978cd6633968.inert"
+    },
+    {
+      "name": "./sysroot/boost/libs/spirit/example/qi/compiler_tutorial/conjure1/function.hpp",
+      "bytes": 1253,
+      "type": "0",
+      "sha256": "f19cbb87c16a2ceea2744c4e99c144be8527f1702d046361462f4d647f3ca855",
+      "saved_as": "f53388b7350913cc.inert"
+    },
+    {
+      "name": "./sysroot/boost/libs/spirit/example/qi/compiler_tutorial/conjure1/main.cpp",
+      "bytes": 3817,
+      "type": "0",
+      "sha256": "beb7b285d67b1f50edef10ea93fe29efa716fddfee947c6059df29ed472683e7",
+      "saved_as": "2816fee478686b00.inert"
+    },
+    {
+      "name": "./sysroot/boost/libs/spirit/example/qi/compiler_tutorial/conjure1/function.cpp",
+      "bytes": 558,
+      "type": "0",
+      "sha256": "b487af7cf124a3417d7c247b14e257b4bfa06066f80eb1caa0920850a11c3da3",
+      "saved_as": "244bbcc37a651d84.inert"
+    },
+    {
+      "name": "./sysroot/boost/libs/spirit/example/qi/compiler_tutorial/conjure1/annotation.hpp",
+      "bytes": 2713,
+      "type": "0",
+      "sha256": "fd61d70826538b2bddf9d66901ef5b022a47b4aad3df70ce222734230ae866dd",
+      "saved_as": "4df6f0e775f4dd18.inert"
+    },
+    {
+      "name": "./sysroot/boost/libs/spirit/example/qi/compiler_tutorial/conjure1/vm.cpp",
+      "bytes": 4785,
+      "type": "0",
+      "sha256": "089be71df71947216ba9f92f376e24a2bd3d260c2fc51502fe89bbb86785cf43",
+      "saved_as": "3529f83660befeaf.inert"
+    },
+    {
+      "name": "./sysroot/boost/libs/spirit/example/qi/compiler_tutorial/conjure1/function_def.hpp",
+      "bytes": 2212,
+      "type": "0",
+      "sha256": "273f7f0d6ca91864f8e24adb05be44ea98720aed94052a0e9d58b08bb7b0a647",
+      "saved_as": "dea56627a6ae4b5b.inert"
+    },
+    {
+      "name": "./sysroot/boost/libs/spirit/example/qi/compiler_tutorial/conjure1/statement.hpp",
+      "bytes": 1663,
+      "type": "0",
+      "sha256": "cdd0f2205964201169ff8f1fcd37c8b02046adcbb1fc01c7d8e6dd00d724a4e6",
+      "saved_as": "ca9310cc01e37818.inert"
+    },
+    {
+      "name": "./sysroot/boost/libs/spirit/example/qi/compiler_tutorial/conjure1/vm.hpp",
+      "bytes": 2929,
+      "type": "0",
+      "sha256": "3ba07676471710c4a553a2598f20498b2c48a8c96411a208af1c89a5879327be",
+      "saved_as": "195967b04204dc68.inert"
+    },
+    {
+      "name": "./sysroot/boost/libs/spirit/example/qi/compiler_tutorial/conjure1/ast.hpp",
+      "bytes": 6150,
+      "type": "0",
+      "sha256": "f28774ce2f6987d7c022d8d6ff8ecc198892f824d83084747ef2458fe970b970",
+      "saved_as": "c26663b9b307e945.inert"
+    },
+    {
+      "name": "./sysroot/boost/libs/spirit/example/qi/compiler_tutorial/conjure1/expression.cpp",
+      "bytes": 562,
+      "type": "0",
+      "sha256": "a58f95030e13c00197de25328d3f4eb336ed2629c2dccef61f0c3c766fac1a53",
+      "saved_as": "1a8a172d2b70467c.inert"
+    },
+    {
+      "name": "./sysroot/boost/libs/spirit/example/qi/compiler_tutorial/conjure1/expression_def.hpp",
+      "bytes": 3869,
+      "type": "0",
+      "sha256": "1c72820e9bbbc40e24c91649af0e0f486acfd9099d33d7d667055dcdac68c59f",
+      "saved_as": "a6d9f9d8a88d4a6a.inert"
+    },
+    {
+      "name": "./sysroot/boost/libs/spirit/example/qi/compiler_tutorial/conjure1/expression.hpp",
+      "bytes": 2528,
+      "type": "0",
+      "sha256": "7217f785db4256a7da329d62ac4e6f4d533ca4ddaabd474f42220eca97aa06ea",
+      "saved_as": "45743aaaa4417f2c.inert"
+    },
+    {
+      "name": "./sysroot/boost/libs/spirit/example/qi/compiler_tutorial/conjure1/compiler.cpp",
+      "bytes": 18844,
+      "type": "0",
+      "sha256": "4de0ebb95670fecaae0b99db0c0b6af2687a9aa7e3461cabfa031aebc9af5bf7",
+      "saved_as": "5c8bd4e7a398dcfe.inert"
+    },
+    {
+      "name": "./sysroot/boost/libs/spirit/example/qi/compiler_tutorial/conjure1/statement_def.hpp",
+      "bytes": 3683,
+      "type": "0",
+      "sha256": "6c7d02cfa4d9b3f76c990c7100138d847cfdb99cdd0e5745bcbd9b673edee37d",
+      "saved_as": "4672640574f26ae2.inert"
+    },
+    {
+      "name": "./sysroot/boost/libs/spirit/example/qi/compiler_tutorial/conjure1/statement.cpp",
+      "bytes": 560,
+      "type": "0",
+      "sha256": "8d951536e4028d375f439af36b4bf6a135d408e3e83a4e2be66855b315d6f65e",
+      "saved_as": "08728a9d265d61b8.inert"
+    },
+    {
+      "name": "./sysroot/boost/libs/spirit/example/qi/compiler_tutorial/conjure1/error_handler.hpp",
+      "bytes": 2897,
+      "type": "0",
+      "sha256": "020eb6c84b6ab31cd48f0b16eb34815c8c6eae5f4cde8da758a5d3a977781bd6",
+      "saved_as": "326fe8cf8ba59dbd.inert"
+    },
+    {
+      "name": "./sysroot/boost/libs/spirit/example/qi/compiler_tutorial/conjure1/compiler.hpp",
+      "bytes": 4372,
+      "type": "0",
+      "sha256": "6d7e95b38c9d2aa36ffc14f345b17846344d918251971346aee5f7bcbd45804d",
+      "saved_as": "baf8566851b15c01.inert"
+    },
+    {
+      "name": "./sysroot/boost/libs/spirit/example/qi/compiler_tutorial/conjure3/config.hpp",
+      "bytes": 2210,
+      "type": "0",
+      "sha256": "f0281df3ae402300635a0001800072ec44b39acb7e6884533bb5552472412636",
+      "saved_as": "7fe7896a63513aeb.inert"
+    },
+    {
+      "name": "./sysroot/boost/libs/spirit/example/qi/compiler_tutorial/conjure3/ids.hpp",
+      "bytes": 5387,
+      "type": "0",
+      "sha256": "ae6c1d08af58a83e957279369a6e33bfd20445d04d1a1266289f0d31c1bb16ab",
+      "saved_as": "381d582b503eace3.inert"
+    },
+    {
+      "name": "./sysroot/boost/libs/spirit/example/qi/compiler_tutorial/conjure3/function.hpp",
+      "bytes": 1292,
+      "type": "0",
+      "sha256": "44c4bc917de24cc1d824f9bdf713bb6b3b64986ed238ab1a7a7bc37cd5060f9e",
+      "saved_as": "c8187b63f33abf4e.inert"
+    },
+    {
+      "name": "./sysroot/boost/libs/spirit/example/qi/compiler_tutorial/conjure3/main.cpp",
+      "bytes": 5047,
+      "type": "0",
+      "sha256": "385d9e32167357f53440f77f0fd8ee45ce53a02ca6c0918fc340e8122ba6d9e7",
+      "saved_as": "1b387fb3b87dc730.inert"
+    },
+    {
+      "name": "./sysroot/boost/libs/spirit/example/qi/compiler_tutorial/conjure3/function.cpp",
+      "bytes": 781,
+      "type": "0",
+      "sha256": "c453333cb937063aa0d9e628b2788c9f8d13a5ef0da724b652fc63c66c80a3b5",
+      "saved_as": "a5ea49e7ca13c1af.inert"
+    },
+    {
+      "name": "./sysroot/boost/libs/spirit/example/qi/compiler_tutorial/conjure3/lexer.cpp",
+      "bytes": 704,
+      "type": "0",
+      "sha256": "da95157fd5183a2035e8322d1a6c74d6fc84bfd1dcd188bc1b879305e9ff76fe",
+      "saved_as": "5bd74c8dd9f7ceea.inert"
+    },
+    {
+      "name": "./sysroot/boost/libs/spirit/example/qi/compiler_tutorial/conjure3/annotation.hpp",
+      "bytes": 3818,
+      "type": "0",
+      "sha256": "0c96a9eae2771eead876a5c720b00aaf3337de6b98bf929766170c7be6dde6be",
+      "saved_as": "7a0d56922af4ba32.inert"
+    },
+    {
+      "name": "./sysroot/boost/libs/spirit/example/qi/compiler_tutorial/conjure3/vm.cpp",
+      "bytes": 1289,
+      "type": "0",
+      "sha256": "3b88c779ae38a4f10b49880199cc8ae51d566908d9ddf9d936b3eb67fc1392f1",
+      "saved_as": "436a73899a165cbb.inert"
+    },
+    {
+      "name": "./sysroot/boost/libs/spirit/example/qi/compiler_tutorial/conjure3/function_def.hpp",
+      "bytes": 2112,
+      "type": "0",
+      "sha256": "250ede18e9cccdc84b23b2106b9fd5cfa8182956d0c42d2a31b7b22bbb55cd81",
+      "saved_as": "8468398c3a4be078.inert"
+    },
+    {
+      "name": "./sysroot/boost/libs/spirit/example/qi/compiler_tutorial/conjure3/statement.hpp",
+      "bytes": 1616,
+      "type": "0",
+      "sha256": "54ba72927d2d08c25c1bea1a1749b9e8e64077b6690aca1ff746f3d9088d1c51",
+      "saved_as": "ac29ce056615f58d.inert"
+    },
+    {
+      "name": "./sysroot/boost/libs/spirit/example/qi/compiler_tutorial/conjure3/vm.hpp",
+      "bytes": 3367,
+      "type": "0",
+      "sha256": "2d403ce212a665bed0daba7c17bb989245a61569d2212bdd1701c3ce18770335",
+      "saved_as": "4403ab0baacfd215.inert"
+    },
+    {
+      "name": "./sysroot/boost/libs/spirit/example/qi/compiler_tutorial/conjure3/ast.hpp",
+      "bytes": 6192,
+      "type": "0",
+      "sha256": "0e0fb27bf5408adc63a11c0e5e938dee7461b7db27480539d0181eb479f6708b",
+      "saved_as": "e5f786bc04b3473e.inert"
+    },
+    {
+      "name": "./sysroot/boost/libs/spirit/example/qi/compiler_tutorial/conjure3/conjure_static_lexer.hpp",
+      "bytes": 16459,
+      "type": "0",
+      "sha256": "a24068890bde8822bc6abe4dc00b32e1c810f16bde3fe847f1b4db72c56ba2bb",
+      "saved_as": "ddae66b2e37354fa.inert"
+    },
+    {
+      "name": "./sysroot/boost/libs/spirit/example/qi/compiler_tutorial/conjure3/conjure_static_lexer_generate.cpp",
+      "bytes": 1320,
+      "type": "0",
+      "sha256": "0ac403437605f14b464daed58fed397c93f02d6f53b136dd9944c1e165e33f31",
+      "saved_as": "118e1e05c8a7c44c.inert"
+    },
+    {
+      "name": "./sysroot/boost/libs/spirit/example/qi/compiler_tutorial/conjure3/expression.cpp",
+      "bytes": 785,
+      "type": "0",
+      "sha256": "e7796d3d12b41f38ed7782fe7465ffb20d7d9f3b8fda2850dc99c5021072b7e6",
+      "saved_as": "319e9d7a16a6c114.inert"
+    },
+    {
+      "name": "./sysroot/boost/libs/spirit/example/qi/compiler_tutorial/conjure3/lexer.hpp",
+      "bytes": 5175,
+      "type": "0",
+      "sha256": "ed3d3ec5d32f9315715eba58a8373d0f797564f5a7fcf444e8a2d2ce7c27b986",
+      "saved_as": "6514cda86484f93f.inert"
+    },
+    {
+      "name": "./sysroot/boost/libs/spirit/example/qi/compiler_tutorial/conjure3/expression_def.hpp",
+      "bytes": 3397,
+      "type": "0",
+      "sha256": "97c1fe1a82e4cb8dfd50c09f4e067667320fea4bdf6587c0ee8bb375a36ed5c5",
+      "saved_as": "f5a43c7a5c73ebf8.inert"
+    },
+    {
+      "name": "./sysroot/boost/libs/spirit/example/qi/compiler_tutorial/conjure3/conjure_static_switch_lexer.hpp",
+      "bytes": 19349,
+      "type": "0",
+      "sha256": "facda089c7f2b02322465e4422ea98239743691c3fea137ee7db5a6da1d9dfce",
+      "saved_as": "72146feedd6ecbbf.inert"
+    },
+    {
+      "name": "./sysroot/boost/libs/spirit/example/qi/compiler_tutorial/conjure3/expression.hpp",
+      "bytes": 2377,
+      "type": "0",
+      "sha256": "d2c7cbb2c74b16267b455aa99f49a6a0dd1d0b3da6a4864844ac842d4de8cb3e",
+      "saved_as": "4b465834b6694bb5.inert"
+    },
+    {
+      "name": "./sysroot/boost/libs/spirit/example/qi/compiler_tutorial/conjure3/compiler.cpp",
+      "bytes": 31004,
+      "type": "0",
+      "sha256": "194c87a12155a8552b26f563c89072b04227308977a7bf1fd06f80f1b86ebc2c",
+      "saved_as": "fe06c9627642cc6d.inert"
+    },
+    {
+      "name": "./sysroot/boost/libs/spirit/example/qi/compiler_tutorial/conjure3/statement_def.hpp",
+      "bytes": 3614,
+      "type": "0",
+      "sha256": "15f3063754030ee9ff322bb7478d0d96d26e1c3e8259ca92abc2263d4f6f055c",
+      "saved_as": "49eddf8d53cd900f.inert"
+    },
+    {
+      "name": "./sysroot/boost/libs/spirit/example/qi/compiler_tutorial/conjure3/statement.cpp",
+      "bytes": 783,
+      "type": "0",
+      "sha256": "45bac41e3a17e6131bf017801d11adaaa0fdfaec00d5c81ecc7540754079fae5",
+      "saved_as": "dc48f6ee39789278.inert"
+    },
+    {
+      "name": "./sysroot/boost/libs/spirit/example/qi/compiler_tutorial/conjure3/lexer_def.hpp",
+      "bytes": 3794,
+      "type": "0",
+      "sha256": "00852ccd64b60116f9ea1c3f5aeec9ad120a54c6804153331b143134bd6686bd",
+      "saved_as": "77cb6bd9c493b567.inert"
+    },
+    {
+      "name": "./sysroot/boost/libs/spirit/example/qi/compiler_tutorial/conjure3/error_handler.hpp",
+      "bytes": 3283,
+      "type": "0",
+      "sha256": "d454f4d80a6f54657fb76f42d1d44d484f769bb808e783d206a44a101ca0639f",
+      "saved_as": "f58d8c943d028a42.inert"
+    },
+    {
+      "name": "./sysroot/boost/libs/spirit/example/qi/compiler_tutorial/conjure3/compiler.hpp",
+      "bytes": 9314,
+      "type": "0",
+      "sha256": "a0725607d578d024c846811362e45b4db715c3d1bdbc0e2c752370c09823b746",
+      "saved_as": "87c661802d21639b.inert"
+    },
+    {
+      "name": "./sysroot/boost/libs/spirit/example/qi/compiler_tutorial/conjure2/config.hpp",
+      "bytes": 2210,
+      "type": "0",
+      "sha256": "f0281df3ae402300635a0001800072ec44b39acb7e6884533bb5552472412636",
+      "saved_as": "df32eb61856c254b.inert"
+    },
+    {
+      "name": "./sysroot/boost/libs/spirit/example/qi/compiler_tutorial/conjure2/ids.hpp",
+      "bytes": 5190,
+      "type": "0",
+      "sha256": "a0b5b106f39fca6f468d08d1a078400fe0d014ac3bee517f0cd53affea1317e1",
+      "saved_as": "a2bb1301aca9467c.inert"
+    },
+    {
+      "name": "./sysroot/boost/libs/spirit/example/qi/compiler_tutorial/conjure2/function.hpp",
+      "bytes": 1292,
+      "type": "0",
+      "sha256": "44c4bc917de24cc1d824f9bdf713bb6b3b64986ed238ab1a7a7bc37cd5060f9e",
+      "saved_as": "db56c95e9af36487.inert"
+    },
+    {
+      "name": "./sysroot/boost/libs/spirit/example/qi/compiler_tutorial/conjure2/main.cpp",
+      "bytes": 4213,
+      "type": "0",
+      "sha256": "c67df19b9710d1e1eb0fe1b2196d02ed5ecbc4d58113db554a888a3c5669356c",
+      "saved_as": "c97d1861eb87d8b6.inert"
+    },
+    {
+      "name": "./sysroot/boost/libs/spirit/example/qi/compiler_tutorial/conjure2/function.cpp",
+      "bytes": 781,
+      "type": "0",
+      "sha256": "c453333cb937063aa0d9e628b2788c9f8d13a5ef0da724b652fc63c66c80a3b5",
+      "saved_as": "dd34ac81e04792b9.inert"
+    },
+    {
+      "name": "./sysroot/boost/libs/spirit/example/qi/compiler_tutorial/conjure2/lexer.cpp",
+      "bytes": 706,
+      "type": "0",
+      "sha256": "40ec21062132bdb8b520c8c0f03ea3423ae75f1833b943244ac610823e1441e5",
+      "saved_as": "fc0bb10f17159584.inert"
+    },
+    {
+      "name": "./sysroot/boost/libs/spirit/example/qi/compiler_tutorial/conjure2/annotation.hpp",
+      "bytes": 2713,
+      "type": "0",
+      "sha256": "fd61d70826538b2bddf9d66901ef5b022a47b4aad3df70ce222734230ae866dd",
+      "saved_as": "822b4cacac4a7416.inert"
+    },
+    {
+      "name": "./sysroot/boost/libs/spirit/example/qi/compiler_tutorial/conjure2/vm.cpp",
+      "bytes": 4807,
+      "type": "0",
+      "sha256": "45a3f63518397d112c50aa224ffa2226b8f87108fee6adaf8ada4fe36267ec90",
+      "saved_as": "f9a0e8f1367f30cb.inert"
+    },
+    {
+      "name": "./sysroot/boost/libs/spirit/example/qi/compiler_tutorial/conjure2/function_def.hpp",
+      "bytes": 2104,
+      "type": "0",
+      "sha256": "41b324ed3e9e7e4df4b150a9b85f41736c6cf395c269f61d71699225cd8b793b",
+      "saved_as": "79ad7a3e14768bac.inert"
+    },
+    {
+      "name": "./sysroot/boost/libs/spirit/example/qi/compiler_tutorial/conjure2/statement.hpp",
+      "bytes": 1616,
+      "type": "0",
+      "sha256": "54ba72927d2d08c25c1bea1a1749b9e8e64077b6690aca1ff746f3d9088d1c51",
+      "saved_as": "9c0b53f56a4a26c1.inert"
+    },
+    {
+      "name": "./sysroot/boost/libs/spirit/example/qi/compiler_tutorial/conjure2/vm.hpp",
+      "bytes": 2929,
+      "type": "0",
+      "sha256": "3ba07676471710c4a553a2598f20498b2c48a8c96411a208af1c89a5879327be",
+      "saved_as": "43f72d960380abb7.inert"
+    },
+    {
+      "name": "./sysroot/boost/libs/spirit/example/qi/compiler_tutorial/conjure2/ast.hpp",
+      "bytes": 5021,
+      "type": "0",
+      "sha256": "bd083c55455e6fc87ebab9c9642a8240a3d4d7fff0ea48defdc0f83c9fbcb2ff",
+      "saved_as": "d352c4e3e02fab1a.inert"
+    },
+    {
+      "name": "./sysroot/boost/libs/spirit/example/qi/compiler_tutorial/conjure2/conjure_static_lexer.hpp",
+      "bytes": 16459,
+      "type": "0",
+      "sha256": "a3709b0fe76fb4ccb62818dccee1fd7bb7b60ec4034f0cf85997d96759e9bb52",
+      "saved_as": "bed79181c9cec288.inert"
+    },
+    {
+      "name": "./sysroot/boost/libs/spirit/example/qi/compiler_tutorial/conjure2/conjure_static_lexer_generate.cpp",
+      "bytes": 1320,
+      "type": "0",
+      "sha256": "0ac403437605f14b464daed58fed397c93f02d6f53b136dd9944c1e165e33f31",
+      "saved_as": "fd621f2b8693dfe5.inert"
+    },
+    {
+      "name": "./sysroot/boost/libs/spirit/example/qi/compiler_tutorial/conjure2/expression.cpp",
+      "bytes": 785,
+      "type": "0",
+      "sha256": "e7796d3d12b41f38ed7782fe7465ffb20d7d9f3b8fda2850dc99c5021072b7e6",
+      "saved_as": "6cf96d0f979b29a4.inert"
+    },
+    {
+      "name": "./sysroot/boost/libs/spirit/example/qi/compiler_tutorial/conjure2/lexer.hpp",
+      "bytes": 4701,
+      "type": "0",
+      "sha256": "5084278f4945baa0f4b2d5fe59a1aa342089c51febec1ec8932742851fb530d9",
+      "saved_as": "409bcade63fab6f7.inert"
+    },
+    {
+      "name": "./sysroot/boost/libs/spirit/example/qi/compiler_tutorial/conjure2/expression_def.hpp",
+      "bytes": 3069,
+      "type": "0",
+      "sha256": "79d93fe9c846fee9669df6dafdddf9603135580dfdf1abaff96178c7c884b2e7",
+      "saved_as": "fe5207ab96dc732b.inert"
+    },
+    {
+      "name": "./sysroot/boost/libs/spirit/example/qi/compiler_tutorial/conjure2/conjure_static_switch_lexer.hpp",
+      "bytes": 19349,
+      "type": "0",
+      "sha256": "cb69ba867387efecd82e595a78a849417a9aa8c93462dfcab5e1264aa75b828f",
+      "saved_as": "43a3b64b73cbab30.inert"
+    },
+    {
+      "name": "./sysroot/boost/libs/spirit/example/qi/compiler_tutorial/conjure2/expression.hpp",
+      "bytes": 2315,
+      "type": "0",
+      "sha256": "86c6b356183ffd752e00b9738188d13c8955fe390ecd8dc77f6494278be63486",
+      "saved_as": "893115c5d59fa80e.inert"
+    },
+    {
+      "name": "./sysroot/boost/libs/spirit/example/qi/compiler_tutorial/conjure2/compiler.cpp",
+      "bytes": 18724,
+      "type": "0",
+      "sha256": "65985601b3550bd1ad03dd1f9b15ba8a7693023de686731823c991001705d3ab",
+      "saved_as": "62bcf65f5336d81a.inert"
+    },
+    {
+      "name": "./sysroot/boost/libs/spirit/example/qi/compiler_tutorial/conjure2/statement_def.hpp",
+      "bytes": 3495,
+      "type": "0",
+      "sha256": "45a1acab1bc64104b09a4212cef16f3ec470e8a19b8a9bf6c48f13f0b0b6e2ea",
+      "saved_as": "12a005c03e3923be.inert"
+    },
+    {
+      "name": "./sysroot/boost/libs/spirit/example/qi/compiler_tutorial/conjure2/statement.cpp",
+      "bytes": 783,
+      "type": "0",
+      "sha256": "45bac41e3a17e6131bf017801d11adaaa0fdfaec00d5c81ecc7540754079fae5",
+      "saved_as": "e89ef7234e5072dc.inert"
+    },
+    {
+      "name": "./sysroot/boost/libs/spirit/example/qi/compiler_tutorial/conjure2/lexer_def.hpp",
+      "bytes": 2585,
+      "type": "0",
+      "sha256": "47f9d42677e5ae67eab69cad444db2c7d939b08df65f81cb0eabee01201e1222",
+      "saved_as": "27a171f6c6cb6e34.inert"
+    },
+    {
+      "name": "./sysroot/boost/libs/spirit/example/qi/compiler_tutorial/conjure2/error_handler.hpp",
+      "bytes": 3439,
+      "type": "0",
+      "sha256": "d516e17592f2a701e419bcb88ba9da3ec72d0b6b071ca86f4413197cbfa17d84",
+      "saved_as": "f8938ac04cd1bbfc.inert"
+    },
+    {
+      "name": "./sysroot/boost/libs/spirit/example/qi/compiler_tutorial/conjure2/compiler.hpp",
+      "bytes": 4375,
+      "type": "0",
+      "sha256": "1d3cffa22d798ddf8762d5e865b5017a7e2775a174b10ed2e3315b3d69af3d3a",
+      "saved_as": "94fb5ff2713b636d.inert"
+    },
+    {
+      "name": "./sysroot/redis/README.md",
+      "bytes": 22441,
+      "type": "0",
+      "sha256": "0b0dd129597c05faeb7f9f1147fc65e1f4d6f4792183ae801ad60a02035dde92",
+      "saved_as": "17ef36fc7b84a38a.inert"
+    },
+    {
+      "name": "./README.md",
+      "bytes": 801,
+      "type": "0",
+      "sha256": "a964bd9357013a2b926a44d2a4e301373242d385510eb785f115134f5ab6f019",
+      "saved_as": "bc1e72189ef6f67f.inert"
+    },
+    {
+      "name": "./rootfs/mdns/README.md",
+      "bytes": 6627,
+      "type": "0",
+      "sha256": "575a88951078fc52b61d9d0bc5b6a91ec41ecf8e359308a4a2c30abef43789ac",
+      "saved_as": "95b06bfc8dbfa0d3.inert"
+    },
+    {
+      "name": "./rootfs/eris/README.md",
+      "bytes": 1545,
+      "type": "0",
+      "sha256": "62e07dd21ef805e06426fcdd2f685632727ae2061a0d706dd13e7b2dbd974076",
+      "saved_as": "aee8a28eac0267a8.inert"
+    },
+    {
+      "name": "./rootfs/OSUpdater/osu/utils/settings/impl/sysreg_settings.cpp",
+      "bytes": 3852,
+      "type": "0",
+      "sha256": "e0376e7c3ae60448e89631cdbc64f69983769914377eb588e0a6d2b03258d885",
+      "saved_as": "da2cb4292a2e58f5.inert"
+    },
+    {
+      "name": "./rootfs/OSUpdater/osu/utils/settings/impl/sysreg_settings.h",
+      "bytes": 1296,
+      "type": "0",
+      "sha256": "dc7999003a2d1e9be313ef815b64790546d0b1305797f399622ea47926dd6f0a",
+      "saved_as": "06265c3339b084fb.inert"
+    },
+    {
+      "name": "./rootfs/OSUpdater/osu/utils/reboot/impl/spock_system_rebooter.cpp",
+      "bytes": 1396,
+      "type": "0",
+      "sha256": "4bcde0400c13c93b64713217603d24dadc5ee9deb922f291987d45c30101cea1",
+      "saved_as": "6869804a53bc72be.inert"
+    },
+    {
+      "name": "./rootfs/OSUpdater/osu/src/commands/loki_command_handler.cpp",
+      "bytes": 2706,
+      "type": "0",
+      "sha256": "fef967dc3be78a755f4936e281a442ba66e7bf67b61ed3c969b77cb444c01744",
+      "saved_as": "dc933d4b838055ab.inert"
+    },
+    {
+      "name": "./rootfs/OSUpdater/osu/src/commands/loki_command_handler.h",
+      "bytes": 1080,
+      "type": "0",
+      "sha256": "cd2d65f86550f1b82845601ffdfa07486812931f29d0abb2d397d0325fe84b86",
+      "saved_as": "c8278f0c73f2c75b.inert"
+    },
+    {
+      "name": "./rootfs/OSUpdater/osu/tests/command_handlers/loki_command_handler_tests.cpp",
+      "bytes": 2839,
+      "type": "0",
+      "sha256": "4634f1e5ab9b5679b8407064d539a6e8b11f70097da60bf711b225d766f17e47",
+      "saved_as": "6478e8f2791467b2.inert"
+    },
+    {
+      "name": "./rootfs/OSUpdater/osu/loki_impl.cpp",
+      "bytes": 108,
+      "type": "0",
+      "sha256": "0af0e00c8cd34e1dc97d94ec62f958b7fcbaa4b42c8f13cfcd9f0e495ef5a2c6",
+      "saved_as": "5a1b6fcdf12a0cee.inert"
+    },
+    {
+      "name": "./rootfs/OSUpdater/README.md",
+      "bytes": 3088,
+      "type": "0",
+      "sha256": "2f004757a9dccd116a683ceb55a91e41ec42c36e8a54f26048e963870ec82cda",
+      "saved_as": "a12fccf0bbbb4efa.inert"
+    }
+  ],
+  "captured_bytes": 596392,
+  "nested_archives": [
+    {
+      "name": "./sysroot/perfetto/test/data/bugreport-crosshatch-SPB5.zip",
+      "bytes": 6220586,
+      "type": "0"
+    },
+    {
+      "name": "./sysroot/perfetto/buildtools/zlib/google/test/data/evil_via_absolute_file_name.zip",
+      "bytes": 172,
+      "type": "0"
+    },
+    {
+      "name": "./sysroot/perfetto/buildtools/zlib/google/test/data/evil_via_invalid_utf8.zip",
+      "bytes": 4585,
+      "type": "0"
+    },
+    {
+      "name": "./sysroot/perfetto/buildtools/zlib/google/test/data/test_mismatch_size.zip",
+      "bytes": 886,
+      "type": "0"
+    },
+    {
+      "name": "./sysroot/perfetto/buildtools/zlib/google/test/data/Mixed Paths.zip",
+      "bytes": 12814,
+      "type": "0"
+    },
+    {
+      "name": "./sysroot/perfetto/buildtools/zlib/google/test/data/test_nocompress.zip",
+      "bytes": 14252,
+      "type": "0"
+    },
+    {
+      "name": "./sysroot/perfetto/buildtools/zlib/google/test/data/evil.zip",
+      "bytes": 241,
+      "type": "0"
+    },
+    {
+      "name": "./sysroot/perfetto/buildtools/zlib/google/test/data/Wrong CRC.zip",
+      "bytes": 231,
+      "type": "0"
+    },
+    {
+      "name": "./sysroot/perfetto/buildtools/zlib/google/test/data/test.zip",
+      "bytes": 5065,
+      "type": "0"
+    },
+    {
+      "name": "./sysroot/perfetto/buildtools/zlib/google/test/data/Repeated Dir Name.zip",
+      "bytes": 210,
+      "type": "0"
+    },
+    {
+      "name": "./sysroot/perfetto/buildtools/zlib/google/test/data/empty.zip",
+      "bytes": 22,
+      "type": "0"
+    },
+    {
+      "name": "./sysroot/perfetto/buildtools/zlib/google/test/data/Repeated File Name With Different Cases.zip",
+      "bytes": 313,
+      "type": "0"
+    },
+    {
+      "name": "./sysroot/perfetto/buildtools/zlib/google/test/data/Windows Special Names.zip",
+      "bytes": 3985,
+      "type": "0"
+    },
+    {
+      "name": "./sysroot/perfetto/buildtools/zlib/google/test/data/test_posix_permissions.zip",
+      "bytes": 574,
+      "type": "0"
+    },
+    {
+      "name": "./sysroot/perfetto/buildtools/zlib/google/test/data/Parent Dir Same Name As File.zip",
+      "bytes": 241,
+      "type": "0"
+    },
+    {
+      "name": "./sysroot/perfetto/buildtools/zlib/google/test/data/SJIS Bug 846195.zip",
+      "bytes": 479,
+      "type": "0"
+    },
+    {
+      "name": "./sysroot/perfetto/buildtools/zlib/google/test/data/Different Encryptions.zip",
+      "bytes": 1083,
+      "type": "0"
+    },
+    {
+      "name": "./sysroot/perfetto/buildtools/zlib/google/test/data/Empty Dir Same Name As File.zip",
+      "bytes": 218,
+      "type": "0"
+    },
+    {
+      "name": "./sysroot/perfetto/buildtools/zlib/google/test/data/Repeated File Name.zip",
+      "bytes": 227,
+      "type": "0"
+    },
+    {
+      "name": "./sysroot/perfetto/buildtools/zlib/google/test/data/test_encrypted.zip",
+      "bytes": 5325,
+      "type": "0"
+    },
+    {
+      "name": "./sysroot/boost/tools/boostdep/test/utf8-test.zip",
+      "bytes": 495,
+      "type": "0"
+    },
+    {
+      "name": "./sysroot/sysroot/readline/examples/rlwrap-0.30.tar.gz",
+      "bytes": 184033,
+      "type": "0"
+    },
+    {
+      "name": "./sysroot/sysroot/linux-utils/tests/ts/lsblk/dumps/simple-lvm.tar.xz",
+      "bytes": 14216,
+      "type": "0"
+    },
+    {
+      "name": "./sysroot/sysroot/linux-utils/tests/ts/lsblk/dumps/simple-nvme.tar.xz",
+      "bytes": 10292,
+      "type": "0"
+    },
+    {
+      "name": "./sysroot/sysroot/linux-utils/tests/ts/lsmem/dumps/x86_64-16g.tar.bz2",
+      "bytes": 8660,
+      "type": "0"
+    },
+    {
+      "name": "./sysroot/sysroot/linux-utils/tests/ts/lsmem/dumps/s390-zvm-6g.tar.bz2",
+      "bytes": 2459,
+      "type": "0"
+    },
+    {
+      "name": "./sysroot/sysroot/linux-utils/tests/ts/lscpu/dumps/ppc64-POWER7-64cpu.tar.gz",
+      "bytes": 56867,
+      "type": "0"
+    },
+    {
+      "name": "./sysroot/sysroot/linux-utils/tests/ts/lscpu/dumps/x86_64-dell_e4310.tar.gz",
+      "bytes": 12933,
+      "type": "0"
+    },
+    {
+      "name": "./sysroot/sysroot/linux-utils/tests/ts/lscpu/dumps/s390-lpar-drawer.tar.gz",
+      "bytes": 18131,
+      "type": "0"
+    },
+    {
+      "name": "./sysroot/sysroot/linux-utils/tests/ts/lscpu/dumps/s390-zvm.tar.gz",
+      "bytes": 2582,
+      "type": "0"
+    },
+    {
+      "name": "./sysroot/sysroot/linux-utils/tests/ts/lscpu/dumps/sparc64.tar.gz",
+      "bytes": 2756,
+      "type": "0"
+    },
+    {
+      "name": "./sysroot/sysroot/linux-utils/tests/ts/lscpu/dumps/armv7.tar.gz",
+      "bytes": 3163,
+      "type": "0"
+    },
+    {
+      "name": "./sysroot/sysroot/linux-utils/tests/ts/lscpu/dumps/s390-kvm.tar.gz",
+      "bytes": 2275,
+      "type": "0"
+    },
+    {
+      "name": "./sysroot/sysroot/linux-utils/tests/ts/lscpu/dumps/vbox-win.tar.gz",
+      "bytes": 15769,
+      "type": "0"
+    },
+    {
+      "name": "./sysroot/sysroot/linux-utils/tests/ts/lscpu/dumps/ppc64-POWER7.tar.gz",
+      "bytes": 14350,
+      "type": "0"
+    },
+    {
+      "name": "./sysroot/sysroot/linux-utils/tests/ts/lscpu/dumps/s390-lpar.tar.gz",
+      "bytes": 6611,
+      "type": "0"
+    },
+    {
+      "name": "./sysroot/sysroot/linux-utils/tests/ts/lscpu/dumps/ppc-qemu.tar.gz",
+      "bytes": 2014,
+      "type": "0"
+    },
+    {
+      "name": "./sysroot/sysroot/linux-utils/tests/ts/lscpu/dumps/x86_64-64cpu.tar.gz",
+      "bytes": 153140,
+      "type": "0"
+    },
+    {
+      "name": "./sysroot/sysroot/pipewire/subprojects/wireplumber/subprojects/packagecache/lua_5.4.4-1_patch.zip",
+      "bytes": 2306,
+      "type": "0"
+    },
+    {
+      "name": "./sysroot/sysroot/pipewire/subprojects/wireplumber/subprojects/packagecache/lua-5.4.4.tar.gz",
+      "bytes": 360876,
+      "type": "0"
+    },
+    {
+      "name": "./rootfs/external/e2fsprogs/tests/j_corrupt_ext_jnl_sb_csum/image.tar.bz2",
+      "bytes": 929,
+      "type": "0"
+    },
+    {
+      "name": "./rootfs/external/e2fsprogs/tests/j_corrupt_ext_jnl_sb_block/image.tar.bz2",
+      "bytes": 939,
+      "type": "0"
+    },
+    {
+      "name": "./rootfs/external/toybox/tests/files/zip/example.zip",
+      "bytes": 1082,
+      "type": "0"
+    },
+    {
+      "name": "./rootfs/external/toybox/tests/files/tar/tar.tgz",
+      "bytes": 166,
+      "type": "0"
+    }
+  ],
+  "limits": [
+    "Filename inventory plus selected small files only; embedded archives not searched.",
+    "Only regular-file bytes copied to flat inert names; no code execution or TV changes."
+  ]
+}

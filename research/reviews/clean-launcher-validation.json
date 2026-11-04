@@ -1,0 +1,63 @@
+{
+  "date": "2026-11-01",
+  "browser_verified": [
+    "launcher renders",
+    "Right selects Netflix",
+    "Down selects TV / HDMI",
+    "Stremio button navigates to local full app",
+    "new on-screen Home link returns to clean launcher",
+    "all eleven app tiles render without overflow at 1280x720",
+    "arrows navigate through rows to Apple TV",
+    "owner wallpaper renders with readable translucent tiles; original image unchanged"
+  ],
+  "http_verified": [
+    "all three fixed launcher assets return 200",
+    "launcher CSP permits only local styles/scripts/connections",
+    "unknown apps rejected with 400",
+    "additional descriptor fields rejected with 400",
+    "foreign Origin rejected with 403",
+    "routine event POST does not append activity log"
+  ],
+  "tv_pending": [
+    "exhaustive per-app launch enumeration",
+    "Stremio new on-screen Home return paths specifically",
+    "clean launcher on actual standby/wake"
+  ],
+  "tv_unchanged": [
+    "physical Home/Input destination",
+    "firmware",
+    "app registry"
+  ],
+  "privacy_settings": "normal menu toggles changed and read back; see privacy-settings-result.json",
+  "startup": "clean launcher selected; previous Stremio wake automation owner verified; clean-page wake test pending",
+  "owner_verified": [
+    "initial clean launcher remote navigation and Netflix launch seemed to work",
+    "physical Home shows Vizio Home for roughly three seconds then clean screen",
+    "follow-up app-launch / Home-return / TV-HDMI flow: owner reports everything seems to work; individual apps not enumerated",
+    "arrows responsive after wallpaper removal"
+  ],
+  "home_redirect": {
+    "enabled": true,
+    "match": {
+      "input": "SMARTCAST",
+      "NAME_SPACE": 4,
+      "APP_ID": "1"
+    },
+    "observed_hdmi": "HDMI-2",
+    "owner_verified": true,
+    "stock_home_visible_seconds_approx": 2,
+    "removes_stock_home": false,
+    "observed_estimate_range_seconds": [
+      2,
+      3
+    ],
+    "latest_owner_report": "everything seems to work; Home returns to our launcher after about two seconds of Walmart OEM Vizio Home"
+  },
+  "standalone_investigation": {
+    "status": "current implementation fails independent app launching/Home return; native installation investigation remains open",
+    "tv_runtime_probe": "completed; see owner-tv-local-runtime.json",
+    "pc_service_disconnect_test": "repeat complete; three units inactive, both ports closed, owner confirmed no apps/Home return; helpers automatically restored",
+    "native_local_installation": "not established"
+  },
+  "wallpaper_state": "disabled; owner confirms responsive arrows with plain background"
+}

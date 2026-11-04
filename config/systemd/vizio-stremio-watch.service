@@ -1,0 +1,17 @@
+[Unit]
+Description=Owner TV Stremio watch
+StartLimitIntervalSec=0
+Requires=vizio-stremio-lab.service vizio-stremio-engine.service
+After=vizio-stremio-lab.service vizio-stremio-engine.service
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/python3 "/path/to/WalmartStremio/scripts/service_entry.py" watch --bind 192.0.2.24
+Restart=on-failure
+RestartSec=5
+UMask=0077
+StandardOutput=null
+StandardError=null
+
+[Install]
+WantedBy=default.target

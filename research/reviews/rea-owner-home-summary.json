@@ -1,0 +1,256 @@
+{
+  "parent_evidence_id": "ev_f9297eacf59f1aef51ebd6362f15c9fc4b4257fc7f6c6d19167132a3dc78f748",
+  "artifact": {
+    "path": "/path/to/WalmartStremio/.private/owner-actual-home",
+    "sha256": "6d9f2ae3c7017500b2a9f2874c3f732e8cc7fc8b9864547f1b6d7cae877f29c2"
+  },
+  "summary": {
+    "coverage": {
+      "application": {
+        "limits": [],
+        "omitted_count": null,
+        "status": "partial",
+        "truncated": false
+      },
+      "application_unknowns": 2,
+      "semantic": {
+        "families": [
+          {
+            "family": "boundary",
+            "omitted_relations": null,
+            "retained_relations": 0,
+            "status": "partial",
+            "unknown_count": 0
+          },
+          {
+            "family": "call-flow",
+            "omitted_relations": null,
+            "retained_relations": 1109,
+            "status": "partial",
+            "unknown_count": 4284
+          },
+          {
+            "family": "child-process",
+            "omitted_relations": null,
+            "retained_relations": 0,
+            "status": "partial",
+            "unknown_count": 0
+          },
+          {
+            "family": "closure",
+            "omitted_relations": null,
+            "retained_relations": 8819,
+            "status": "partial",
+            "unknown_count": 0
+          },
+          {
+            "family": "configuration",
+            "omitted_relations": null,
+            "retained_relations": 0,
+            "status": "partial",
+            "unknown_count": 0
+          },
+          {
+            "family": "data-flow",
+            "omitted_relations": null,
+            "retained_relations": 14107,
+            "status": "partial",
+            "unknown_count": 8152
+          },
+          {
+            "family": "event",
+            "omitted_relations": null,
+            "retained_relations": 0,
+            "status": "partial",
+            "unknown_count": 0
+          },
+          {
+            "family": "object-flow",
+            "omitted_relations": null,
+            "retained_relations": 1022,
+            "status": "partial",
+            "unknown_count": 17811
+          },
+          {
+            "family": "promise-ownership",
+            "omitted_relations": null,
+            "retained_relations": 0,
+            "status": "partial",
+            "unknown_count": 0
+          },
+          {
+            "family": "request",
+            "omitted_relations": null,
+            "retained_relations": 0,
+            "status": "partial",
+            "unknown_count": 0
+          },
+          {
+            "family": "resource-lifecycle",
+            "omitted_relations": null,
+            "retained_relations": 0,
+            "status": "partial",
+            "unknown_count": 0
+          },
+          {
+            "family": "timer",
+            "omitted_relations": null,
+            "retained_relations": 0,
+            "status": "partial",
+            "unknown_count": 12
+          }
+        ],
+        "limits": [
+          {
+            "name": "max_semantic_nodes",
+            "unit": "items",
+            "value": 100000
+          },
+          {
+            "name": "max_semantic_nodes_per_file",
+            "unit": "items",
+            "value": 20000
+          },
+          {
+            "name": "max_semantic_unknowns",
+            "unit": "items",
+            "value": 100000
+          },
+          {
+            "name": "max_semantic_unknowns_per_file",
+            "unit": "items",
+            "value": 20000
+          },
+          {
+            "name": "semantic_graph_file_node_ceiling",
+            "unit": "items",
+            "value": 20000
+          },
+          {
+            "name": "semantic_graph_file_unknown_ceiling",
+            "unit": "items",
+            "value": 20000
+          },
+          {
+            "name": "semantic_graph_node_ceiling",
+            "unit": "items",
+            "value": 100000
+          },
+          {
+            "name": "semantic_graph_unknown_ceiling",
+            "unit": "items",
+            "value": 100000
+          }
+        ],
+        "omitted_nodes": null,
+        "omitted_relations": null,
+        "omitted_unknown_occurrences": [
+          {
+            "family": "call-flow",
+            "occurrences": 8092,
+            "reason": "dynamic-call"
+          },
+          {
+            "family": "object-flow",
+            "occurrences": 107,
+            "reason": "dynamic-property"
+          }
+        ],
+        "status": "partial",
+        "truncated": true
+      },
+      "semantic_unknowns": 30259,
+      "static_sources": {
+        "electron_applicability": {
+          "observed": 0,
+          "unknown": 2
+        },
+        "examination": {
+          "complete": 1,
+          "limited": 1,
+          "not-examined": 0
+        },
+        "semantics": {
+          "unexamined_sources": 0,
+          "unknown_sources": 2
+        },
+        "sources": 2,
+        "syntax": {
+          "complete": 2,
+          "failed": 0,
+          "not-examined": 0,
+          "recovered": 0
+        },
+        "unmeasured_sources": 0
+      }
+    },
+    "electron": {
+      "browser_windows": 0,
+      "context_bridge_apis": 0,
+      "explicit_web_preferences": 0,
+      "exposed_api_members": 0,
+      "ipc": {
+        "ambiguous_renderer_transmissions": 0,
+        "dynamic_channel_operations": 0,
+        "literal_channels": 0,
+        "main_handlers": 0,
+        "operations": 0,
+        "paired_renderer_transmissions": 0,
+        "renderer_listeners": 0,
+        "renderer_transmissions": 0,
+        "unpaired_literal_renderer_transmissions": 0
+      },
+      "native_addon_bindings": 0,
+      "preload_entrypoints": 0,
+      "resolved_native_addon_bindings": 0,
+      "resolved_utility_entrypoints": 0,
+      "sender_validation_observations": 0,
+      "utility_processes": 0
+    },
+    "format": "directory",
+    "input_path": "/path/to/WalmartStremio/.private/owner-actual-home",
+    "limitation_count": 20,
+    "root_artifact_sha256": "6d9f2ae3c7017500b2a9f2874c3f732e8cc7fc8b9864547f1b6d7cae877f29c2",
+    "source_selection": {
+      "requested_paths": [
+        "sctv-app.js",
+        "system-ui-main.js"
+      ],
+      "unselected_files": 2
+    },
+    "statistics": {
+      "findings": 53,
+      "invalid_utf8_files": 0,
+      "modules": 0,
+      "nested_asar_containers": 0,
+      "parse_failures": 0,
+      "parsed_javascript_files": 2,
+      "relevant_files": 4,
+      "skipped_javascript_files": 0,
+      "text_bytes_read": 700702,
+      "visited_ast_nodes": 160970
+    }
+  },
+  "limitations": [
+    "Boundary extraction covers unshadowed JSON/global coercions plus parse and validation method candidates.",
+    "Caller-selected source analysis leaves 2 inventoried files outside analysis scope. Inventory identity covers the complete artifact; relationships through unselected sources remain unknown.",
+    "Child-process extraction covers asynchronous node:child_process creation, literal argv/env/stdio options, exit/error listeners, and kill signals.",
+    "CommonJS and ESM binding relationships were recovered from inert syntax and resolved only within the inventoried artifact container.",
+    "Configuration extraction covers process.env, process.argv, node:fs reads, and direct logical defaults.",
+    "Event extraction covers EventEmitter-style literal registrations, removals, and dispatch candidates; dynamic names remain unknown.",
+    "Function fingerprints are static candidates; equal digests can remain ambiguous and do not prove behavioral equivalence.",
+    "Graph coverage is incomplete; unavailable facts remain explicit and must not be read as absence.",
+    "JavaScript and HTML were parsed as inert text; bundle bootstrap code was never executed.",
+    "Local data flow does not claim control-flow-sensitive reaching definitions or arbitrary dynamic property resolution.",
+    "Promise ownership covers explicit unshadowed Promise construction, static factories, aggregation, chaining, and await syntax only.",
+    "Request extraction covers fetch, WebSocket, node:http/node:https construction, direct option fields, and exact local response consumers.",
+    "Resource extraction covers built-in filesystem/network acquisition and exact local close/destroy/end handles.",
+    "Semantic node retention reached max_semantic_nodes_per_file is 20000 (default 20000; an integer from 1 to 1000000). Set max_semantic_nodes_per_file on the next analyze_javascript_application call (CLI: --max-semantic-nodes-per-file). The change applies to that next analysis and does not restart the worker or the REA server. Raising it does not raise max_semantic_unknowns, max_heap_mb, transfer ceilings, or the parent result budget. Coverage reports the same effective values as semantic_graph_node_ceiling and semantic_graph_file_node_ceiling.",
+    "Semantic unknown retention reached max_semantic_unknowns_per_file is 20000 (default 20000; an integer from 1 to 1000000). Set max_semantic_unknowns_per_file on the next analyze_javascript_application call (CLI: --max-semantic-unknowns-per-file). The change applies to that next analysis and does not restart the worker or the REA server. Raising it does not raise max_semantic_nodes, max_heap_mb, transfer ceilings, or the parent result budget. Coverage reports the same effective values as semantic_graph_unknown_ceiling and semantic_graph_file_unknown_ceiling. Omission coverage counts examined emission occurrences by family and reason, including repeats; it does not count unexamined source frontiers or distinct discarded identities.",
+    "Static imports, entrypoints, workers, endpoints, and storage relationships do not prove runtime execution.",
+    "Static paths and relationships may remain unresolved when expressions are dynamic or obfuscated.",
+    "The semantic graph contains static syntax observations and conservative relationship candidates; it does not claim runtime execution.",
+    "Timer extraction covers global or node:timers scheduling and exact local-handle cancellation.",
+    "Webpack/Rspack factories were recovered from AST literals; REA did not invoke push handlers or bundle bootstrap code."
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "date": "2026-11-02",
+  "authority": "Manufacturer GitHub repositories and their referenced download page",
+  "repository": "https://github.com/opensource-vizio/5586L_FUR9.2_OpenSourceSoftware",
+  "readme": "https://github.com/opensource-vizio/5586L_FUR9.2_OpenSourceSoftware/blob/main/README.md",
+  "readme_git_blob": "c2cfa3e550fe0d7876ecbb5d1ae6ee84737ab746",
+  "published_identifiers": {
+    "chipset": "5586L",
+    "release": "FUR9.2",
+    "firmware_family": "86.920.X.Y"
+  },
+  "archive_name": "5586L_FUR9.2.tar.gz",
+  "download_page": "https://d2mi77xcznxniv.cloudfront.net/index.html?file=5586L_FUR9.2.tar.gz",
+  "published_checksums": {
+    "source": "https://github.com/opensource-vizio/5586L_FUR9.2_OpenSourceSoftware/blob/main/checksums",
+    "git_blob": "15e8843e37eac0d30b3a9e67120d94a02096af18",
+    "sha1": "31e9a0f603a666c47ffa22aa82332c11e0869a3c",
+    "md5": "84174019c114cbdc6d7755567f6a39fc"
+  },
+  "acquisition": {
+    "status": "Owner provided project-root archive; manufacturer SHA1/MD5 verified; top-level and two referenced nested archive inventories completed",
+    "form_fields": [
+      "name",
+      "email",
+      "phone",
+      "company"
+    ],
+    "form_notice": "Collection for compliance, audit and download tracking",
+    "personal_information_submitted_by_Codex": false,
+    "direct_public_archive_head_status": 403,
+    "local_path": "5586L_FUR9.2.tar.gz"
+  },
+  "relevance": "Firmware family matches prefix; exact model, chipset suffix and running build/source correspondence not established",
+  "next_question": "Acquire actual owner-build Home/Loki-bundles resources or evidenced artifact reference; none recovered in inspected material",
+  "smallest_test": "Verify vendor SHA1/MD5 plus record own SHA256; inventory archive members without executing scripts; read top-level README and only relevant loader/resource references",
+  "expected_outcomes": [
+    "Actual relevant source/resources: inspect exact path and build identity; do not assume binary equivalence",
+    "Open-source dependencies/relink stubs only: record bounded absence and missing proprietary Home/loader artifact",
+    "Identity mismatch: stop and diagnose archive before using contents"
+  ],
+  "stopping_condition": "No build/install/flash actions; stop if archive identity mismatches or relevant proprietary components are absent",
+  "limits": [
+    "Not an exact source-to-device build match; internal documentation uses mixed F/L and9.1/9.2 labels",
+    "Open-source release is not a TV recovery image",
+    "Five fonts in outer LOKI directory; selected source includes OSUpdater but not Home renderer",
+    "Other embedded dependency/toolchain archives not recursively searched"
+  ],
+  "review": "research/reviews/vendor-5586l-fur92-review.json"
+}

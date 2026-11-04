@@ -1,0 +1,106 @@
+{
+  "date": "2026-11-01",
+  "model": "W4K65M-1031",
+  "firmware": "86.920.9.3-2",
+  "browser_storage_only": true,
+  "native_installed": false,
+  "physical_home_replaced": false,
+  "cold_start_verified": false,
+  "observations": {
+    "loopback-file-write.json": {
+      "phase": "write",
+      "origin": "http://127.0.0.1:12345",
+      "protocol": "http:",
+      "steps": [
+        "persistent-filesystem-opened",
+        "exclusive-directory-created",
+        "file-written-and-byte-readback-matched",
+        "attempting-local-page-navigation",
+        "top-navigation-did-not-unload",
+        "rendering-own-stored-file-in-local-document"
+      ],
+      "error": null,
+      "url": "filesystem:http://127.0.0.1:12345/persistent/owner-tv-lab-disposable-v1/local-test.html"
+    },
+    "loopback-file-executed-initial.json": {
+      "phase": "executed",
+      "origin": "http://127.0.0.1:12345",
+      "protocol": "http:",
+      "steps": [
+        "self-contained-local-page-running"
+      ],
+      "error": null,
+      "url": null
+    },
+    "loopback-file-executed.json": {
+      "phase": "executed",
+      "origin": "http://127.0.0.1:12345",
+      "protocol": "http:",
+      "steps": [
+        "self-contained-local-page-running"
+      ],
+      "error": null,
+      "url": null
+    },
+    "loopback-file-cleanup.json": {
+      "phase": "cleanup",
+      "origin": "http://127.0.0.1:12345",
+      "protocol": "http:",
+      "steps": [
+        "persistent-filesystem-opened",
+        "own-directory-removed"
+      ],
+      "error": null,
+      "url": null
+    },
+    "loopback-control-read.json": {
+      "origin": "http://127.0.0.1:12345",
+      "bootstrap_status": 200,
+      "token_available": true,
+      "capabilities_status": 200,
+      "capability_keys": [
+        "STATUS",
+        "ITEM",
+        "URI"
+      ],
+      "bindings": {
+        "vizio": {
+          "type": "object",
+          "own_names": [],
+          "prototype_names": [
+            "constructor",
+            "createSystemRegistryConnection",
+            "createVizioConnectionConnection",
+            "createAppLaunchConnection",
+            "createLokiConnection",
+            "createVizioTestConnection"
+          ]
+        },
+        "vizioSystemRegistry": {
+          "type": "object",
+          "own_names": [],
+          "prototype_names": [
+            "constructor",
+            "get",
+            "set",
+            "subscribeToKeyChange",
+            "unsubscribeToKeyChange"
+          ]
+        }
+      },
+      "error": null
+    }
+  },
+  "effects": [
+    "Created exclusively owner-tv-lab-disposable-v1/local-test.html inside Chromium PERSISTENT sandbox; readback matched.",
+    "Cleanup of that exact disposable directory succeeded and test file was recreated.",
+    "No native filesystem path, registry/configuration write, service-worker registration or firmware change.",
+    "Local control credential requested through documented SDK bootstrap and used only in the TV closure for GET /system/capabilities; token was not stored, returned to PC or included in a URL."
+  ],
+  "limits": [
+    "Top-level filesystem URL navigation did not unload the document. Rendering read-back HTML in local-origin document worked.",
+    "TV-only bootstrap reloaded stored HTML after leaving the test app; a PC launch/trampoline still initiated the test.",
+    "Not yet tested across full power loss.",
+    "No physical Home or startup entry has been changed."
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "archive": "5586L_FUR9.2.tar.gz",
+  "bytes": 6738959096,
+  "digests": {
+    "sha1": "31e9a0f603a666c47ffa22aa82332c11e0869a3c",
+    "md5": "84174019c114cbdc6d7755567f6a39fc",
+    "sha256": "5bc7e3646fa6130ce8538cab26046427770560a7c5025d20de75ecb8a6234ea5"
+  },
+  "published_checksums_match": true,
+  "elapsed_seconds": 16.5
+}

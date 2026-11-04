@@ -1,0 +1,9 @@
+{
+  "url": "https://vizio-pm.s3-us-west-1.amazonaws.com/conjure-launcher.html",
+  "sha256": "ca92a3074dd9938c8636f4fa2cc15eddc6633cc8731d4a760bc4effcbe6d6b2f",
+  "observed_source": "Normal PIN pairing followed by PUT /app/launch, namespace 4, app 17, MESSAGE URL. No install/ZIP flow in this captured page.",
+  "executed": false,
+  "owner_app_17_tested": false,
+  "developer_device_documentation": "https://docs.tvlabs.ai/platform/platforms/smartcast",
+  "limitation": "Developer-session ZIP sideloading documentation does not establish retail model installation or Home replacement."
+}

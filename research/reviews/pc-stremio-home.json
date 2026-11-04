@@ -1,0 +1,33 @@
+{
+  "date": "2026-11-02",
+  "owner_choice": "physical Home redirects directly to PC-hosted Stremio",
+  "pc_health": {
+    "host": 200,
+    "launcher": 200,
+    "stremio": 200,
+    "engine_settings": 200
+  },
+  "offline_checks_passed": 8,
+  "configuration": {
+    "redirect_home": true,
+    "screen": "stremio"
+  },
+  "watcher": "active and enabled at boot",
+  "new_tv_launch": "Stremio server settings API SUCCESS",
+  "visual_result": "pending owner feedback",
+  "replacement": {
+    "model": "W4K65M-1030",
+    "firmware": "86.920.9.3-2",
+    "software": "86.920.9.3-2.12",
+    "normal_pin_pairing": "passed",
+    "authenticated_control_reads": "passed",
+    "pc_host_engine_allowlist": "updated",
+    "selected_input": "HDMI-3",
+    "pc_connected_input": "unconfirmed"
+  },
+  "active_shortcut": "WatchFree -> Stremio",
+  "home_redirect": false,
+  "watchfree_redirect": true,
+  "owner_visual_confirmation": "Confirmed Stremio opens after physical WatchFree press",
+  "torrentio": "One configured descriptor verified by replacement TV browser client"
+}

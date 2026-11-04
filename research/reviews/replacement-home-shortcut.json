@@ -1,0 +1,25 @@
+{
+  "date": "2026-11-02",
+  "model": "W4K65M-1030",
+  "before": {
+    "input": "SMARTCAST",
+    "app": {
+      "NAME_SPACE": 4,
+      "APP_ID": "3001"
+    }
+  },
+  "home_key_command_status": "SUCCESS",
+  "observed_changes": [
+    {
+      "input": "SMARTCAST",
+      "app": {
+        "NAME_SPACE": 4,
+        "APP_ID": "3001"
+      }
+    }
+  ],
+  "watcher_accepted_launch": false,
+  "target": "PC-hosted /stremio/#/",
+  "owner_visual_confirmation": "pending",
+  "scope": "Normal remote command and app launch; no firmware/Home registry write."
+}

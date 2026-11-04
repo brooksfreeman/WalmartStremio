@@ -1,0 +1,145 @@
+{
+  "component": "acr-relink",
+  "identity": {
+    "member": "5586L_FUR9.2/ACR/libACR.tar.xz",
+    "component": "acr-relink",
+    "saved_as": "acr-relink.tar.xz",
+    "bytes": 43366596,
+    "sha256": "477dc65535270593cb90c60a7af8eddd1b722239617b09a53ab305355ec8adf0"
+  },
+  "complete_tar_inventory": true,
+  "members": 18410,
+  "prefixes": {
+    "libACR/lgpl-src": 21,
+    "libACR/LICENSES": 1,
+    "libACR/relink_instructions": 16660,
+    "libACR/libACR.so": 1,
+    "libACR/lgpl-libs": 2,
+    "libACR/Readme.md": 1
+  },
+  "candidate_paths": [
+    {
+      "name": "libACR/relink_instructions/_vsl_libs/include/vsl/sysreg_wrap.h",
+      "bytes": 20358,
+      "type": "0"
+    },
+    {
+      "name": "libACR/relink_instructions/_vsl_libs/include/vsl/loki_datasession.hpp",
+      "bytes": 387,
+      "type": "0"
+    },
+    {
+      "name": "libACR/relink_instructions/_vsl_libs/loki_datasession/include/vsl/private/loki_datasession/LokiDataSession.hpp",
+      "bytes": 4304,
+      "type": "0"
+    },
+    {
+      "name": "libACR/relink_instructions/_vsl_libs/loki_datasession/include/vsl/private/loki_datasession/LokiDataSessionFactory.hpp",
+      "bytes": 902,
+      "type": "0"
+    },
+    {
+      "name": "libACR/relink_instructions/_vsl_libs/loki_datasession/include/vsl/private/loki_datasession/Loki.hpp",
+      "bytes": 4114,
+      "type": "0"
+    },
+    {
+      "name": "libACR/relink_instructions/_vsl_libs/loki_datasession/include/vsl/private/loki_datasession/LokiProxy.hpp",
+      "bytes": 1997,
+      "type": "0"
+    },
+    {
+      "name": "libACR/relink_instructions/_vsl_libs/loki_datasession/include/vsl/private/loki_datasession/LokiProxyFactory.hpp",
+      "bytes": 1053,
+      "type": "0"
+    },
+    {
+      "name": "libACR/relink_instructions/_vsl_libs/unit_testing/include/vsl/mocks/LokiProxyMock.hpp",
+      "bytes": 1346,
+      "type": "0"
+    },
+    {
+      "name": "libACR/relink_instructions/_vsl_libs/unit_testing/include/vsl/mocks/LokiDataSessionMock.hpp",
+      "bytes": 1377,
+      "type": "0"
+    }
+  ],
+  "inert_captures": [
+    {
+      "name": "libACR/relink_instructions/_vsl_libs/include/vsl/sysreg_wrap.h",
+      "bytes": 20358,
+      "type": "0",
+      "saved_as": "9e1e159f9f2b74bb.inert",
+      "sha256": "baffd00e934c9a204ecddd7bc38f1ddd8037c031bffcc86cc825ecdceaf44c60"
+    },
+    {
+      "name": "libACR/relink_instructions/_vsl_libs/include/vsl/loki_datasession.hpp",
+      "bytes": 387,
+      "type": "0",
+      "saved_as": "5313eb1ff700feb6.inert",
+      "sha256": "85d5331536186c3be1e94d769bdda19bbf69e0430dc4b76656fa21eef82d6f7f"
+    },
+    {
+      "name": "libACR/relink_instructions/_vsl_libs/loki_datasession/include/vsl/private/loki_datasession/LokiDataSession.hpp",
+      "bytes": 4304,
+      "type": "0",
+      "saved_as": "0a1c892b5a74c2d2.inert",
+      "sha256": "192fba0c19720a6dafcfcb5c3521b81e3a8be2b2d8cb78992f03ae078b86f420"
+    },
+    {
+      "name": "libACR/relink_instructions/_vsl_libs/loki_datasession/include/vsl/private/loki_datasession/LokiDataSessionFactory.hpp",
+      "bytes": 902,
+      "type": "0",
+      "saved_as": "a19779225e2472a9.inert",
+      "sha256": "aadbac5f7d9518b6c3e0692204c7a51a22bd1e2d2052167aae3a49828a39af49"
+    },
+    {
+      "name": "libACR/relink_instructions/_vsl_libs/loki_datasession/include/vsl/private/loki_datasession/Loki.hpp",
+      "bytes": 4114,
+      "type": "0",
+      "saved_as": "993a43e495fb81da.inert",
+      "sha256": "57de34b9d7822240242dd0c5549a81108a22c5b93b6e383295864754a6ea0f9a"
+    },
+    {
+      "name": "libACR/relink_instructions/_vsl_libs/loki_datasession/include/vsl/private/loki_datasession/LokiProxy.hpp",
+      "bytes": 1997,
+      "type": "0",
+      "saved_as": "ca644c96b2a67e37.inert",
+      "sha256": "4ca82428e4fd23b99793660b0983e76608999ec03a81c3128cd6a3082759c999"
+    },
+    {
+      "name": "libACR/relink_instructions/_vsl_libs/loki_datasession/include/vsl/private/loki_datasession/LokiProxyFactory.hpp",
+      "bytes": 1053,
+      "type": "0",
+      "saved_as": "94a010915872b36e.inert",
+      "sha256": "ecad780bf59f8bcb2b0ca06bf678a34f69eaea5dd3b91b2080b041db2cdacb0c"
+    },
+    {
+      "name": "libACR/relink_instructions/_vsl_libs/unit_testing/include/vsl/mocks/LokiProxyMock.hpp",
+      "bytes": 1346,
+      "type": "0",
+      "saved_as": "939c13572f73b1fc.inert",
+      "sha256": "9a72ef9fd1f4aaeb6b453f5d121e369e66f1c3bb8f3a8ff6bfdd80fd34fc4fcd"
+    },
+    {
+      "name": "libACR/relink_instructions/_vsl_libs/unit_testing/include/vsl/mocks/LokiDataSessionMock.hpp",
+      "bytes": 1377,
+      "type": "0",
+      "saved_as": "47936bf57dc42234.inert",
+      "sha256": "fd3f53f3519f32aff1a7d57ea1f8e0e2c2ffd29ea73fcacda16b9992de9a584f"
+    },
+    {
+      "name": "libACR/Readme.md",
+      "bytes": 33,
+      "type": "0",
+      "saved_as": "9d0fbc6ddaef4bb8.inert",
+      "sha256": "4272e3b02b21fd814087bf1ad597062c665b97dbd6abfece8818844ce8a023d0"
+    }
+  ],
+  "captured_bytes": 35871,
+  "limits": [
+    "Filename inventory and selected small files only; no generic binary symbol scan.",
+    "Other embedded archives not recursively expanded; header names do not prove runtime availability.",
+    "No file paths extracted or links followed; no scripts or code executed; no TV operations."
+  ]
+}

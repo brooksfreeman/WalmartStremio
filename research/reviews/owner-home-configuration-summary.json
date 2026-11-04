@@ -1,0 +1,34 @@
+{
+  "model": "W4K65M-1031",
+  "firmware": "86.920.9.3-2",
+  "authority": "owner TV normal PIN-paired reads",
+  "method": "PUT /app/config/get_properties",
+  "roots_read": [
+    "VIZIOApps",
+    "AppMigration",
+    "AppConfigs",
+    "SmartCastHome"
+  ],
+  "writes_performed": false,
+  "internal_credential_requested": false,
+  "home": {
+    "SCTVMode": "prod",
+    "UrlEndpoint": "http://127.0.0.1:12345/scfs/sctv/main.html",
+    "AppInfo": {
+      "NAME_SPACE": 2,
+      "APP_ID": "1",
+      "MESSAGE": null
+    }
+  },
+  "observations": [
+    "Device KV /app/store/get and vendor /app/config/get_properties are distinct read APIs.",
+    "AppMigration N2:A1 resolves to N4:A1.",
+    "SCU loader is an updater and was captured without executing it.",
+    "Home entry capture pending; no installation or startup change established."
+  ],
+  "source_response_sha256": {
+    "owner-app-configuration-read.json": "93103d414ef9a31307980b57531b8010b0f329ac6458ef4a092cc57d335229b9",
+    "owner-appconfigs-read.json": "b8dd7c094531c6124bc7ad5210aea6274d92a85e100d27718f42c97106327538",
+    "owner-home-configuration-read.json": "52d6a2afe8871badb31c03074423f3c32d30b1d6ee5e59d9b7f60cf1c470b637"
+  }
+}

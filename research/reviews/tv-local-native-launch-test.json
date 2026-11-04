@@ -1,0 +1,43 @@
+{
+  "started_utc": "2026-11-02T00:22:03.372209+00:00",
+  "scope": "PC helpers stopped; PC OS and TV internet remain on",
+  "recovery_unit": "vizio-local-native-test-recovery-20261102T002203",
+  "launcher_sha256": "1ffc521b26692047290008cc2bcf2c1e9a226922339fe8f71dfd7dcacf8d3a1f",
+  "native_launch_at": 1793578938125,
+  "phase": "native launch observed",
+  "initial_states": [
+    "active",
+    "active",
+    "inactive"
+  ],
+  "paused_states": [
+    "inactive",
+    "inactive",
+    "inactive"
+  ],
+  "ports_closed": {
+    "8099": true,
+    "11470": true
+  },
+  "isolated_utc": "2026-11-02T00:22:03.394508+00:00",
+  "observed_after_launch": {
+    "NAME_SPACE": 3,
+    "APP_ID": "1"
+  },
+  "observed_input": "SMARTCAST",
+  "netflix_descriptor_observed": true,
+  "restored_states": [
+    "active",
+    "active",
+    "active"
+  ],
+  "owner_visual_confirmation": "Netflix did not open; black screen",
+  "limits": [
+    "PC OS and TV internet stayed on; only three helper services stopped.",
+    "No full power-loss persistence, Home replacement, TV-side startup, or standalone Stremio established.",
+    "First attempt interrupted by owner returning to HDMI; superseded by retry with native Netflix descriptor observed."
+  ],
+  "visual_app_open_verified": false,
+  "diagnosis": "API descriptor changed to Netflix while helpers were stopped; visual playback/interface launch failed or did not complete within observation. Timing and method comparison pending.",
+  "normal_paired_https_comparison": "Owner confirms Netflix appears through original paired method after allowing startup."
+}

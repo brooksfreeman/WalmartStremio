@@ -1,0 +1,120 @@
+{
+  "model": "W4K65M-1031",
+  "firmware": "86.920.9.3-2",
+  "objective": "Install launcher and playback on TV; replace OEM Home and startup without PC",
+  "objective_achieved": false,
+  "native_configuration_read": {
+    "ChromiumSettings": {
+      "DebugEnabled": false,
+      "DebugPort": 9555
+    },
+    "PlatformDebugSettings": {
+      "SSHServer": false,
+      "Journald": false
+    },
+    "ViziOS_environment": "production"
+  },
+  "debugger_observation": {
+    "9555": "connection refused",
+    "9222": "connection refused",
+    "services_enabled_by_us": false
+  },
+  "installation_get_observations": [
+    {
+      "method": "GET",
+      "path": "/install",
+      "status": 500,
+      "content_type": "text/html",
+      "bytes": 218,
+      "sha256": "a0e82db459c38743938a8200def5074e17323372cddfdca94e25a49f7c0be44f"
+    },
+    {
+      "method": "GET",
+      "path": "/scpl/install",
+      "status": 500,
+      "content_type": "text/html",
+      "bytes": 218,
+      "sha256": "a0e82db459c38743938a8200def5074e17323372cddfdca94e25a49f7c0be44f"
+    },
+    {
+      "method": "GET",
+      "path": "/static/install.html",
+      "status": 404,
+      "content_type": "text/html",
+      "bytes": 341,
+      "sha256": "664f2b1654c363a6348b688d5d475ed9ec0e7ef3c72f6f315f37fe97a2fe63eb"
+    },
+    {
+      "method": "GET",
+      "path": "/dlm/available_update_info",
+      "status": 200,
+      "content_type": "application/json",
+      "bytes": 177,
+      "sha256": "88e8a9f7932b2251974e0768fca02d58ca52f8f1273ca238dd74e3997640c102",
+      "result": "SUCCESS",
+      "value_keys": [
+        "UPDATE_LEVEL",
+        "VERSION",
+        "IS_AVAILABLE"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/uli/available_update_info",
+      "error": "The read operation timed out"
+    }
+  ],
+  "limits": [
+    "GET /install HTTP 500 cannot establish whether a functioning POST installer exists. No package or injection submitted.",
+    "Null device KV values are distinct from the vendor configuration root. No store override effect or reversible debug change has been established.",
+    "A firmware decoder/decompiler needs a plaintext artifact; no current native SCPL/Conjure/LOKI executable or filesystem dump acquired.",
+    "Opaque vendor localassets snapshot saved privately. It is not a decrypted firmware dump."
+  ],
+  "next_work": [
+    "Test a disposable file in a unique browser-sandbox directory, read back, then try local navigation; reversible browser-data test only.",
+    "Trace native app launch and a TV-side Home/startup entry; do not confuse storage with a launch hook.",
+    "Acquire plaintext native executable/filesystem if no supported writable app route emerges.",
+    "Document exact backup and recovery before any persistent native-setting or firmware change."
+  ],
+  "tv_mutations_this_pass": [
+    "Transient input switch to SmartCast and diagnostic page navigation only; no persistent native settings changed."
+  ],
+  "control_diagnosis": {
+    "owner_reports": [
+      "PC desktop showing; TV on",
+      "Physical Home opens OEM Home normally"
+    ],
+    "observed_read_failures": [
+      "app/current returned HTTP 500 generic exception",
+      "current_input VALUE sometimes contained integer 1 or an app descriptor",
+      "state_extended APP_CURRENT sometimes contained integer 1"
+    ],
+    "healthy_reads": [
+      "power_mode VALUE=1",
+      "system/versions and deviceinfo returned success"
+    ],
+    "watcher_pause_test": "After pause plus quiet interval, app/current briefly returned the correct N0:A2 HDMI descriptor. After another launch request, malformed app state recurred. No cause established.",
+    "latest_capture": "Owner confirmed read-only check appeared and saved; source and private GET markers received after activating SmartCast input.",
+    "physical_recovery_requested": "Owner completed ordinary unplug/reconnect cycle; valid state reads returned. No reset or firmware change.",
+    "smartcast_activation": {
+      "endpoint": "PUT /key_command/",
+      "key": {
+        "CODESET": 4,
+        "CODE": 3,
+        "ACTION": "KEYPRESS"
+      },
+      "readback": "SMARTCAST",
+      "result": "SUCCESS",
+      "limit": "Other Home launch requests could report success without leaving HDMI; input activation is a separate step."
+    }
+  },
+  "native_bridge_followup": {
+    "source_observation": "navigator.vizioConnection.send and viziodata native bridge callbacks in owner SDK",
+    "old_probe_gap": "Earlier typeof window.VIZIO only measured whether the SDK was loaded, not whether the native binding exists.",
+    "prepared_probe": "Inspect method names only; no binding invocation, token bootstrap or SDK execution",
+    "rea_parent": "ev_1aef65f978ba894463c609f0a3d70721231961e6a5d421e448bbef8bd444ffb2",
+    "rea_coverage": "Increased semantic allowance removed the former per-file node ceiling; conservative alias/semantic unknowns remain. Native vendor API exact seed had no graph match; manual source contains the call.",
+    "owner_runtime_result": "LAN-origin binding undefined; loopback-origin binding object with send/onviziodata/addEventListener/sendAnalytics/sendLogs. No native methods invoked."
+  },
+  "local_origin_results": "research/reviews/owner-local-origin-results.json"
+}
