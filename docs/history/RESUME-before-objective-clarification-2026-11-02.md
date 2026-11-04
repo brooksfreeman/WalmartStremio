@@ -33,8 +33,8 @@ stack observed. Android/APK/ADB is not established. No root or bootloader unlock
 
 Original boundary: concrete change and recovery method, plus approval, before
 flashing, reset, bootloader changes or potentially unrecoverable writes. No
-arbitrary configuration keys. Owner later said there is no risk in breaking the
-TV and requested continued experimentation; no specific firmware write reviewed.
+arbitrary configuration keys. Owner requested continued experimentation;
+no specific firmware write reviewed.
 
 ## Most recent verified progress
 

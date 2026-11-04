@@ -23,8 +23,8 @@ Owner explicitly corrected the earlier Home-button choice, then physically
 verified WatchFree opens Stremio. Native Home/firmware/hardware work is parked.
 
 Replacement W4K65M-1030 at192.0.2.57, firmware86.920.9.3-2/software86.920.9.3-2.12,
-separately certificate-pinned and normally PIN-paired. Original1031 broke per owner;
-old identity/credentials saved privately under hardware-identification/replacement/
+separately certificate-pinned and normally PIN-paired.
+Old identity/credentials saved privately under hardware-identification/replacement/
 before-switch-*. Never reuse its browser settings/files as replacement evidence.
 
 **November3 overlay follow-up / tvbuild12:** owner still saw the standalone Home
@@ -289,8 +289,8 @@ stack observed. Android/APK/ADB is not established. No root or bootloader unlock
 
 Original boundary: concrete change and recovery method, plus approval, before
 flashing, reset, bootloader changes or potentially unrecoverable writes. No
-arbitrary configuration keys. Owner later said there is no risk in breaking the
-TV and requested continued experimentation; no specific firmware write reviewed.
+arbitrary configuration keys. Owner requested continued experimentation;
+no specific firmware write reviewed.
 
 ## Preserved browser prototype evidence — not the current product
 

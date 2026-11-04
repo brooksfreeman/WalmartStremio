@@ -381,7 +381,7 @@ No live launch or new visual result yet. See [setup](PC-STREMIO-HOME.md).
 
 ## November 2, 2026 — replacement 1030 paired for PC-hosted Stremio
 
-Owner reports original1031 broke. Replacement photo identifies W4K65M-1030 with
+Replacement photo identifies W4K65M-1030 with
 same firmware/software. SSDP matching Living Room at192.0.2.57; fresh certificate
 and normal PIN pairing succeeded. Old credentials/identity saved privately;
 never sent to replacement. Host/engine allowlists updated; authenticated GETs

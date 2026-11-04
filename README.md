@@ -19,7 +19,7 @@ Start with [build notes](docs/stremio-build.md) and
 See [third-party notices](THIRD_PARTY_NOTICES.md) and [GPLv2](LICENSE).
 
 Owner-authorized setup for replacement **W4K65M-1030**. Original research began
-November 1, 2026 on a different W4K65M-1031, which the owner reports broke.
+November 1, 2026 on a different W4K65M-1031.
 
 **Current setup:** the replacement TV's **WatchFree button opens PC-hosted
 Stremio**. Owner physically verified it. Home stays normal. Native Home editing
