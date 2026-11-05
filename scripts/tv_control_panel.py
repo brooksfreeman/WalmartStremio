@@ -197,12 +197,15 @@ def desktop(screenshot=None, tab='overview'):
                 notebook tab { background: #211d2d; color: #bbb4cd; padding: 8px 18px; }
                 notebook tab:checked { background: #493360; color: #ffffff; }
                 entry { background: #211d2d; color: #f5f2ff; border: 1px solid #69577d; border-radius: 8px; padding: 10px; }
-                treeview.view { background: #211d2d; color: #f5f2ff; }
-                treeview.view:selected { background: #634590; color: #ffffff; }
+                list.addons { background: #211d2d; color: #f5f2ff; }
+                list.addons row { padding: 0; border-bottom: 1px solid #393247; }
                 scrollbar trough { background: #14121d; }
                 button { background: #342d45; color: #f5f2ff; border: 1px solid #51445f; border-radius: 8px; padding: 9px 12px; box-shadow: none; text-shadow: none; }
                 button:hover { background: #49395e; }
                 button.primary { background: #7950d7; border-color: #a782f3; }
+                button.delete { background: #492b39; border-color: #94536c; color: #ffd6df; padding: 4px 10px; }
+                button.delete:hover { background: #633346; }
+                button:disabled { color: #8d849b; border-color: #393247; }
                 switch { background: #4b425b; border: 1px solid #69577d; border-radius: 15px; min-width: 48px; min-height: 26px; }
                 switch:checked { background: #8860dc; }
                 switch slider { background: #f5f2ff; border: 2px solid #d9c9fa; border-radius: 13px; min-width: 20px; min-height: 20px; }
@@ -293,24 +296,17 @@ def desktop(screenshot=None, tab='overview'):
             self.controls.append(install)
             box.pack_start(install, False, False, 0)
             box.pack_start(self.label('Installed on the TV', 'section'), False, False, 0)
-            self.addon_rows = Gtk.ListStore(str, str, str, bool)
-            self.addon_tree = Gtk.TreeView(model=self.addon_rows)
-            for index, title in enumerate(('Add-on', 'Version')):
-                renderer = Gtk.CellRendererText()
-                column = Gtk.TreeViewColumn(title, renderer, text=index)
-                column.set_expand(index == 0)
-                self.addon_tree.append_column(column)
+            box.pack_start(self.label('Use Delete beside an add-on to uninstall it from the TV. Built-ins are protected.', 'muted'), False, False, 0)
+            self.addon_rows = []
+            self.addon_delete_buttons = []
+            self.addon_list = Gtk.ListBox(selection_mode=Gtk.SelectionMode.NONE)
+            self.addon_list.get_style_context().add_class('addons')
             table = Gtk.ScrolledWindow()
             table.set_min_content_height(230)
-            table.add(self.addon_tree)
+            table.set_policy(Gtk.PolicyType.NEVER, Gtk.PolicyType.AUTOMATIC)
+            table.add(self.addon_list)
             box.pack_start(table, True, True, 0)
-            row = Gtk.Box(spacing=10, homogeneous=True)
-            row.pack_start(self.button('Refresh from TV', lambda: self.backend.manage_addons('list'), addon=True), True, True, 0)
-            remove = Gtk.Button(label='Remove selected')
-            remove.connect('clicked', lambda _: self.remove_selected())
-            self.controls.append(remove)
-            row.pack_start(remove, True, True, 0)
-            box.pack_start(row, False, False, 0)
+            box.pack_start(self.button('Refresh from TV', lambda: self.backend.manage_addons('list'), addon=True), False, False, 0)
             self.addon_message = self.label('Refresh to read the current TV list. Configured URLs stay private on this PC.', 'muted')
             box.pack_start(self.addon_message, False, False, 0)
 
@@ -321,18 +317,37 @@ def desktop(screenshot=None, tab='overview'):
                 return
             self.perform(lambda: self.backend.install_addon(value), addon=True, clear_url=True)
 
-        def remove_selected(self):
-            model, selected = self.addon_tree.get_selection().get_selected()
-            if selected is None:
-                self.addon_message.set_text('Select an add-on to remove.')
-                return
-            name, key = model[selected][0], model[selected][2]
-            if model[selected][3]:
-                self.addon_message.set_text('Stremio protects this built-in add-on from removal.')
-                return
+        def show_addons(self, rows):
+            for button in self.addon_delete_buttons:
+                self.controls.remove(button)
+            self.addon_delete_buttons = []
+            for row in self.addon_list.get_children():
+                row.destroy()
+            self.addon_rows = rows
+            for name, version, key, protected in rows:
+                row = Gtk.Box(spacing=16, margin=4)
+                row.pack_start(self.label(name), True, True, 0)
+                row.pack_start(self.label(version, 'muted'), False, False, 0)
+                button = Gtk.Button(label='Built-in' if protected else 'Delete', valign=Gtk.Align.CENTER)
+                button.set_sensitive(not protected)
+                button.set_tooltip_text('Protected by Stremio' if protected else f'Delete {name} from the TV')
+                if not protected:
+                    button.get_style_context().add_class('delete')
+                    button.connect('clicked', lambda _, addon_key=key, addon_name=name: self.delete_addon(addon_key, addon_name))
+                    self.controls.append(button)
+                    self.addon_delete_buttons.append(button)
+                row.pack_end(button, False, False, 0)
+                self.addon_list.add(row)
+            self.addon_list.show_all()
+
+        def delete_addon(self, key, name):
             dialog = Gtk.MessageDialog(transient_for=self.window, modal=True,
-                message_type=Gtk.MessageType.QUESTION, buttons=Gtk.ButtonsType.OK_CANCEL,
-                text=f'Remove {name} from Stremio on the TV?')
+                message_type=Gtk.MessageType.QUESTION, buttons=Gtk.ButtonsType.NONE,
+                text=f'Delete {name} from Stremio on the TV?')
+            dialog.format_secondary_text('This uninstalls the add-on and its catalogs. You can reinstall it later with its URL. The TV will open the add-ons screen.')
+            dialog.add_button('Cancel', Gtk.ResponseType.CANCEL)
+            dialog.add_button('Delete add-on', Gtk.ResponseType.OK)
+            dialog.set_default_response(Gtk.ResponseType.CANCEL)
             answer = dialog.run(); dialog.destroy()
             if answer == Gtk.ResponseType.OK:
                 self.perform(lambda: self.backend.remove_addon(key), addon=True)
@@ -440,10 +455,8 @@ def desktop(screenshot=None, tab='overview'):
             if result['sleep_blocked']:
                 self.message.set_text('Automatic sleep is blocked. Closing this window does not change server status.')
             rows = [(a['name'], a['version'], a['key'], a['protected']) for a in result['addons']]
-            if rows != [tuple(row) for row in self.addon_rows]:
-                self.addon_rows.clear()
-                for row in rows:
-                    self.addon_rows.append(row)
+            if rows != self.addon_rows:
+                self.show_addons(rows)
 
         def refresh(self):
             if not self.busy:

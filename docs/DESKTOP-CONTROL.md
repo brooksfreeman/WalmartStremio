@@ -29,8 +29,9 @@ remote firmware rewrite. Home redirect is disabled.
    URL. A configured link can contain personal tokens, so it is masked by default.
 2. Click **Install add-on**. The TV opens Stremio's add-ons screen and confirms the
    new descriptor is installed. The input clears after confirmed success.
-3. **Refresh from TV** reads the installed list. **Remove selected** confirms and
-   removes one add-on; protected built-ins stay protected.
+3. **Refresh from TV** reads the installed list. Each removable add-on has its own
+   **Delete** button. Click it, then confirm **Delete add-on**. Protected entries
+   show a disabled **Built-in** button. Cancel leaves the TV unchanged.
 
 These operations open the TV screen and therefore leave current playback. They
 require the paired TV to be on. No editing source or copying a Stremio account is

@@ -339,7 +339,7 @@ hosting until the PC boots again.
 
 In **Add-ons**, paste a provider's `stremio://…` install link or an HTTP(S)
 manifest URL, then choose **Install add-on**. Use **Refresh from TV** to fetch
-the current list and **Remove selected** to remove an unprotected add-on.
+the current list. Click **Delete** beside an add-on to uninstall it, then confirm. Protected built-ins cannot be deleted.
 Configured links are masked because they can contain personal tokens.
 
 These operations open the TV's add-ons screen and leave current playback.
