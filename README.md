@@ -1,137 +1,116 @@
 # WalmartStremio
 
-Linux-hosted Stremio for Vizio TVs, with a WatchFree remote-button shortcut,
-desktop server controls, add-on management, and bandwidth monitoring.
+**Use Stremio on a compatible Vizio TV, with your Linux PC doing the hosting.**
+Press the TV remote’s **WatchFree** button to open Stremio. Use the remote to
+browse, search and control playback. A desktop app on the PC lets you start or
+stop the server, manage add-ons and view streaming bandwidth.
 
-**Experimental, model-specific project:** tested on the owner’s W4K65M-1030.
-Windows support and compatibility with other models are not established.
-This is not a turnkey installer. A Linux PC is required for hosting.
+The PC must stay on, awake and connected to the same network as the TV while
+you watch. This project does not install Stremio directly into the TV’s firmware.
 
-**Public source copy:** local paths and LAN addresses below are examples.
-Replace `/path/to/WalmartStremio`, `/home/your-user`, and `192.0.2.*` with
-your own values before setup. Existing service files are templates; do not
-install them unchanged. Credentials, paired-device identity, add-on URLs,
-raw captures, firmware archives, and compiled Stremio builds are excluded.
-Historical validation reports describe the original setup, not your machine.
+**[Installation guide](docs/INSTALLATION.md)** ·
+**[Which files do what?](docs/FILE-GUIDE.md)** ·
+**[Troubleshooting](docs/INSTALLATION.md#troubleshooting)**
 
-Start with [build notes](docs/stremio-build.md) and
-[desktop controls](docs/DESKTOP-CONTROL.md).
-See [third-party notices](THIRD_PARTY_NOTICES.md) and [GPLv2](LICENSE).
+## What you get
 
-Owner-authorized setup for replacement **W4K65M-1030**. Original research began
-November 1, 2026 on a different W4K65M-1031.
+- Stremio in the TV’s built-in browser, adapted for remote-control navigation.
+- A WatchFree shortcut that opens it without typing a web address.
+- An on-screen search keyboard and remote-friendly playback controls.
+- A **Stremio TV** desktop panel with server controls, add-on installation/removal,
+  automatic-startup settings and a live bandwidth graph.
+- Optional background hosting that starts when the PC boots.
 
-**Current setup:** the replacement TV's **WatchFree button opens PC-hosted
-Stremio**. Owner physically verified it. Home stays normal. Native Home editing
-and hardware work are parked.
+You supply your own add-ons and any accounts they require. This repository does
+not provide a movie library, subscriptions or anyone else’s add-on configuration.
 
-Double-click **Stremio TV** on the PC desktop to check server status, toggle the
-WatchFree shortcut, control startup at boot, restart hosting, or open Stremio on
-the TV. Its **Overview** tab has a live server bandwidth graph; **Add-ons** lets
-you paste an Install link/manifest URL, install it, refresh the TV list and remove
-selected add-ons. Configured URLs remain private. All three hosting services are configured to start at boot using
-user lingering. Wi-Fi autoconnect is enabled and system-wide. Automatic sleep is
-disabled with a persistent sleep/idle blocker. Torrentio was transferred from the
-owner's existing PC configuration and verified present by the replacement TV.
+## How it works
 
-Replacement W4K65M-1030 is separately PIN-paired at192.0.2.57. Old1031 evidence
-and credentials remain private and historical. See
-[desktop/server controls](docs/DESKTOP-CONTROL.md) and
-[WatchFree setup](docs/PC-STREMIO-HOME.md).
+1. **Your PC runs the app and streaming server.** It hosts an adapted version of
+   Stremio Web and the Stremio media engine.
+2. **Your TV displays the app.** The TV opens the PC-hosted page in its browser;
+   an HDMI connection is not required for this streaming setup.
+3. **A small background program watches for WatchFree.** When the TV enters the
+   WatchFree app, the PC asks it to open Stremio instead. There may be a brief delay.
+4. **The desktop panel controls the PC services.** Closing the panel leaves
+   hosting running; choosing **Stop server** stops it.
 
-Start with [the current handoff](docs/RESUME-HERE.md) and
-[the Home evidence and bounded investigation plan](docs/NATIVE-HOME-INVESTIGATION.md).
-Follow [AGENTS.md](AGENTS.md) and preserve its private-context boundary.
+The shortcut detects the WatchFree app opening, rather than changing the remote’s
+firmware. Opening WatchFree another way also triggers it. Turn the shortcut off
+to use WatchFree normally. The physical Home button still opens the normal TV
+Home screen. No rooting, TV disassembly or firmware flashing is part of setup.
 
-## Preserved native Home investigation on the retired 1031 (parked)
+## Will it work with my setup?
 
-Owner-TV runtime app definitions and app-manager state identify `vizios-home`,
-Loki controller, `app=home`, `bundle=bundles/home`. Deployer and Loki metadata
-report Home version `v26.08.28.9`. This identifies the managed Home app, **not its
-implementation language or renderer**. Physical Home dispatch and startup's
-consumer are not yet traced.
+| Requirement | Current support |
+| --- | --- |
+| TV | Tested on Vizio internal model **W4K65M-1030**, firmware `86.920.9.3-2` |
+| PC | Tested on **Linux Mint 22.3, x86-64, Xfce 4.18**, with systemd and GTK 3 |
+| Network | PC and TV must reach each other on the same LAN; stable IP addresses needed |
+| Windows / macOS | No supported installation path yet |
+| Other Vizio models | Unverified; the same brand or screen size does not guarantee compatibility |
 
-The highest-value missing evidence is the matching Home deployment descriptor,
-entry resources and loader relationship. No actual Loki Home bundle/source has
-been acquired. The four-read metadata investigation completed without a bundle locator.
-The manufacturer5586L FUR9.2 archive was supplied and verified. Its LOKI folder
-contains fonts; the nested ViziOS source includes OSUpdater, but no matching
-Home renderer or bundle has been acquired in the inspected scope. Seven
-source-guided owner-TV metadata reads provided no artifact download reference.
-Exact build matching remains unproven. See [the archive review](docs/OSS-ARCHIVE-REVIEW.md).
-No Home settings were written and no launcher work resumed. The subsequent
-[SDK/interface pass](docs/SDK-INTERFACE-REVIEW.md) recovered Loki headers and a
-native client library, but no confirmed Home-file export route. External hardware
-identification now confirms rear-label model **65S4V1**, correcting the supplied
-Walmart listing's65S4V4. The label identifies transmitter module2AJVQ-MWH647B,
-not the mainboard. No USB-to-TTL adapter is owned and no exact1031 board/readout
-procedure is established. See [the retail check](docs/RETAIL-HARDWARE-IDENTIFICATION.md).
-UART/root access is not established; actual Home acquisition remains unresolved.
+This is an experimental source project, not a one-click installer. Setup involves
+a terminal, pairing the TV, building the frontend and installing background
+services. Playback, the WatchFree shortcut and desktop controls have worked on
+the existing setup. **A fresh installation on a second PC and a complete reboot
+of that installation have not been verified.** The latest playback-overlay fix
+passed browser checks; final TV visual confirmation is still pending.
 
-Owner subsequently supplied a533MB USB UTV image. Its signed metadata identifies
-86.910.19.2-1F; internal signatures verify, but the payload remains opaque and no
-Home files were extracted. Owner confirms compatibility; download provenance,
-exact model policy and current-build equivalence were not independently verified.
-See [the offline firmware review](docs/UTV-FIRMWARE-REVIEW.md). No flashing or TV
-operations occurred. Decryption/unpacked-resource acquisition remains necessary.
-The [Qterics follow-up](docs/QTERICS-DECRYPTOR-FOLLOWUP.md) found a concrete
-open-source format implementation and tested21 published keys: none matched.
-No native file access or owner Home plaintext established. Mainboard/readout
-feasibility remains unknown. Owner confirms relevant electronics experience;
-[interior photos](docs/MAINBOARD-IDENTIFICATION.md) now identify PCB
-**715GF461-M0B-T01-004I** (0/O glyph ambiguous). No UART pinout, voltage or
-usable console has been identified; visible empty footprints are insufficient.
+## Start here
 
-The [home_provider experiment](docs/NATIVE-HOME-EXPERIMENT.md) is preserved as an
-untested, secondary routing hypothesis. It is deprioritized and still requires
-specific approval. Its rollback was preflighted only against an unchanged value;
-it does not establish appearance editing or custom-app registration.
+Follow the **[installation guide](docs/INSTALLATION.md)** in order. It covers:
 
-Before persistent native changes, present the exact modification, backup and
-restore method, and recovery limits. Obtain approval before potentially
-unrecoverable writes. No arbitrary flashing, erasure or bootloader changes are
-authorized by the clarified objective.
+1. Installing the Linux tools and downloading this project.
+2. Finding the PC and TV addresses and pairing with the TV’s PIN.
+3. Building Stremio and starting the media server.
+4. Opening it on the TV and enabling the WatchFree shortcut.
+5. Installing the desktop panel, adding add-ons and enabling boot startup.
+6. Troubleshooting, updating and uninstalling.
 
-## Preserved prototype results and superseded assumptions
+You do not need the firmware research or diagnostic experiments to install the
+working app.
 
-A separate eleven-app browser launcher and adapted Stremio playback were tested.
-Its own browser-sandbox file survived power loss, and Netflix launched through
-local REST with PC helpers stopped. These results are preserved; browser storage
-is not an installed Home bundle. They did not meet the former native-editing objective.
+## Working software versus research
 
-Legacy SCTV/System UI web assets were captured. Earlier text treating SCTV as the
-active Home source is superseded by the stronger Loki app-manager evidence.
-Readable resources do not establish permission to replace them. Accepted launch
-responses or app-state changes do not establish visible success.
+The folders contain both current software and earlier experiments. **Do not run
+every script in `scripts/`; use only the commands in the installation guide.**
 
-Viewing Data Off and Limited Ad Tracking On were read back. Hidden advertising
-or absence of an ad in a short test does not establish that background tracking
-has stopped. No OEM Home resource, native registry value, firmware or bootloader
-has been changed in the native investigation.
+| Location | What it contains |
+| --- | --- |
+| [`client/`](client/) | Working TV interface additions: remote controls, search keyboard and add-on integration |
+| [`scripts/`](scripts/) | Server, pairing, desktop and setup tools **mixed with research utilities**; see the file guide for the distinction |
+| [`web/`](web/) | Shared player library, optional browser launcher and diagnostic pages; not the complete Stremio frontend |
+| [`config/`](config/) | Desktop icon and service files; setup regenerates the three host-service files for your PC |
+| [`tests/`](tests/) | Local regression tests for add-on management and bandwidth measurement |
+| [`research/reviews/`](research/reviews/) | Research summaries, earlier validation results and saved source patches; not an installer |
+| [`docs/`](docs/) | The installation/file guides plus technical notes and historical investigation records |
+| `.private/` (created locally) | Your pairing credentials, downloaded source/build, engine, settings and logs; excluded from GitHub |
 
-Historical work remains in [the findings ledger](docs/findings.md),
-[earlier installation research](docs/native-installation.md),
-[launcher notes](docs/home-launcher.md), and [Stremio notes](docs/stremio-build.md).
-Pre-clarification README and handoff are preserved under `docs/history/`.
+**[The full file guide](docs/FILE-GUIDE.md)** lists the current tools and identifies
+the experimental ones. Some older documents discuss native Home replacement,
+firmware inspection or a Home-button shortcut. Those describe earlier work,
+not the current WatchFree installation procedure.
 
-## Project and recovery
+## Research background
 
-- `research/reviews/`: sanitized findings, artifact identities and REA evidence references.
-- `.private/`: credentials, raw device captures, account/add-on configuration and
-  full evidence; ignored, directory0700/files0600. Never worker context.
-- `scripts/`, `web/`, `client/`: existing diagnostic/prototype tools, not a Home redesign.
-- [Recovery instructions](docs/recovery.md) and [REA setup](docs/rea-setup.md).
-- [CodexSaver status](docs/codexsaver.md): affected live delegation paths must not
-  run until the reported command-execution/context-isolation issues are demonstrably resolved.
+The project also preserves investigations into ViziOS, TV app launching and
+native Home behavior. Native Home replacement and hardware/firmware work are
+not completed features. Those records are optional reading:
 
-The TV also displays this PC. Physical **Input → the PC-connected HDMI port** returns to the desktop.
-HDMI-2 was the old TV; replacement photo/API show HDMI-3 selected, but its PC
-cable connection has not been confirmed.
-Do not infer current helper-service or TV state from old saved observations.
-Credentials and pinned TV identity remain local; do not paste private responses
-or credential files into chats, worker context, issues or public repositories.
+- [Research findings](docs/findings.md)
+- [Native Home investigation](docs/NATIVE-HOME-INVESTIGATION.md)
+- [Technical build notes](docs/stremio-build.md)
 
-`scripts/save_checkpoint.py` saves source/docs/public reports and a private
-artifact hash manifest. `.private/checkpoints/latest.json` points to the latest
-local checkpoint. Raw private artifacts remain in place; this is not a firmware
-backup, whole-machine backup or guaranteed hardware recovery image.
+The [maintainer handoff](docs/RESUME-HERE.md) is for continuing development, not
+for first-time installation. Historical reports may contain example paths,
+addresses and observations that do not apply to your TV.
+
+## License and private data
+
+See [GPLv2](LICENSE) and [third-party notices](THIRD_PARTY_NOTICES.md).
+This is an independent project, unaffiliated with Vizio, Walmart or Stremio.
+
+Keep `.private/`, `.env`, `.tv_auth`, PINs, tokens and configured add-on URLs out
+of public uploads. When asking for help, include your model, firmware, Linux
+version and a redacted error message—not private logs or account configuration.
