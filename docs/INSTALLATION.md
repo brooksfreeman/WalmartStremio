@@ -335,6 +335,31 @@ requires it, mark the shortcut as allowed/trusted. A direct fallback is
 The no-sleep service is independent of Stop server. A PC shutdown always stops
 hosting until the PC boots again.
 
+### Choose whether subtitles start on or off
+
+In **Overview**, use **Subtitles on by default**. New installations start with
+this option On. It applies when a video starts, including resumed videos and
+next episodes. On chooses an available track using your saved/configured subtitle
+language, with English as the fallback. Off prevents automatic caption selection.
+You can still change captions manually during the current video.
+
+Saving this setting does not start the server or contact the TV. After updating
+from an older version, rebuild the frontend with `prepare_stremio_tv.py` and the
+build command in step 4, then exit and reopen Stremio on the TV. Updating only
+the desktop Python code will not update the TV player. Local tests passed;
+live TV playback of this new subtitle-default behavior is not yet verified.
+
+### Update the TV IP address
+
+If the TV gets a new address, open **Network**, enter the IPv4 address shown in
+the TV's network settings in the four number boxes, and choose **Save TV IP
+address**. Each box accepts 0–255. Tab or a period moves to the next box. Keep
+the TV on.
+The app checks that it is your paired TV, then updates the saved address and
+both server access lists. Running services briefly restart, interrupting playback;
+a stopped server stays stopped. WatchFree and boot preferences are preserved.
+An unreachable address or different TV certificate leaves the settings unchanged.
+
 ### Add-ons without editing code
 
 In **Add-ons**, paste a provider's `stremio://…` install link or an HTTP(S)
@@ -452,12 +477,14 @@ also serves as your PC monitor.
 
 ### If addresses change
 
-Stop the three hosting services. Update your own `.private/tv.json` IP only after
-confirming it is the same TV/certificate. Set `TVLAB_PC_IP` to the new PC address,
-then rerun engine `prepare`, service installation and `daemon-reload`. Start the
+For a TV address change, use **Network → Save TV IP address** in the desktop app.
+A replacement TV requires its own deliberate certificate recording and PIN pairing;
+this setting only accepts the already-paired TV.
+
+For a PC address change, stop the three hosting services. Set `TVLAB_PC_IP` to the
+new PC address, then rerun engine `prepare`, service installation and `daemon-reload`. Start the
 services and accept the new streaming-server address on the TV. Both the engine
-allowlist/CORS origin and generated service binding must match. A replacement TV
-requires its own deliberate certificate recording and PIN pairing; never silently
+allowlist/CORS origin and generated service binding must match. Never silently
 reuse another TV's credential or certificate.
 
 ## Updates and removal

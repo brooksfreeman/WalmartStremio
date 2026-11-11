@@ -48,7 +48,10 @@ def manifest_url(value):
 def fetch_addon(value):
     url = manifest_url(value)
     try:
-        request = urllib.request.Request(url, headers={'Accept': 'application/json'})
+        request = urllib.request.Request(url, headers={
+            'Accept': 'application/json',
+            'User-Agent': 'StremioTV-AddonManager/1.0',
+        })
         class HTTPRedirects(urllib.request.HTTPRedirectHandler):
             def redirect_request(self, req, fp, code, msg, headers, newurl):
                 manifest_url(newurl)

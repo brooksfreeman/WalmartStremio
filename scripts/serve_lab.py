@@ -15,6 +15,7 @@ import tvctl
 from launcher_apps import NATIVE_APPS
 import home_navigation
 import addon_manager
+import playback_preferences
 
 WEB = tvctl.ROOT / "web"
 HOME_RESOURCE_READS = {
@@ -86,6 +87,11 @@ def main():
             if self.client_address[0] not in allowed:
                 return self.respond(403)
             path = urllib.parse.urlsplit(self.path).path
+            if path == '/playback-preferences':
+                try:
+                    return self.respond(200, json.dumps(playback_preferences.read()).encode())
+                except (OSError, ValueError, KeyError, TypeError):
+                    return self.respond(500, b'{"ok":false}')
             # Temporary source-acquisition diagnostics only. Record neither
             # query strings nor ordinary launcher/media activity.
             probe_assets = {'/local-runtime.html': 'page', '/local-runtime.js': 'script', '/loopback-home-install.js':'home-installer', '/tv-local-launcher.html':'home-package'}

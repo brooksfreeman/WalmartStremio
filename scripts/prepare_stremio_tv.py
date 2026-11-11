@@ -42,6 +42,19 @@ def main():
     elif 'onCloseMenus={closeMenus}' not in player.read_text():
         replace(player, "onBrowse={() => navigate('/')} />", "onBrowse={() => navigate('/')} onCloseMenus={closeMenus} />")
     shutil.copyfile(ROOT / "client/TVRemoteBar.js", player.parent / "TVRemoteBar.js")
+    shutil.copyfile(ROOT / 'client/useTVSubtitleDefault.js', player.parent / 'useTVSubtitleDefault.js')
+    subtitles = player.parent / 'useSubtitles.ts'
+    replace(subtitles, "const withFallbackLabels =", "const useTVSubtitleDefault = require('./useTVSubtitleDefault');\n\nconst withFallbackLabels =")
+    replace(subtitles, '    const toast = useToast();',
+            '    const toast = useToast();\n    const tvSubtitleDefault = useTVSubtitleDefault(video.state.stream);')
+    replace(subtitles, '        const subtitlesEnabled = player.streamState?.subtitlesEnabled;\n\n        if (subtitlesEnabled === false || (!subtitlesEnabled && settings.subtitlesLanguage === null)) {',
+            '''        const subtitlesEnabled = true;
+
+        if (!tvSubtitleDefault.ready || !tvSubtitleDefault.enabled) {''')
+    replace(subtitles, '        const candidates = buildCandidates(player.streamState?.subtitleTrack, subtitlesEnabled, settings.subtitlesLanguage);',
+            '        const candidates = buildCandidates(player.streamState?.subtitleTrack, subtitlesEnabled, settings.subtitlesLanguage || CONSTANTS.DEFAULT_SUBTITLES_LANGUAGE);')
+    replace(subtitles, '        player.streamState,\n        settings.subtitlesLanguage,',
+            '        player.streamState,\n        tvSubtitleDefault.ready,\n        tvSubtitleDefault.enabled,\n        settings.subtitlesLanguage,')
     shutil.copyfile(ROOT / "client/TVRuntime.js", SOURCE / 'src/TVRuntime.js')
     shutil.copyfile(ROOT / 'client/TVAddonImport.js', SOURCE / 'src/App/TVAddonImport.js')
     shutil.copyfile(ROOT / 'client/TVAddonManager.js', SOURCE / 'src/App/TVAddonManager.js')

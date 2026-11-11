@@ -17,6 +17,18 @@ window leaves background services running.
 - **Stop server** stops all three processes now. The boot toggle determines
   whether they return at the next boot. Existing streaming playback will stop.
 - **Open Stremio on TV** starts hosting if needed and sends its reviewed app launch.
+- **Subtitles on by default** saves whether each video starts with captions on
+  or off, including resumed videos and next episodes. On selects an available
+  subtitle track using Stremio's saved language (English when none is set).
+  You can still select captions or turn them off during the current video.
+  Saving works while the TV/server is off and does not start hosting. Reopen
+  Stremio once after installing this update to load the updated player.
+
+The subtitle default is stored locally in `.private/playback-preferences.json`
+and starts On until changed. The TV reads it when a stream starts; changing it
+does not interrupt the video currently playing. If the preference cannot be read,
+the player uses the last successfully read value in that page session (On before
+the first successful read). Videos without available subtitles stay uncaptioned.
 
 The current WatchFree button route was physically verified on replacement1030.
 PC detects stable WatchFree app4/3014 and opens Stremio. A brief WatchFree flash
@@ -42,6 +54,23 @@ use one-use nonces, timeouts, allowed operations and TV-only Origin/source check
 Provider manifest text is treated as data. URLs are never included in public logs
 or desktop error messages. HTTP(S) redirects are validated before following them.
 
+## Network tab
+
+When the TV's IP address changes, open **Network**, enter its new IPv4 address
+from the TV's network settings, and click **Save TV IP address**. Keep the TV on.
+The saved address is shown above the field. The app verifies the existing paired
+TV certificate before saving; a different device or unreachable address is rejected.
+
+Saving updates the controller, WatchFree observer, frontend access list and
+streaming-engine access list together. Running hosting services briefly restart,
+which can interrupt playback. A stopped server stays stopped, and WatchFree/boot
+preferences are preserved. A private backup is saved before changes; if saving or
+restarting fails, the app attempts to restore the previous files and running services.
+No re-pairing, downloads or firmware changes are needed for the same TV.
+
+This field changes only the TV address. The PC server address is displayed for
+reference; changing it still requires the server setup steps in the installation guide.
+
 ## Bandwidth graph
 
 Overview shows current server receive/send in **Mb/s**, with a two-minute history.
@@ -61,8 +90,8 @@ All three service units are enabled and retry on failure while the network start
 User lingering is enabled. Host/engine health checks passed during validation. The owner explicitly left
 hosting stopped after November3 control testing; Start / repair restarts it. Wi-Fi
 autoconnect/system availability checked. A full PC reboot was not performed.
-Addresses remain192.0.2.24 (PC),192.0.2.57 (TV); DHCP reassignment may require
-updating prepared units, allowlists and the TV's saved server preference.
+Use **Network** for TV DHCP address changes. A PC address change still requires
+updating prepared units, allowlists and the TV's saved streaming-server preference.
 
 Automatic sleep is disabled in the installed Xfce power manager and GNOME settings.
 A separate enabled user service, vizio-stremio-awake.service, holds an actual

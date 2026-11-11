@@ -1,5 +1,13 @@
 # Reproduce the local TV build
 
+November 10: desktop subtitle defaults are read from `/playback-preferences` on
+each stream. Preparation copies `client/useTVSubtitleDefault.js` and patches the
+automatic-selection effect in the pinned `useSubtitles.ts`. Default Off suppresses
+saved automatic selections; On enables available saved/configured-language tracks
+with English fallback. Manual choices remain valid until the stream changes.
+Reopen Stremio after rebuilding. Validation: `node tests/check_subtitle_defaults.js`
+uses the prepared tree and its existing TypeScript dependency with fixture tracks.
+
 November3 / logical tvbuild12: standalone floating Home link removed entirely.
 Owner still saw it with build11; isolated Chrome reproduced the gap when React
 Router navigated using pushState without a hashchange event. All five updated

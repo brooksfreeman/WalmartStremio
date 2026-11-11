@@ -18,7 +18,8 @@ you watch. This project does not install Stremio directly into the TV’s firmwa
 - A WatchFree shortcut that opens it without typing a web address.
 - An on-screen search keyboard and remote-friendly playback controls.
 - A **Stremio TV** desktop panel with server controls, add-on installation/removal,
-  automatic-startup settings and a live bandwidth graph.
+  automatic-startup settings, a subtitle-default toggle, a live bandwidth graph
+  and TV IP address settings.
 - Optional background hosting that starts when the PC boots.
 
 You supply your own add-ons and any accounts they require. This repository does
@@ -46,7 +47,7 @@ Home screen. No rooting, TV disassembly or firmware flashing is part of setup.
 | --- | --- |
 | TV | Tested on Vizio internal model **W4K65M-1030**, firmware `86.920.9.3-2` |
 | PC | Tested on **Linux Mint 22.3, x86-64, Xfce 4.18**, with systemd and GTK 3 |
-| Network | PC and TV must reach each other on the same LAN; stable IP addresses needed |
+| Network | PC and TV must reach each other on the same LAN; keep the PC IP stable and update TV IP changes in the desktop panel |
 | Windows / macOS | No supported installation path yet |
 | Other Vizio models | Unverified; the same brand or screen size does not guarantee compatibility |
 

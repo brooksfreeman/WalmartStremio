@@ -27,6 +27,8 @@ The installation guide lists every command needed for the supported setup.
 | `scripts/open_stremio.py` | Opens the catalog or streaming-server settings on the TV |
 | `scripts/tv_control_panel.py` | The GTK desktop app named **Stremio TV** |
 | `scripts/addon_manager.py` | Validates add-on links and coordinates TV-confirmed add-on operations |
+| `scripts/playback_preferences.py`, `client/useTVSubtitleDefault.js` | Save the desktop subtitle default and apply it when each TV stream starts |
+| `scripts/tv_network.py` | Verify the paired TV certificate and update its address with private backups and rollback support |
 | `scripts/server_bandwidth.py` | Measures estimated TCP traffic for the hosting services |
 | `scripts/install_desktop_control.py` | Creates the desktop and Applications shortcuts |
 | `scripts/server_awake.py` | Optional power-settings helper for the tested GNOME-schema/Xfce setup; not required on every desktop |
@@ -36,7 +38,9 @@ The installation guide lists every command needed for the supported setup.
 | `web/vendor/hls.min.js`, `web/vendor/hls.js-LICENSE` | Player library used by the frontend build and its license |
 | `web/launcher.html`, `web/launcher.css`, `web/launcher.js` | Optional PC-hosted app launcher; also used by the on-screen player Home action |
 | `scripts/launcher_apps.py` | Native-app descriptors shared with the web server/launcher |
-| `tests/test_desktop_addons_bandwidth.py` | Local regression tests; they do not contact a TV |
+| `tests/test_*.py` | Local regression tests for add-ons, bandwidth, subtitle preferences and TV address updates; no real TV operations |
+| `tests/check_subtitle_defaults.js` | Subtitle behavior checks against the prepared frontend; requires the step 4 source/dependencies |
+| `tests/check_subtitle_panel.py` | Isolated GTK subtitle-toggle checks; requires a graphical desktop and writes a fixture screenshot |
 
 **The full Stremio app is not stored in `web/`.** Installation downloads its pinned
 source to `.private/stremio-tv-src/`, copies in the `client/` additions, and builds

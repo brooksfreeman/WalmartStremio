@@ -3,6 +3,24 @@
 Updated November 3, 2026 (America/New_York). Project:
 `/path/to/WalmartStremio`.
 
+## November 10 public update
+
+Desktop Overview adds **Subtitles on by default**. The boolean preference stays
+local and is read by the TV frontend when each stream starts. Rebuild the frontend
+and reopen Stremio to use it. Manual choices remain valid for the current stream.
+Live TV playback validation of this new behavior is still pending.
+
+Desktop Network adds a four-part TV IPv4 editor. It verifies the existing paired
+TV certificate, updates the controller and engine access configuration, and
+preserves the prior running/stopped service state with backup/rollback handling.
+This does not pair a new TV or change the PC address. Live IP migration was not
+performed during this publication review.
+
+Publication validation: 19 Python regression tests, subtitle-hook fixture tests
+and isolated real GTK checks passed. No TV or hosting-service changes were made.
+The add-on manifest client also identifies itself with an application User-Agent.
+See INSTALLATION.md, DESKTOP-CONTROL.md and FILE-GUIDE.md for current instructions.
+
 ## Current objective and next action
 
 **Publication preparation, November3:** created
