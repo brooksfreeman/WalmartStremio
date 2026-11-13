@@ -16,7 +16,11 @@ window leaves background services running.
 - **Start / repair** restarts hosting and the observer if its shortcut is enabled.
 - **Stop server** stops all three processes now. The boot toggle determines
   whether they return at the next boot. Existing streaming playback will stop.
-- **Open Stremio on TV** starts hosting if needed and sends its reviewed app launch.
+- **Force launch Stremio on TV**, at the top of Overview, starts hosting if needed
+  and opens Stremio without pressing WatchFree. Keep the TV on. It switches from
+  HDMI to SmartCast when necessary, then sends the launch request. This leaves
+  the current TV app or playback; the success message confirms the request was
+  accepted, so check the TV for the visible result.
 - **Subtitles on by default** saves whether each video starts with captions on
   or off, including resumed videos and next episodes. On selects an available
   subtitle track using Stremio's saved language (English when none is set).

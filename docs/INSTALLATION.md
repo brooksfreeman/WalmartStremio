@@ -329,7 +329,7 @@ requires it, mark the shortcut as allowed/trusted. A direct fallback is
 | Stop server | Stops hosting and observer now; does not turn off boot enablement |
 | WatchFree opens Stremio | Persists shortcut choice; off stops/disables watcher, on starts hosting and watcher |
 | Start server when this PC turns on | Enables/disables user units and enables lingering when turning on |
-| Open Stremio on TV | Starts hosting if needed, then launches the TV page |
+| Force launch Stremio on TV | Starts hosting if needed, switches from HDMI to SmartCast when necessary, then opens Stremio; TV must be on |
 | Close window | Leaves the current service state unchanged |
 
 The no-sleep service is independent of Stop server. A PC shutdown always stops
@@ -470,8 +470,9 @@ pinned package with an unverified binary.
 
 ### If the TV stays on HDMI after a launch
 
-The launch response alone does not confirm that the screen changed. Press the
-physical Home/SmartCast button to leave HDMI, then retry **Open Stremio on TV**.
+**Force launch Stremio on TV** checks for SmartCast and switches out of HDMI
+before launching. If the TV does not switch, press the physical Home/SmartCast
+button, then retry. The launch response alone does not confirm that Stremio appeared.
 Use **Input** and the PC-connected HDMI port to return to the desktop if the TV
 also serves as your PC monitor.
 

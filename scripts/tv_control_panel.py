@@ -135,7 +135,24 @@ class Backend:
         self.start()
         if not self.wait_ready():
             raise RuntimeError('The server is still starting. Try again in a few seconds.')
-        tvctl.launch(f'http://{self.bind()}:8099/stremio/#/')
+        try:
+            state = tvctl.request('GET', '/state_extended')
+            if state.get('CURRENT_INPUT', {}).get('NAME') != 'SMARTCAST':
+                # The observed SmartCast key leaves HDMI; app launch alone may not.
+                tvctl.request('PUT', '/key_command/', {
+                    'KEYLIST': [{'CODESET': 4, 'CODE': 3, 'ACTION': 'KEYPRESS'}],
+                })
+                for _ in range(12):
+                    time.sleep(.25)
+                    state = tvctl.request('GET', '/state_extended')
+                    if state.get('CURRENT_INPUT', {}).get('NAME') == 'SMARTCAST':
+                        break
+                else:
+                    raise RuntimeError('The TV did not switch to SmartCast. Press Home on the TV remote, then try again.')
+            tvctl.launch(f'http://{self.bind()}:8099/stremio/#/')
+        except OSError:
+            raise RuntimeError('Could not reach the TV. Turn it on and check its saved IP address in Network.') from None
+        return 'Launch request accepted. Check the TV for Stremio.'
 
     def wait_ready(self):
         for _ in range(12):
@@ -279,6 +296,11 @@ def desktop(screenshot=None, tab='overview'):
             for title, callback in [('Start / repair', lambda: self.backend.start(True)), ('Stop server', self.backend.stop)]:
                 buttons.pack_start(self.button(title, callback), True, True, 0)
             server.pack_start(buttons, False, False, 0)
+            self.launch_button = self.button('Force launch Stremio on TV', self.backend.open_tv, True)
+            server.pack_start(self.launch_button, False, False, 0)
+            server.pack_start(self.label('Starts the server and opens Stremio directly. TV must be on. Leaves the current TV app or HDMI input.', 'muted'), False, False, 0)
+            self.message = self.label('Closing this window does not change server status.', 'muted')
+            server.pack_start(self.message, False, False, 0)
             bandwidth = self.card()
             bandwidth.pack_start(self.label('Server bandwidth', 'section'), False, False, 0)
             self.rates = self.label('Receive —   ·   Send —', 'section')
@@ -302,9 +324,6 @@ def desktop(screenshot=None, tab='overview'):
                 'Applies when each video starts. You can still change captions during playback.', self.backend.subtitles)
             self.subtitles_switch.get_accessible().set_name('Subtitles on by default')
             playback.pack_start(self.label('On uses your Stremio subtitle language, or English if none is set. Subtitles must be available for the video.', 'muted'), False, False, 0)
-            self.body.pack_start(self.button('Open Stremio on TV', self.backend.open_tv, True), False, False, 0)
-            self.message = self.label('Closing this window does not change server status.', 'muted')
-            self.body.pack_start(self.message, False, False, 0)
             self.build_addons(tabs)
             self.build_network(tabs)
             self.window.show_all()
@@ -535,14 +554,16 @@ def desktop(screenshot=None, tab='overview'):
                 control.set_sensitive(False)
             def work():
                 try:
-                    callback()
+                    message = callback()
+                    if not isinstance(message, str):
+                        message = None
                     result = self.backend.status()
-                    GLib.idle_add(self.completed, result, None)
+                    GLib.idle_add(self.completed, result, None, message)
                 except Exception as exc:
                     GLib.idle_add(self.completed, None, str(exc) if isinstance(exc, RuntimeError) else 'Could not reach the local services. Try Start / repair.')
             self.pool.submit(work)
 
-        def completed(self, result, error):
+        def completed(self, result, error, message=None):
             self.busy = False
             for control in self.controls:
                 control.set_sensitive(True)
@@ -554,11 +575,11 @@ def desktop(screenshot=None, tab='overview'):
                 for switch in (self.shortcut_switch, self.boot_switch, self.subtitles_switch):
                     switch.set_active(switch.get_state())
                 self.updating = False
-            self.message.set_text(error or 'Updated. Closing this window keeps your settings.')
+            self.message.set_text(error or message or 'Updated. Closing this window keeps your settings.')
             if self.addon_action:
                 self.addon_message.set_text(error or 'Confirmed by Stremio. The list is the last verified TV snapshot.')
             if self.network_action:
-                self.network_message.set_text(error or 'TV address verified and saved. You can use WatchFree or Open Stremio on TV.')
+                self.network_message.set_text(error or 'TV address verified and saved. You can use WatchFree or Force launch Stremio on TV.')
                 if not error and result:
                     self.set_tv_address(result['tv_ip'])
             if not error and self.clear_url:
